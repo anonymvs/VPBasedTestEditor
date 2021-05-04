@@ -7,6 +7,7 @@
     editor.use(VueRenderPlugin.default);    
     editor.use(ContextMenuPlugin.default);
     editor.use(AreaPlugin);
+    editor.use(MinimapPlugin.default);
     // editor.use(CommentPlugin.default);
     // editor.use(HistoryPlugin);
     // editor.use(ConnectionMasteryPlugin.default);
