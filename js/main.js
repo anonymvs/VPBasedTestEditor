@@ -1,6 +1,6 @@
 (async () => {
     var container = document.querySelector('#rete');
-    var components = [new NumComponent(), new StrComponent()];
+    var components = [new NumComponent (), new StrComponent (), new Coord2DComponent ()];
     
     var editor = new Rete.NodeEditor('demo@0.1.0', container);
     editor.use(ConnectionPlugin.default);

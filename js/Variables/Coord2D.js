@@ -1,0 +1,26 @@
+var coord2DSocket = new Rete.Socket('coord2DSocket');
+
+class Coord2DComponent extends Rete.Component {
+
+    constructor(){
+        super("Coordinate2D");
+    }
+
+    builder(node) {
+        var out = new Rete.Output('coordinate', "Coord2D", coord2DSocket);
+
+        return node
+                .addControl(new NumControl(this.editor, 'coordX'))
+                .addControl(new NumControl(this.editor, 'coordY'))
+                .addOutput(out);
+    }
+
+    worker(node, inputs, outputs) {
+        var coordinate = {
+            x : node.data.coordX,
+            y : node.data.coordY
+        };
+        
+        outputs['coordinate'] = coordinate;
+    }
+}
