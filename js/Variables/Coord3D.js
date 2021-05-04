@@ -7,7 +7,7 @@ class Coord3DComponent extends Rete.Component {
     }
 
     builder(node) {
-        var out = new Rete.Output('coord3D', "Coord3D", coord2DSocket);
+        var out = new Rete.Output('coord3D', "Coord3D", coord3DSocket);
 
         return node
                 .addControl(new NumControl(this.editor, 'coordX'))
