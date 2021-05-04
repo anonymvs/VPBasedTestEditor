@@ -1,8 +1,10 @@
+var editor;
+
 (async () => {
     var container = document.querySelector('#rete');
     var components = [new NumComponent (), new StrComponent (), new Coord2DComponent (), new Coord3DComponent ()];
     
-    var editor = new Rete.NodeEditor('demo@0.1.0', container);
+    editor = new Rete.NodeEditor('demo@0.1.0', container);
     editor.use(ConnectionPlugin.default);
     editor.use(VueRenderPlugin.default);    
     editor.use(ContextMenuPlugin.default);
