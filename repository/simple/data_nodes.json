@@ -1,0 +1,134 @@
+{
+  "nodes": [
+        {  
+            "ACClick_3D" : {
+                "name": "ACClick 3D",
+                "description" : "Click's in AC",
+                "data_guid" : "{A68A1D4A-CF94-4C35-A681-18BFD03276A7}",
+                "input" : [
+                    {
+                        "name" : "in_coord",
+                        "type" : "coord3d"
+                    }
+                ],
+                "perl" : [
+                    "ACClick (in_coord.x, in_coord.y, in_coord.z);"
+                ]
+            },
+            "ACClick_2D" : {
+                "name": "ACClick 2D",
+                "description" : "Click's in AC",
+                "data_guid" : "{466C3CF0-D74D-435A-9AE9-81677F9895CC}",
+                "input" : [
+                    {
+                        "name" : "in_coord",
+                        "type" : "coord2d"
+                    }],
+                "perl" : [ "ACClick (in_coord.x, in_coord.y);" ]
+            },
+            "OpenView" : {
+                "name": "OpenView",
+                "description" : "Opens view in AC. Expects the path in tree as az input separated by commas.",
+                "data_guid" : "{E4DD8542-D3C1-4141-98A6-C8FE9E93EBA7}",
+                "input" : [
+                    {
+                        "name" : "path_in_tree",
+                        "type" : "string"
+                    }
+                ],
+                "perl" : [
+                    "my @path_separated = Split (',', $path_in_tree)",
+                    "setDialog ('Navigator');",
+                    "checkIn ('ViewMap');",
+                    "setDialog ('Navigator-ViewMap');",
+                    "openViewInNavigator ('Tree', @path_separated);",
+                    "waitForAC;"
+                ]
+            },
+            
+            "OpenFile" : {
+                "name": "openFile",
+                "description" : "Opens a file",
+                "data_guid" : "{22EC3D37-5D35-48EE-BA9F-296360FAA718}",
+                "input" : [
+                    {
+                        "name" : "file_name",
+                        "type" : "string"
+                    }
+                ],
+                "perl" : "openFile (file_name);"
+            },
+
+            "MigrateLibraries" : {
+                "name": "MigrateLibraries",
+                "description" : "Skips or confirms migration (Parameter can be: SkipMigration or MigrateArchiCADLibraries)",
+                "data_guid" : "{F8147A00-B1BC-4905-A0EC-84660A863B58}",
+                "input" : [
+                    {
+                        "name" : "migration",
+                        "type" : "string"
+                    }
+                ],
+                "perl" :  [
+                    "setDialog ('Warning-MigrateArchiCADLibraries');",
+	                "mustWaitForDialog ();",
+	                "clickOn (migration);",
+	                "waitForAC ();"
+                ]
+            },
+
+            "BitmapCheckView" : {
+                "name": "BitmapCheck",
+                "description" : "BitmapChecks a given view (view) giving it a name (bitmap_name)",
+                "data_guid" : "{CF29651C-B328-444D-A527-BE47DB0A32FF}",
+                "input" : [
+                    {
+                        "name" : "view",
+                        "type" : "string"
+                    },
+                    
+                    {
+                        "name" : "bitmap_name",
+                        "type" : "string"
+                    }
+                ],
+                "perl" :  [
+                    "bitmapCheck (bitmap_name, view);"
+                ]
+            },
+
+            "BitmapCheckDialog" : {
+                "name": "BitmapCheckDialog",
+                "description" : "BitmapChecks the dialog in focus giving it a name (bitmap_name)",
+                "data_guid" : "{DE62C051-36EC-432C-BD06-C517ACF82969}",
+                "input" : [       
+                    {
+                        "name" : "bitmap_name",
+                        "type" : "string"
+                    }
+                ],
+                "perl" :  [
+                    "bitmapCheckDialog (bitmap_name);"
+                ]
+            },
+
+            "SetDialog" : {
+                "name": "SetDialog",
+                "description" : "Sets dialog in focus to the one given as a parmeter",
+                "data_guid" : "{1382F9FE-1C75-4178-B875-759CF4B6C65A}",
+                "input" : [
+                    {
+                        "name" : "dialog_name",
+                        "type" : "string"
+                    }
+                ],
+                "perl" :  [
+                    "setDialog (dialog_name);"
+                ]
+            }
+
+
+        }
+    ]
+}
+     
