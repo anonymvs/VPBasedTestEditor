@@ -12,7 +12,11 @@ window.onload = function () {
 
     console.log("fun times");
 
+    console.log (editor.toJSON());
 
+    // Ideiglenes export
+    // var myJSON = JSON.stringify(editor.toJSON());
+    // document.getElementById("asd").innerHTML = myJSON;
   });
 
 }
