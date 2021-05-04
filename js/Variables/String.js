@@ -50,6 +50,6 @@ class StrComponent extends Rete.Component {
     }
 
     worker(node, inputs, outputs) {
-        //outputs['str'] = node.data.str;
+        outputs['str'] = node.data.str;
     }
 }

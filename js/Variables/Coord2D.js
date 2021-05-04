@@ -7,7 +7,7 @@ class Coord2DComponent extends Rete.Component {
     }
 
     builder(node) {
-        var out = new Rete.Output('coordinate', "Coord2D", coord2DSocket);
+        var out = new Rete.Output('coord2D', "Coord2D", coord2DSocket);
 
         return node
                 .addControl(new NumControl(this.editor, 'coordX'))
@@ -21,6 +21,6 @@ class Coord2DComponent extends Rete.Component {
             y : node.data.coordY
         };
         
-        outputs['coordinate'] = coordinate;
+        outputs['coord2D'] = coordinate;
     }
 }
