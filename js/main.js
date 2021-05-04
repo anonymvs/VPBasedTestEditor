@@ -1,6 +1,6 @@
 (async () => {
     var container = document.querySelector('#rete');
-    var components = [new NumComponent(), new AddComponent()];
+    var components = [new NumComponent(), new StrComponent()];
     
     var editor = new Rete.NodeEditor('demo@0.1.0', container);
     editor.use(ConnectionPlugin.default);
@@ -19,23 +19,23 @@
         engine.register(c);
     });
 
-    var n1 = await components[0].createNode({num: 2});
-    var n2 = await components[0].createNode({num: 0});
-    var n3 = await components[0].createNode({num: 0});
-    var add = await components[1].createNode();
+    // var n1 = await components[0].createNode({num: 2});
+    // var n2 = await components[0].createNode({num: 0});
+    // var n3 = await components[0].createNode({num: 0});
+    // var add = await components[1].createNode();
 
-    n1.position = [80, 200];
-    n2.position = [80, 400];
-    n3.position = [80, 600];
-    add.position = [500, 240];
+    // n1.position = [80, 200];
+    // n2.position = [80, 400];
+    // n3.position = [80, 600];
+    // add.position = [500, 240];
  
-    editor.addNode(n1);
-    editor.addNode(n2);
-    editor.addNode(n3);
-    editor.addNode(add);
+    // editor.addNode(n1);
+    // editor.addNode(n2);
+    // editor.addNode(n3);
+    // editor.addNode(add);
 
-    editor.connect(n1.outputs.get('num'), add.inputs.get('num'));
-    editor.connect(n2.outputs.get('num'), add.inputs.get('num2'));
+    // editor.connect(n1.outputs.get('num'), add.inputs.get('num'));
+    // editor.connect(n2.outputs.get('num'), add.inputs.get('num2'));
 
     editor.on('process nodecreated noderemoved connectioncreated connectionremoved', async () => {
       console.log('process');
