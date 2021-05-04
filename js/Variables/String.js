@@ -1,8 +1,8 @@
-var numSocket = new Rete.Socket('numSocket');
+var strSocket = new Rete.Socket('strSocket');
 
-var VueNumControl = {
+var VueStrControl = {
   props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],
-  template: '<input type="number" :readonly="readonly" :value="value" @input="change($event)" @dblclick.stop="" @pointerdown.stop="" @pointermove.stop=""/>',
+  template: '<input type="text" :readonly="readonly" :value="value" @input="change($event)" @dblclick.stop="" @pointerdown.stop="" @pointermove.stop=""/>',
   data() {
     return {
       value: 0,
@@ -24,7 +24,7 @@ var VueNumControl = {
   }
 }
 
-class NumControl extends Rete.Control {
+class StrControl extends Rete.Control {
 
   constructor(emitter, key, readonly) {
     super(key);
@@ -37,19 +37,19 @@ class NumControl extends Rete.Control {
   }
 }
 
-class NumComponent extends Rete.Component {
+class StrComponent extends Rete.Component {
 
     constructor(){
-        super("Number");
+        super("String");
     }
 
     builder(node) {
-        var out1 = new Rete.Output('num', "Number", numSocket);
+        var out1 = new Rete.Output('str', "String", strSocket);
 
-        return node.addControl(new NumControl(this.editor, 'num')).addOutput(out1);
+        return node.addControl(new StrControl(this.editor, 'str')).addOutput(out1);
     }
 
     worker(node, inputs, outputs) {
-        outputs['num'] = node.data.num;
+        //outputs['str'] = node.data.str;
     }
 }
