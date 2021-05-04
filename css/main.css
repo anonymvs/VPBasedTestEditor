@@ -18,3 +18,8 @@ id {
     top: -6px;
     background: white;
 }
+
+.number-value-3 {
+    border-radius: 0px !important;
+    background-color: black !important;
+}

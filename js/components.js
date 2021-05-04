@@ -1,135 +1,85 @@
-var actionSocket = new Rete.Socket('Action');
-var dataSocket = new Rete.Socket('Data');
+var numSocket = new Rete.Socket('Number value 3');
 
-var eventHandlers = {
-    list: [],
-    remove() {
-        this
-            .list
-            .forEach(h => {
-                document.removeEventListener('keydown', h);
-            });
-        this.list = [];
+var VueNumControl = {
+  props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],
+  template: '<input type="number" :readonly="readonly" :value="value" @input="change($event)" @dblclick.stop="" @pointerdown.stop="" @pointermove.stop=""/>',
+  data() {
+    return {
+      value: 0,
+    }
+  },
+  methods: {
+    change(e){
+      this.value = +e.target.value;
+      this.update();
     },
-    add(name, h) {
-        document.addEventListener(name, h, false);
-        this
-            .list
-            .push(h);
-    }
-};
-
-class KeydownComp extends Rete.Component {
-
-    constructor() {
-        super('Keydown event');
-        this.task = {
-            outputs: ['option', 'output'],
-            init: this.init
-        }
-    }
-
-    init(task) {
-        eventHandlers.remove();
-        eventHandlers.add('keydown', function (e) {
-            task.run(e.keyCode);
-            task.reset();
-        });
-    }
-
-    builder(node) {
-
-        node.addOutput(new Rete.Output('', actionSocket));
-        node.addOutput(new Rete.Output('Key code', dataSocket));
-    }
-
-    worker(node, inputs, data) {
-        console.log('Keydown event', node.id, data);
-        return [data]
-    }
-}
-
-class EnterPressComp extends Rete.Component {
-
-    constructor() {
-        super('Enter pressed')
-        this.task = {
-            outputs: ['option', 'option']
-        }
-    }
-
-    builder(node) {
-        node.addInput(new Rete.Input('', actionSocket))
-        node.addInput(new Rete.Input('Key code', dataSocket))
-        node.addOutput(new Rete.Output('Tren', actionSocket))
-        node.addOutput(new Rete.Output('Else', actionSocket));
-    }
-
-    worker(node, inputs) {
-        if (inputs[0][0] == 13)
-            this.closed = [1];
-        else
-            this.closed = [0];
-        console.log('Print', node.id, inputs);
-    }
-}
-
-
-
-class MessageControl extends Rete.Control {
-
-    constructor(emitter, msg) {
-        super();
-        this.emitter = emitter;
-        this.template = '<input :value="msg" @input="change($event)"/>';
-
-        this.scope = {
-            msg,
-            change: this.change.bind(this)
-        };
-    }
-
-    change(e) {
-        this.scope.value = +e.target.value;
-        this.update();
-    }
-
     update() {
-        this.putData('msg', this.scope.value)
-        this.emitter.trigger('process');
-        this._alight.scan();
+      if (this.ikey)
+        this.putData(this.ikey, this.value)
+      this.emitter.trigger('process');
     }
-
-    mounted() {
-        this.scope.value = this.getData('msg') || 0;
-        this.update();
-    }
-
-    setValue(val) {
-        this.scope.value = val;
-        this._alight.scan()
-    }
+  },
+  mounted() {
+    this.value = this.getData(this.ikey);
+  }
 }
 
+class NumControl extends Rete.Control {
 
-class AlertComp extends Rete.Component {
+  constructor(emitter, key, readonly) {
+    super(key);
+    this.component = VueNumControl;
+    this.props = { emitter, ikey: key, readonly };
+  }
 
-    constructor() {
-        super('Alert');
-        this.task = {
-            outputs: []
-        }
+  setValue(val) {
+    this.vueContext.value = val;
+  }
+}
+
+class NumComponent extends Rete.Component {
+
+    constructor(){
+        super("Number");
     }
 
     builder(node) {
-        var ctrl = new MessageControl(this.editor, node.data.msg);
+        var out1 = new Rete.Output('num', "Number", numSocket);
 
-        node.addControl(ctrl)
-        node.addInput(new Rete.Input('ff', actionSocket));
+        return node.addControl(new NumControl(this.editor, 'num')).addOutput(out1);
     }
 
-    worker(node, inputs) {
-        console.log('Alert', node.id, node.data);
-        alert(node.data.msg);
+    worker(node, inputs, outputs) {
+        outputs['num'] = node.data.num;
     }
-};
+}
+
+class AddComponent extends Rete.Component {
+    constructor(){
+        super("Add");
+    }
+
+    builder(node) {
+        var inp1 = new Rete.Input('num',"Number", numSocket);
+        var inp2 = new Rete.Input('num2', "Number2", numSocket);
+        var out = new Rete.Output('num', "Number", numSocket);
+
+        // inp1.addControl(new NumControl(this.editor, 'num'))
+        // inp2.addControl(new NumControl(this.editor, 'num2'))
+
+        return node
+            .addInput(inp1)
+            .addInput(inp2)
+            .addControl(new NumControl(this.editor, 'preview', true))
+            .addOutput(out);
+    }
+
+    worker(node, inputs, outputs) {
+        var n1 = inputs['num'].length?inputs['num'][0]:node.data.num1;
+        var n2 = inputs['num2'].length?inputs['num2'][0]:node.data.num2;
+        var sum = n1 + n2;
+        
+        this.editor.nodes.find(n => n.id == node.id).controls.get('preview').setValue(sum);
+        outputs['num'] = sum;
+    }
+}
