@@ -5,12 +5,12 @@ var VueStrControl = {
   template: '<input type="text" :readonly="readonly" :value="value" @input="change($event)" @dblclick.stop="" @pointerdown.stop="" @pointermove.stop=""/>',
   data() {
     return {
-      value: 0,
+      value: "",
     }
   },
   methods: {
     change(e){
-      this.value = +e.target.value;
+      this.value = e.target.value;
       this.update();
     },
     update() {
@@ -28,7 +28,7 @@ class StrControl extends Rete.Control {
 
   constructor(emitter, key, readonly) {
     super(key);
-    this.component = VueNumControl;
+    this.component = VueStrControl;
     this.props = { emitter, ikey: key, readonly };
   }
 
