@@ -1,3 +1,7 @@
+let command_array = []
+let command_array2 = []
+let controlsDiv = document.querySelector('[aria-labelledby="SimpleComponents"]');
+
 // Commands to array
 function getCommands(command_array) {
   let json_database = getData();
@@ -5,7 +9,6 @@ function getCommands(command_array) {
 
   for (const [key, value] of Object.entries(commands)) {
     command_array.push([key, value]);
-    //console.log(`${key}: ${value}`);
   }
 }
 
@@ -20,17 +23,36 @@ function getData() {
   return response
 }
 
-let command_array = []
-//getCommands(command_array);
+// Async
+function getPoster(command_array2) {
+    fetch("./repository/simple/data_nodes.json")
+      .then(response => response.json())
+      .then(response => {
+          let commands = response['nodes'][0];
+          console.log('siker?: ', commands);
+          for (const [key, value] of Object.entries(commands)) {
+            command_array2.push([key, value]);
+            //console.log(`${key}: ${value}`);
+          }
+          console.log('itt meg jo? : ', command_array2[0]);
+          command_array2 = command_array2[0]
+      }
+      );
+      
+  }
 
-let controlsDiv = document.querySelector('[aria-labelledby="SimpleComponents"]');
+
+window.addEventListener('load', () => {
+    getPoster(command_array2);
+    setTimeout(() => {
+        generateControlsToDropDowMenu();    
+    }, 1000);
+})
 
 function generateControlsToDropDowMenu () {
-    
-    for (let i = 0; i < command_array.length; ++i) {
-        
+    for (let i = 0; i < command_array2.length; ++i) {
         let child = document.createElement('a');
-        let text = document.createTextNode(`${command_array[i][0]}`);
+        let text = document.createTextNode(`${command_array2[i][0]}`);
 
         child.appendChild(text);
         child.setAttribute('class', 'dropdown-item no-href component');
@@ -39,6 +61,3 @@ function generateControlsToDropDowMenu () {
         controlsDiv.appendChild(child);
     }
 }
-
-generateControlsToDropDowMenu();
-console.log(controlsDiv);
