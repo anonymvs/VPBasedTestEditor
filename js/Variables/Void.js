@@ -1,0 +1,1 @@
+var voidSocket = new Rete.Socket('voidSocket');
