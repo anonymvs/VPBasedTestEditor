@@ -12,7 +12,7 @@
                     }
                 ],
                 "perl" : [
-                    "ACClick (in_coord.x, in_coord.y, in_coord.z);"
+                    "ACClick ($in_coord_x, $in_coord_y, $in_coord_z);"
                 ]
             },
             "ACClick_2D" : {
@@ -24,7 +24,7 @@
                         "name" : "in_coord",
                         "type" : "coord2d"
                     }],
-                "perl" : [ "ACClick (in_coord.x, in_coord.y);" ]
+                "perl" : [ "ACClick ($in_coord_x, $in_coord_y);" ]
             },
             "OpenView" : {
                 "name": "OpenView",
@@ -56,7 +56,7 @@
                         "type" : "string"
                     }
                 ],
-                "perl" : "openFile (file_name);"
+                "perl" : "openFile ($file_name);"
             },
 
             "MigrateLibraries" : {
@@ -72,7 +72,7 @@
                 "perl" :  [
                     "setDialog ('Warning-MigrateArchiCADLibraries');",
 	                "mustWaitForDialog ();",
-	                "clickOn (migration);",
+	                "clickOn ($migration);",
 	                "waitForAC ();"
                 ]
             },
@@ -93,7 +93,7 @@
                     }
                 ],
                 "perl" :  [
-                    "bitmapCheck (bitmap_name, view);"
+                    "bitmapCheck ($bitmap_name, $view);"
                 ]
             },
 
@@ -108,7 +108,7 @@
                     }
                 ],
                 "perl" :  [
-                    "bitmapCheckDialog (bitmap_name);"
+                    "bitmapCheckDialog ($bitmap_name);"
                 ]
             },
 
@@ -123,10 +123,9 @@
                     }
                 ],
                 "perl" :  [
-                    "setDialog (dialog_name);"
+                    "setDialog ($dialog_name);"
                 ]
             }
-
 
         }
     ]

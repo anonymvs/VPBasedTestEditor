@@ -1,3 +1,5 @@
+const endline = '\n';
+
 
 class Exporter {
   constructor(nodes){
@@ -15,28 +17,42 @@ class Exporter {
     this.control_flow = this.select_control_flow (nodes);   // ordered sequence of nodes connected by the control sockets  
 
     this.export = this.export.bind (this);
+    //this.process_input = this.process_input.bind (this);
   }
 
 
-  select_control_flow () {
+  select_control_flow (nodes) {
     let ret = [];
 
-    let start = nodes.find (node => node.name === 'start');
-    let end = nodes.find (node => node.name === 'end');
+    let start = nodes.find (node => node.name === 'Begin');
+    let end = nodes.find (node => node.name === 'End');
 
     if (typeof start !== 'undefined' && typeof end !== 'undefined') {
 
       let current = start;
-      while (current === end) {
+      while (current !== end) {
         for (let key of current.outputs.keys()) {
+          
+          //  //current.getConnections ();
+          //  for (let connections of current.getConnections ()) {
+          //   if (typeof connections.output !== 'undefined') {
+  
+          //     for (let c of connections.output.connections) {
+          //       let output = c.input;
 
-          if (key === 'control') {  // type key of socket e.i.: 'str'
-            current = current.outputs.get (key).node;
-            if (current.name !== 'end')
-              ret.add (current);
+          if (key === 'void') {  // type key of socket e.i.: 'str'
+            let connections = current.outputs.get (key).connections;
+            if (typeof connections !== 'undefined') {
+              if (connections.length == 1) {
+                current = connections[0].input.node;
+                if (current !== end)
+                  ret.push (current);
 
-            break;
-
+                break;
+              } else {
+                alert ('Multiple routes for control flow found.');
+              }
+            }
           }
         }
       }
@@ -54,62 +70,65 @@ class Exporter {
   }
 
 
-  process_input (signature, key, id, data) {
+  process_input (signature, name, id, data) {
     let str = ''; 
     let value;
     let variables = [];
-    switch (key) {
-      case 'control':
+    switch (name) {
+      case 'Void':
         alert ('This is not supposed to be here.');
         break;
 
-      case 'num':
+      case 'Number':
         value = data['num'];
-        variables.add (signature);
-        str += 'my @' + signature + ' = ' + String (value) + ';';
+        variables.push (signature);
+        str += 'my @' + signature + ' = ' + String (value) + ';' + endline;
         break;
 
-      case 'str':
+      case 'String':
         value = data['str'];
-        variables.add (signature);
-        str += 'my @' + signature + ' = ' + String (value) + ';';
+        variables.push (signature);
+        str += 'my @' + signature + " = '" + String (value) + "';" + endline;
         break;
 
       // TODO: rework this... this is horrible maybe functions idunno
-      case 'coord2D': {
+      case 'Coord2D': {
         let x = data['coordX'];
         let signature_x = signature + '_x';
-        str += 'my @' + signature_x + ' = ' + String (x) + ';';
-        variables.add (signature_x);
+        str += 'my @' + signature_x + ' = ' + String (x) + ';' + endline;
+        variables.push (signature_x);
 
         let y = data['coordY'];
         let signature_y = signature + '_y';
-        str += 'my @' + signature_y + ' = ' + String (y) + ';';
-        variables.add (signature_y);
+        str += 'my @' + signature_y + ' = ' + String (y) + ';' + endline;
+        variables.push (signature_y);
 
         break;
       }
-      case 'coord3D': {
+      case 'Coord3D': {
         let x = data['coordX'];
         let signature_x = signature + '_x';
-        str += 'my @' + signature_x + ' = ' + String (x) + ';';
-        variables.add (signature_x);
+        str += 'my @' + signature_x + ' = ' + String (x) + ';' + endline;
+        variables.push (signature_x);
 
         let y = data['coordY'];
         let signature_y = signature + '_y';
-        str += 'my @' + signature_y + ' = ' + String (y) + ';';
-        variables.add (signature_y);
+        str += 'my @' + signature_y + ' = ' + String (y) + ';' + endline;
+        variables.push (signature_y);
 
         let z = data['coordZ'];
         let signature_z = signature + '_z';
-        str += 'my @' + signature_z + ' = ' + String (z) + ';';
-        variables.add (signature_z);
+        str += 'my @' + signature_z + ' = ' + String (z) + ';' + endline;
+        variables.push (signature_z);
         break;
       }
+      default:
+        return '';
     }
 
     this.processed_inputs.set (id, variables);
 
+    str += endline;
     return str;
   }
 
@@ -120,41 +139,51 @@ class Exporter {
       if (key === 'control')
         continue;
 
-      let input_node = value.node;
+      let input_node;
+      let connections = value.connections;
+      if (typeof connections !== 'undefined') {
+        input_node = connections[0].output.node;  
+      }      
+
+      let input_name = this.get_signature_name (input_node);
 
       // Declaring variables if not processed already
-      if (!this.processed_inputs.has (input_node.id)) {
-        let input_name = this.get_signature_name (input_node);
-        
+      if (!this.processed_inputs.has (input_node.id)) {  
         // Processes variable name and value, and return the declaration string 
-        this.main += process_input (input_name, key, input_node.id, input_node.data);
+        this.main += this.process_input (input_name, input_node.name, input_node.id, input_node.data);
+      } else {
+        this.processed_inputs.get(input_node.id).push (input_name);
       }
-
-      let func_name       = this.get_signature_name (node);
-      let input_variables = this.processed_inputs.get (input_node.id);
-
-      // function call
-      this.main += func_name + ' (';
-      for (let i = 0; i < input_variables.size (); ++i) {
-        this.main += '@' + input_variables[i];
-        if (i < input_variables.size () - 1)
-          this.main += ', ';
-      }
-      this.main += ');';
     }
+
+    let func_name       = this.get_signature_name (node);
+    let input_variables = [];
+    for (let value of this.processed_inputs.values ()) {
+      input_variables.push.apply(input_variables, value);
+    }
+    // let input_variables = this.processed_inputs.get (input_node.id);
+
+    // function call
+    this.main += '_' + func_name + ' (';
+    for (let i = 0; i < input_variables.length; ++i) {
+      this.main += '@' + input_variables[i];
+      if (i < input_variables.length - 1)
+        this.main += ', ';
+    }
+    this.main += ');' + endline;
 
   }
 
   write_subrutines (node) {
 
-    this.subrutines = "sub _node" + this.get_signature_name(node) + " {" + "\n";
+    this.subrutines = "sub _" + this.get_signature_name(node) + " {" + endline;
 
-    for (const param of node.data['inputs']) {
-      this.subrutines += "my $" + param.name + "= shift @_; + \n";
+    for (const param of node.data.input) {
+      this.subrutines += "my $" + param.name + "= shift @_;" + endline;
     }
     
-    for (const line of node.data['perl']) {
-      this.subrutines += line + "\n";
+    for (const line of node.data.perl) {
+      this.subrutines += line + endline;
     }
 
     this.subrutines += "}";
@@ -206,28 +235,34 @@ class Exporter {
 }
 
 
-window.onload = function () {
+$('#export').click (async function(event) {
+  let exporter = new Exporter (editor.nodes);
+  let script = exporter.export ();
+  console.log (script);
+});
 
-  document.getElementById("export").addEventListener("click", function() {
-    alert("Export");
-    console.log("Megnyomtuk az exportot");
+// window.onload = function () {
 
-    var myNum = 100;
-    var myNode = editor.nodes;
+//   document.getElementById("export").addEventListener("click", function() {
+//     alert("Export");
+//     console.log("Megnyomtuk az exportot");
 
-    console.log (myNode[0].id);
+//     var myNum = 100;
+//     var myNode = editor.nodes;
 
-    console.log("fun times");
+//     console.log (myNode[0].id);
 
-    console.log (editor.toJSON());
+//     console.log("fun times");
 
-    // Ideiglenes export
-    // var myJSON = JSON.stringify(editor.toJSON());
-    // document.getElementById("asd").innerHTML = myJSON;
+//     console.log (editor.toJSON());
 
-  });
+//     // Ideiglenes export
+//     // var myJSON = JSON.stringify(editor.toJSON());
+//     // document.getElementById("asd").innerHTML = myJSON;
 
-}
+//   });
+
+// }
 
 
 // start 

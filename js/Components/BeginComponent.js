@@ -9,6 +9,5 @@ class BeginComponent extends Rete.Component {
     }
 
     worker(node, inputs, outputs) {
-        
     }
 }
