@@ -23,3 +23,14 @@ id {
     border-radius: 0px !important;
     background-color: black !important;
 }
+
+
+#rete {
+    width: 100hh;
+    height: 100vh;
+    background-color:rgb(234, 248, 255);
+}
+
+.no-padding {
+    padding: 0px !important;
+}

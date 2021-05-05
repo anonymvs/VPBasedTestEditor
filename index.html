@@ -1,14 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Visual Programming Based Text Editor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<link rel="icon" href="img/favico.ico" type="image/x-icon" />
 
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css" />
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/JQuery/jquery.min.js"></script>
+        <script src="js/Bootstrap/bootstrap.min.js"></script>
 
         <script src="js/Rete.js/rete.min.js"></script>
         <script src="js/Rete.js/vue.min.js"></script>
@@ -16,7 +19,7 @@
         <script src="js/Rete.js/connection-plugin.min.js"></script>
         <script src="js/Rete.js/lodash.min.js"></script>
         <script src="js/Rete.js/context-menu-plugin.min.js"></script>
-        <script src="js/Rete.js/area-plugin.min.js"></script>
+        <!-- <script src="js/Rete.js/area-plugin.min.js"></script> -->
         <script src="js/Rete.js/minimap-plugin.min.js"></script>
 
         <script src="js/Variables/Number.js"></script>
@@ -26,6 +29,7 @@
 
         <script src="js/main.js" defer="defer"></script>
         <script src="js/export.js" defer="defer"></script>
+        <script src="js/style.js" defer="defer"></script>
 
         <!-- <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script> -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/alight@0.14.1/alight.min.js"></script> -->
@@ -37,10 +41,45 @@
         <!-- <script src="js/data.js"></script> -->
     </head>
     <body>
-        <div id="asd"></div>
-        <input type="button" value="GOMB" id="b"/>
-        <button id="Export">Export</button>
-        
-        <div class="node-editor" id="rete"></div>
+        <div class="container-fluid no-padding">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">VP Based Text Editor</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#VP-Navbar" aria-controls="VP-Navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="VP-Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="FileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">File</a>
+                            <div class="dropdown-menu" aria-labelledby="FileDropdown">
+                                <a class="dropdown-item no-href" href="#" id="open">Open</a>
+                                <a class="dropdown-item no-href" href="#" id="save">Save</a>
+                                <a class="dropdown-item no-href" href="#" id="export">Export</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="VariableComponents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Variables</a>
+                            <div class="dropdown-menu" aria-labelledby="VariableComponents">
+                                <a class="dropdown-item no-href" href="#" id="numComponent">Number</a>
+                                <a class="dropdown-item no-href" href="#" id="strComponent">String</a>
+                                <a class="dropdown-item no-href" href="#" id="coord2DComponent">Coord2D</a>
+                                <a class="dropdown-item no-href" href="#" id="coord3DComponent">Coord3D</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="SimpleComponents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Controls</a>
+                            <div class="dropdown-menu" aria-labelledby="SimpleComponents">
+                                <a class="dropdown-item no-href disabled" href="#">Ezt majd generálni kell</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="node-editor" id="rete"></div>
+        </div>
     </body>
 </html>

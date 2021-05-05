@@ -1,3 +1,29 @@
+// Commands to array
+function getCommands(command_array) {
+  let json_database = getData();
+  let commands = json_database['nodes'][0];
+
+  for (const [key, value] of Object.entries(commands)) {
+    command_array.push([key, value]);
+    console.log(`${key}: ${value}`);
+  }
+}
+
+// Get data from json synchronous
+function getData() {
+
+  const xhr = new XMLHttpRequest();
+
+  xhr.open("GET", "./repository/simple/data_nodes.json", false);
+  xhr.send(null);
+
+  const response = JSON.parse(xhr.responseText)
+  return response
+}
+
+let command_array = []
+getCommands(command_array);
+
 var editor;
 
 (async () => {
@@ -8,23 +34,23 @@ var editor;
     editor.use(ConnectionPlugin.default);
     editor.use(VueRenderPlugin.default);    
     editor.use(ContextMenuPlugin.default);
-    editor.use(AreaPlugin);
+    // editor.use(AreaPlugin);
     editor.use(MinimapPlugin.default);
     // editor.use(CommentPlugin.default);
     // editor.use(HistoryPlugin);
     // editor.use(ConnectionMasteryPlugin.default);
 
-    var engine = new Rete.Engine('demo@0.1.0');
+    let engine = new Rete.Engine('demo@0.1.0');
     
     components.map(c => {
         editor.register(c);
         engine.register(c);
     });
 
-    // var n1 = await components[0].createNode({num: 2});
-    // var n2 = await components[0].createNode({num: 0});
-    // var n3 = await components[0].createNode({num: 0});
-    // var add = await components[1].createNode();
+    // let n1 = await components[0].createNode({num: 2});
+    // let n2 = await components[0].createNode({num: 0});
+    // let n3 = await components[0].createNode({num: 0});
+    // let add = await components[1].createNode();
 
     // n1.position = [80, 200];
     // n2.position = [80, 400];
@@ -45,7 +71,7 @@ var editor;
         await engine.process(editor.toJSON());
     });
 
-    editor.view.resize();
-    AreaPlugin.zoomAt(editor);
+    // editor.view.resize();
+    // AreaPlugin.zoomAt(editor);
     editor.trigger('process');
 })();
