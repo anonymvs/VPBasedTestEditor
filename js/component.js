@@ -44,10 +44,16 @@ function getPosition (nodeWidth, nodeHeight) {
 
 
 function deleteComponent () {
-    if (selectedNode != null) {
-        editor.removeNode (selectedNode);
+    if (editor.selected.list.length > 0) {
+        editor.removeNode (editor.selected.list[0]);
         selectedNode = null;
     }
+}
+
+function selectNode (node) {
+    editor.selected.clear ();
+    editor.selected.list.push (node);
+    editor.nodes.map(n => n.update());
 }
 
 
@@ -59,6 +65,8 @@ $('.component').click (async function(event) {
     node.position = getPosition (222, 131);
 
     editor.addNode(node);
+
+    selectNode (node);
 });
 
 
@@ -97,4 +105,5 @@ $('#debug').click (async function (event) {
     node.position = getPosition (184, 195);
  
     editor.addNode(node);
+    selectNode (node);
 });
