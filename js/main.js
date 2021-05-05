@@ -1,30 +1,3 @@
-/*
-// Commands to array
-function getCommands(command_array) {
-  let json_database = getData();
-  let commands = json_database['nodes'][0];
-
-  for (const [key, value] of Object.entries(commands)) {
-    command_array.push([key, value]);
-    console.log(`${key}: ${value}`);
-  }
-}
-
-function getData() {
-
-  const xhr = new XMLHttpRequest();
-
-  xhr.open("GET", "./repository/simple/data_nodes.json", false);
-  xhr.send(null);
-
-  const response = JSON.parse(xhr.responseText)
-  return response
-}
-
-let command_array = []
-getCommands(command_array);
-*/
-
 (async () => {
     var container = document.querySelector('#rete');
     // var components = [new NumComponent (), new StrComponent (), new Coord2DComponent (), new Coord3DComponent ()];

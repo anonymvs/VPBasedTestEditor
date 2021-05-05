@@ -37,7 +37,10 @@ function getPosition (nodeWidth, nodeHeight) {
     let zoom = transform.zoom;
     let reciprocalZoom = 1.0 / transform.zoom;
 
-    let position = [reciprocalZoom * -transform.x + reciprocalZoom * size.width / 2 - zoom * nodeWidth / 2, reciprocalZoom * -transform.y + reciprocalZoom * size.height / 2 - zoom * nodeHeight / 2];
+    let positionX = reciprocalZoom * -transform.x + reciprocalZoom * size.width / 2 - zoom * nodeWidth / 2;
+    let positionY = reciprocalZoom * -transform.y + reciprocalZoom * size.height / 2 - zoom * nodeHeight / 2;
+
+    let position = [positionX, positionY];
 
     return position;
 }
@@ -50,11 +53,23 @@ function deleteComponent () {
     }
 }
 
+
 function selectNode (node) {
     editor.selected.clear ();
     editor.selected.list.push (node);
     editor.nodes.map(n => n.update());
 }
+
+
+$('#delete').click (function (event) {
+    deleteComponent ();
+});
+
+
+$(document).keydown(function(e){
+    if (e.keyCode == 46)
+        deleteComponent ();
+});
 
 
 $('.component').click (async function(event) {
@@ -70,16 +85,7 @@ $('.component').click (async function(event) {
 });
 
 
-$('#delete').click (function (event) {
-    deleteComponent ();
-});
-
-$(document).keydown(function(e){
-    if (e.keyCode == 46)
-        deleteComponent ();
-});
-
-$('#debug').click (async function (event) {
+$('#debug_component').click (async function (event) {
     let comp;
     try {
         comp = editor.getComponent ('ProblemSolved');
@@ -118,9 +124,11 @@ $('#debug').click (async function (event) {
     selectNode (node);
 });
 
+
 // $('#template_selector').click (async function(event) {
 
 // })
+
 
 $('#new_open').click (async function(event) {
 
