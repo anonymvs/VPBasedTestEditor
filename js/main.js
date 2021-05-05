@@ -1,3 +1,4 @@
+/*
 // Commands to array
 function getCommands(command_array) {
   let json_database = getData();
@@ -10,6 +11,7 @@ function getCommands(command_array) {
 }
 
 // Get data from json synchronous
+
 function getData() {
 
   const xhr = new XMLHttpRequest();
@@ -23,12 +25,12 @@ function getData() {
 
 let command_array = []
 getCommands(command_array);
-
+*/
 var editor;
 
 (async () => {
     var container = document.querySelector('#rete');
-    var components = [new NumComponent (), new StrComponent (), new Coord2DComponent (), new Coord3DComponent ()];
+    var components = [new NumComponent (), new StrComponent (), new Coord2DComponent (), new Coord3DComponent (), new SimpleComponent ()];
     
     editor = new Rete.NodeEditor('demo@0.1.0', container);
     editor.use(ConnectionPlugin.default);
@@ -47,17 +49,37 @@ var editor;
         engine.register(c);
     });
 
-    // let n1 = await components[0].createNode({num: 2});
+     let n1 = await components[4].createNode(
+        {
+            "name": "BitmapCheck",
+            "description" : "BitmapChecks a given view (view) giving it a name (bitmap_name)",
+            "data_guid" : "{CF29651C-B328-444D-A527-BE47DB0A32FF}",
+            "input" : [
+                {
+                    "name" : "view",
+                    "type" : "string"
+                },
+                
+                {
+                    "name" : "bitmap_name",
+                    "type" : "string"
+                }
+            ],
+            "perl" :  [
+                "bitmapCheck (bitmap_name, view);"
+            ]
+        }
+     );
     // let n2 = await components[0].createNode({num: 0});
     // let n3 = await components[0].createNode({num: 0});
     // let add = await components[1].createNode();
 
-    // n1.position = [80, 200];
+    n1.position = [80, 200];
     // n2.position = [80, 400];
     // n3.position = [80, 600];
     // add.position = [500, 240];
  
-    // editor.addNode(n1);
+    editor.addNode(n1);
     // editor.addNode(n2);
     // editor.addNode(n3);
     // editor.addNode(add);
