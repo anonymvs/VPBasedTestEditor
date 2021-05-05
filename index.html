@@ -63,7 +63,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="FileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">File</a>
                             <div class="dropdown-menu" aria-labelledby="FileDropdown">
-                                <a class="dropdown-item no-href" href="#" id="new">New</a>
+                                <a class="dropdown-item no-href" href="#" id="new" data-toggle="modal" data-target="#newTestModal">New</a>
                                 <a class="dropdown-item no-href" href="#" id="open">Open</a>
                                 <a class="dropdown-item no-href" href="#" id="save">Save</a>
                                 <a class="dropdown-item no-href" href="#" id="export">Export</a>
@@ -99,5 +99,36 @@
                 <button type="button" class="btn btn-info btn-lg padding" id="debug">Test Component</button>
             </nav>
         </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="newTestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="newTestModalLabel">Choose a template</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="btn-group btn-group-toggle" id="template_selector" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="options" id="default_test_template" autocomplete="off" checked> Default
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="datadriven_test_template" autocomplete="off"> Data Driven
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="speed_test_template" autocomplete="off"> Speed
+                    </label>
+                  </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="new_open">Open</button>
+            </div>
+        </div>
+        </div>
+    </div>
     </body>
 </html>

@@ -46,37 +46,37 @@ getCommands(command_array);
         engine.register(c);
     });
 
-     let n1 = await components[4].createNode(
-        {
-            "name": "BitmapCheck",
-            "description" : "BitmapChecks a given view (view) giving it a name (bitmap_name)",
-            "data_guid" : "{CF29651C-B328-444D-A527-BE47DB0A32FF}",
-            "input" : [
-                {
-                    "name" : "view",
-                    "type" : "string"
-                },
+    //  let n1 = await components[4].createNode(
+    //     {
+    //         "name": "BitmapCheck",
+    //         "description" : "BitmapChecks a given view (view) giving it a name (bitmap_name)",
+    //         "data_guid" : "{CF29651C-B328-444D-A527-BE47DB0A32FF}",
+    //         "input" : [
+    //             {
+    //                 "name" : "view",
+    //                 "type" : "string"
+    //             },
                 
-                {
-                    "name" : "bitmap_name",
-                    "type" : "string"
-                }
-            ],
-            "perl" :  [
-                "bitmapCheck (bitmap_name, view);"
-            ]
-        }
-     );
+    //             {
+    //                 "name" : "bitmap_name",
+    //                 "type" : "string"
+    //             }
+    //         ],
+    //         "perl" :  [
+    //             "bitmapCheck (bitmap_name, view);"
+    //         ]
+    //     }
+    //  );
     // let n2 = await components[0].createNode({num: 0});
     // let n3 = await components[0].createNode({num: 0});
     // let add = await components[1].createNode();
 
-    n1.position = [80, 200];
+    //n1.position = [80, 200];
     // n2.position = [80, 400];
     // n3.position = [80, 600];
     // add.position = [500, 240];
  
-    editor.addNode(n1);
+    //editor.addNode(n1);
     // editor.addNode(n2);
     // editor.addNode(n3);
     // editor.addNode(add);
@@ -90,9 +90,9 @@ getCommands(command_array);
         await engine.process(editor.toJSON());
     });
 
-    editor.on('nodeselect', (node) => {
-      selectedNode = node;
-    });
+    // editor.on('nodeselect', (node) => {
+    //   selectedNode = node;
+    // });
 
     // editor.view.resize();
     // AreaPlugin.zoomAt(editor);

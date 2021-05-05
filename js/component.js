@@ -117,3 +117,36 @@ $('#debug').click (async function (event) {
     editor.addNode(node);
     selectNode (node);
 });
+
+// $('#template_selector').click (async function(event) {
+
+// })
+
+$('#new_open').click (async function(event) {
+
+    editor.clear ();
+
+    let active_option = $('.modal-body input:radio:checked').attr ('id');
+    state.type = active_option;
+
+    let begin, end;
+    try {
+        begin = editor.getComponent ('Begin');
+        end = editor.getComponent ('End');
+    } catch (e) {
+        alert ('there is no begin and end component wtf!');
+    } 
+
+    let beg_node = await begin.createNode();
+    let end_node = await end.createNode();
+
+    let size = getReteSize (); 
+    let offset = size.width / 6;
+    beg_node.position = [offset,     size.height / 2];
+    end_node.position = [offset * 4, size.height / 2];
+
+    editor.addNode(beg_node);
+    editor.addNode(end_node);
+    
+    editor.trigger('process');
+});
