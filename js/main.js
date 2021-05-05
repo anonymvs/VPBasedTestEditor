@@ -32,7 +32,7 @@ getCommands(command_array);
     editor = new Rete.NodeEditor('demo@0.1.0', container);
     editor.use(ConnectionPlugin.default);
     editor.use(VueRenderPlugin.default);    
-    editor.use(ContextMenuPlugin.default);
+    // editor.use(ContextMenuPlugin.default);
     // editor.use(AreaPlugin);
     editor.use(MinimapPlugin.default);
     // editor.use(CommentPlugin.default);
@@ -88,6 +88,10 @@ getCommands(command_array);
       console.log('process');
         await engine.abort();
         await engine.process(editor.toJSON());
+    });
+
+    editor.on('nodeselect', (node) => {
+      selectedNode = node;
     });
 
     // editor.view.resize();
