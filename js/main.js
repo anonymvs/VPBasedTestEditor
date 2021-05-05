@@ -75,8 +75,3 @@ var editor;
     // AreaPlugin.zoomAt(editor);
     editor.trigger('process');
 })();
-
-
-$('.no-href').click(function(e){
-  e.preventDefault();
-});
