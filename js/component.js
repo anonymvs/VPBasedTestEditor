@@ -80,7 +80,12 @@ $(document).keydown(function(e){
 });
 
 $('#debug').click (async function (event) {
-    let node = await components[4].createNode(
+    let comp = new SimpleComponent ('ProblemSolved');
+
+    editor.register (comp);
+    engine.register (comp);
+
+    let node = await comp.createNode(
     {
         "name": "BitmapCheck",
         "description" : "BitmapChecks a given view (view) giving it a name (bitmap_name)",
