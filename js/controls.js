@@ -79,6 +79,9 @@ controlsDiv.addEventListener('click', (e) => {
     if (e.target.matches('a')) {
         let guid = e.target.getAttribute ('guid');
 
+        if (guid == null)
+          return;
+
         for (let desc of simple_command_descriptors) {
           let data = desc[1];
           if (data.data_guid === guid) {

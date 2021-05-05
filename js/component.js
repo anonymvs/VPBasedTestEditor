@@ -75,6 +75,9 @@ $(document).keydown(function(e){
 $('.component').click (async function(event) {
     var id = $(event.target).attr ('componentid');
 
+    if (id == null)
+        return;
+
     var node = await components[id].createNode();
 
     node.position = getPosition (222, 131);
