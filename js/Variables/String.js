@@ -1,4 +1,4 @@
-var strSocket = new Rete.Socket('strSocket');
+var strSocket = new Rete.Socket('string');
 
 var VueStrControl = {
   props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],

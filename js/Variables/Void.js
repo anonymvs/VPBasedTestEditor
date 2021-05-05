@@ -1,1 +1,1 @@
-var voidSocket = new Rete.Socket('voidSocket');
+var voidSocket = new Rete.Socket('void');

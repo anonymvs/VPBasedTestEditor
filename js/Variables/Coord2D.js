@@ -1,4 +1,4 @@
-var coord2DSocket = new Rete.Socket('coord2DSocket');
+var coord2DSocket = new Rete.Socket('coord2D');
 
 class Coord2DComponent extends Rete.Component {
 

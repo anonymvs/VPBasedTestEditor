@@ -1,4 +1,4 @@
-var numSocket = new Rete.Socket('numSocket');
+var numSocket = new Rete.Socket('number');
 
 var VueNumControl = {
   props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],

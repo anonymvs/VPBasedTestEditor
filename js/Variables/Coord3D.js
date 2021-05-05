@@ -1,4 +1,4 @@
-var coord3DSocket = new Rete.Socket('coord3DSocket');
+var coord3DSocket = new Rete.Socket('coord3D');
 
 class Coord3DComponent extends Rete.Component {
 
