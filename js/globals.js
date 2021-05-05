@@ -11,3 +11,4 @@ var components = [
   new EndComponent ()
 ];
 
+var simple_command_descriptors = [];

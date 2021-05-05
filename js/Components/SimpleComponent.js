@@ -15,15 +15,15 @@ class SimpleComponent extends Rete.Component {
                     node.addInput(strParam);
                     break;
                 case 'number':
-                    let numParam = new Rete.Input(i,"String", strSocket);
+                    let numParam = new Rete.Input(i,"Number", numSocket);
                     node.addInput(numParam);
                     break;
                 case 'coord2d':
-                    let coord2DParam = new Rete.Input(i,"String", strSocket);
+                    let coord2DParam = new Rete.Input(i,"Coord2D", coord2DSocket);
                     node.addInput(coord2DParam);
                     break;
                 case 'coord3d':
-                    let coord3DParam = new Rete.Input(i,"String", strSocket);
+                    let coord3DParam = new Rete.Input(i,"Coord3D", coord3DSocket);
                     node.addInput(coord3DParam);
                     break;
                 default:
