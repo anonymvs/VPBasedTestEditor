@@ -1,11 +1,12 @@
 class SimpleComponent extends Rete.Component {
-    constructor(){
-        super("Simple");
+    constructor(id){
+        super(id);
     }
 
     builder(node) {
 
-        //node.
+        //node.addControl(new NameControl(this.editor, node['data']['name']));
+        console.log(this);
         for (var i = 0; i < node['data']['input'].length; i++) {
             let param = node['data']['input'][i];
             switch (param['type']) {
