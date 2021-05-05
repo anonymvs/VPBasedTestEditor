@@ -80,10 +80,15 @@ $(document).keydown(function(e){
 });
 
 $('#debug').click (async function (event) {
-    let comp = new SimpleComponent ('ProblemSolved');
+    let comp;
+    try {
+        comp = editor.getComponent ('ProblemSolved');
+    } catch (e) {
+        comp = new SimpleComponent ('ProblemSolved');
 
-    editor.register (comp);
-    engine.register (comp);
+        editor.register (comp);
+        engine.register (comp);
+    } 
 
     let node = await comp.createNode(
     {

@@ -21,7 +21,7 @@ function getData() {
 }
 
 let command_array = []
-getCommands(command_array);
+//getCommands(command_array);
 
 let controlsDiv = document.querySelector('[aria-labelledby="SimpleComponents"]');
 
