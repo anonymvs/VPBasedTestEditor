@@ -128,11 +128,6 @@ $('#debug_component').click (async function (event) {
 });
 
 
-// $('#template_selector').click (async function(event) {
-
-// })
-
-
 $('#new_open').click (async function(event) {
 
     editor.clear ();
@@ -160,4 +155,60 @@ $('#new_open').click (async function(event) {
     editor.addNode(end_node);
     
     editor.trigger('process');
+});
+
+function download(data, filename, type) {
+    var file = new Blob([data], {type: type});
+    if (window.navigator.msSaveOrOpenBlob) // IE10+
+        window.navigator.msSaveOrOpenBlob(file, filename);
+    else { // Others
+        var a = document.createElement("a"),
+                url = URL.createObjectURL(file);
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function() {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);  
+        }, 0); 
+    }
+}
+
+$('#save').click (async function(event) {
+    var json = editor.toJSON();
+    download (JSON.stringify(json, null, 2), "nice_name", 'text/plain');
+});
+
+$("#open").click(function() {
+    // creating input on-the-fly
+    var input = $(document.createElement("input"));
+    input.attr("type", "file");
+    input.attr("accept", ".json,.txt");
+
+    input.on ('change', function (event) {
+        let files = event.target.files;
+        if (files.length == 0) {
+            alert ('select only one file');
+        }
+        
+        if (!files[0])
+            alert ('Failed to load file');
+
+        var readFile = new FileReader();
+        readFile.onload = function(e) { 
+            let json = JSON.parse(e.target.result);
+            
+            editor.fromJSON (json);
+        };
+        readFile.readAsText(files[0]); 
+    });
+
+    // add onchange handler if you wish to get the file :)
+    input.trigger("click"); // opening dialog
+
+    // var file = input.attr('files') .files[0];
+    // console.log (file);
+
+    return false; // avoiding navigation
 });
