@@ -10,8 +10,6 @@ function getCommands(command_array) {
   }
 }
 
-// Get data from json synchronous
-
 function getData() {
 
   const xhr = new XMLHttpRequest();
@@ -26,11 +24,13 @@ function getData() {
 let command_array = []
 getCommands(command_array);
 */
+
 var editor;
+var components = [new NumComponent (), new StrComponent (), new Coord2DComponent (), new Coord3DComponent (), new SimpleComponent ()];
 
 (async () => {
     var container = document.querySelector('#rete');
-    var components = [new NumComponent (), new StrComponent (), new Coord2DComponent (), new Coord3DComponent (), new SimpleComponent ()];
+    // var components = [new NumComponent (), new StrComponent (), new Coord2DComponent (), new Coord3DComponent ()];
     
     editor = new Rete.NodeEditor('demo@0.1.0', container);
     editor.use(ConnectionPlugin.default);
