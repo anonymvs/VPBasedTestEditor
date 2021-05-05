@@ -18,7 +18,7 @@
         <script src="js/Rete.js/vue-render-plugin.min.js"></script>
         <script src="js/Rete.js/connection-plugin.min.js"></script>
         <script src="js/Rete.js/lodash.min.js"></script>
-        <script src="js/Rete.js/context-menu-plugin.min.js"></script>
+        <!-- <script src="js/Rete.js/context-menu-plugin.min.js"></script> -->
         <!-- <script src="js/Rete.js/area-plugin.min.js"></script> -->
         <script src="js/Rete.js/minimap-plugin.min.js"></script>
 
@@ -91,6 +91,11 @@
             </nav>
 
             <div class="node-editor" id="rete"></div>
+
+            <nav class="navbar fixed-bottom navbar-expand">
+                <button type="button" class="btn btn-danger btn-lg" id="delete">Delete</button>
+                <button type="button" class="btn btn-info btn-lg padding" id="debug">Test Component</button>
+            </nav>
         </div>
     </body>
 </html>

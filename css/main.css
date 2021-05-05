@@ -34,3 +34,7 @@ id {
 .no-padding {
     padding: 0px !important;
 }
+
+.padding {
+    margin-left: 15px;
+}
