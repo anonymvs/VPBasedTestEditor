@@ -8,7 +8,7 @@
       "type": "pwa-chrome",
       "request": "launch",
       "name": "Launch Chrome against localhost",
-      "url": "file:///C:/Users/heged/Documents/Dev/VPBasedTestEditor/index.html",
+      "url": "file:///C:/Dev/VPBasedTestEditor/index.html",
       "webRoot": "${workspaceFolder}"
     }
   ]
