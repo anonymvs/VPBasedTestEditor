@@ -25,9 +25,6 @@ let command_array = []
 getCommands(command_array);
 */
 
-var editor;
-var components = [new NumComponent (), new StrComponent (), new Coord2DComponent (), new Coord3DComponent (), new SimpleComponent ()];
-
 (async () => {
     var container = document.querySelector('#rete');
     // var components = [new NumComponent (), new StrComponent (), new Coord2DComponent (), new Coord3DComponent ()];
