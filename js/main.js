@@ -39,7 +39,7 @@ getCommands(command_array);
     // editor.use(HistoryPlugin);
     // editor.use(ConnectionMasteryPlugin.default);
 
-    let engine = new Rete.Engine('demo@0.1.0');
+    engine = new Rete.Engine('demo@0.1.0');
     
     components.map(c => {
         editor.register(c);
