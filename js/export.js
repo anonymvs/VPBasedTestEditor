@@ -1,6 +1,7 @@
 window.onload = function () {
 
-  document.getElementById("Export").addEventListener("click", function() {
+  document.getElementById("export").addEventListener("click", function() {
+    alert("Export");
     console.log("Megnyomtuk az exportot");
 
     var container = document.querySelector('#rete');

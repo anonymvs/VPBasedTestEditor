@@ -8,7 +8,7 @@ var editor;
     editor.use(ConnectionPlugin.default);
     editor.use(VueRenderPlugin.default);    
     editor.use(ContextMenuPlugin.default);
-    editor.use(AreaPlugin);
+    // editor.use(AreaPlugin);
     editor.use(MinimapPlugin.default);
     // editor.use(CommentPlugin.default);
     // editor.use(HistoryPlugin);
@@ -45,7 +45,12 @@ var editor;
         await engine.process(editor.toJSON());
     });
 
-    editor.view.resize();
-    AreaPlugin.zoomAt(editor);
+    // editor.view.resize();
+    // AreaPlugin.zoomAt(editor);
     editor.trigger('process');
 })();
+
+
+$('.no-href').click(function(e){
+  e.preventDefault();
+});
