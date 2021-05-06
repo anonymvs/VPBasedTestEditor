@@ -33,10 +33,6 @@ hr {
     border-radius: 10px !important;
 }
 
-.node.selected {
-    border-color: yellow !important;
-}
-
 .node .title {
     background-color: rgb(58, 101, 158) !important;
     border-radius: 8px 8px 0px 0px !important;
@@ -53,4 +49,26 @@ hr {
 
 .void {
     border-radius: 0px !important;
+}
+
+
+
+.node.coordinate2d, .node.coordinate3d, .node.number, .node.string {
+    border-color: rgb(48, 101, 63) !important;
+}
+
+.node.coordinate2d .title, .node.coordinate3d .title, .node.number .title, .node.string .title {
+    background-color: rgb(48, 101, 63) !important;
+}
+
+.node.begin, .node.end {
+    border-color: rgb(78, 79, 83) !important;
+}
+
+.node.begin .title, .node.end .title {
+    background-color: rgb(78, 79, 83) !important;
+}
+
+.node.selected {
+    border-color: rgb(183, 187, 0) !important;
 }
