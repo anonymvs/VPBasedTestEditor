@@ -11,19 +11,19 @@ class SimpleComponent extends Rete.Component {
             let param = node['data']['input'][i];
             switch (param['type']) {
                 case 'string':
-                    let strParam = new Rete.Input(i,"String", strSocket);
+                    let strParam = new Rete.Input(i, param['name'], strSocket);
                     node.addInput(strParam);
                     break;
                 case 'number':
-                    let numParam = new Rete.Input(i,"Number", numSocket);
+                    let numParam = new Rete.Input(i, param['name'], numSocket);
                     node.addInput(numParam);
                     break;
                 case 'coord2d':
-                    let coord2DParam = new Rete.Input(i,"Coord2D", coord2DSocket);
+                    let coord2DParam = new Rete.Input(i, param['name'], coord2DSocket);
                     node.addInput(coord2DParam);
                     break;
                 case 'coord3d':
-                    let coord3DParam = new Rete.Input(i,"Coord3D", coord3DSocket);
+                    let coord3DParam = new Rete.Input(i, param['name'], coord3DSocket);
                     node.addInput(coord3DParam);
                     break;
                 default:
