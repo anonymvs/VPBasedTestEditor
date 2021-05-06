@@ -128,6 +128,24 @@ $('#debug_component').click (async function (event) {
 });
 
 
+$('#auto_arrange').click (async function (event) {
+    if (editor.selected.list.length == 0) {
+        alert ("Please select a node!");
+        return;
+    }
+
+    editor.trigger('arrange', { node: editor.selected.list[0] });
+
+    editor.view.resize();
+    AreaPlugin.zoomAt(editor);
+});
+
+$('#fit_window').click (async function (event) {
+    editor.view.resize();
+    AreaPlugin.zoomAt(editor);
+});
+
+
 $('#new_open').click (async function(event) {
 
     editor.clear ();
