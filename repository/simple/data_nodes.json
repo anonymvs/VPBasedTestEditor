@@ -2,7 +2,7 @@
   "nodes": [
         {  
             "ACClick_3D" : {
-                "name": "ACClick 3D",
+                "name": "ACClick3D",
                 "description" : "Click's in AC",
                 "data_guid" : "{A68A1D4A-CF94-4C35-A681-18BFD03276A7}",
                 "input" : [
@@ -16,7 +16,7 @@
                 ]
             },
             "ACClick_2D" : {
-                "name": "ACClick 2D",
+                "name": "ACClick2D",
                 "description" : "Click's in AC",
                 "data_guid" : "{466C3CF0-D74D-435A-9AE9-81677F9895CC}",
                 "input" : [

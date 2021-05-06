@@ -15,6 +15,8 @@ class Exporter {
     this.processed_inputs = new Map ();
 
     this.control_flow = this.select_control_flow (nodes);   // ordered sequence of nodes connected by the control sockets  
+    this.beg_node = nodes.find (node => node.name === 'Begin');
+    this.end_node = nodes.find (node => node.name === 'End');
 
     this.export = this.export.bind (this);
     //this.process_input = this.process_input.bind (this);
@@ -92,7 +94,7 @@ class Exporter {
         break;
 
       // TODO: rework this... this is horrible maybe functions idunno
-      case 'Coord2D': {
+      case 'Coordinate2D': {
         let x = data['coordX'];
         let signature_x = signature + '_x';
         str += 'my @' + signature_x + ' = ' + String (x) + ';' + endline;
@@ -105,7 +107,7 @@ class Exporter {
 
         break;
       }
-      case 'Coord3D': {
+      case 'Coordinate3D': {
         let x = data['coordX'];
         let signature_x = signature + '_x';
         str += 'my @' + signature_x + ' = ' + String (x) + ';' + endline;
@@ -134,9 +136,8 @@ class Exporter {
 
 
   write_main (node) {
-
     for (let [key, value] of node.inputs) {
-      if (key === 'control')
+      if (key === 'void')
         continue;
 
       let input_node;
@@ -176,47 +177,53 @@ class Exporter {
 
   write_subrutines (node) {
 
-    this.subrutines = "sub _" + this.get_signature_name(node) + " {" + endline;
+    this.subrutines += "sub _" + this.get_signature_name(node) + " {" + endline;
 
     for (const param of node.data.input) {
-      this.subrutines += "my $" + param.name + "= shift @_;" + endline;
+      if (param.type === 'coord2d') {
+        this.subrutines += "my $" + param.name + "_x = shift @_;" + endline;
+        this.subrutines += "my $" + param.name + "_y = shift @_;" + endline;
+      } else if (param.type === 'coord3d') {
+        this.subrutines += "my $" + param.name + "_x = shift @_;" + endline;
+        this.subrutines += "my $" + param.name + "_y = shift @_;" + endline;
+        this.subrutines += "my $" + param.name + "_z = shift @_;" + endline;
+
+      } else {
+        this.subrutines += "my $" + param.name + " = shift @_;" + endline;
+      }
     }
     
     for (const line of node.data.perl) {
       this.subrutines += line + endline;
     }
 
-    this.subrutines += "}";
+    this.subrutines += "}" + endline + endline;
 
   }
 
-  // create_template (uncomment) {
-
-  //   const resources = require ('resources');
+  write_beg () {
+    if (this.beg_node.type === 'undefined') {
+      return;
+    }
     
-  //   resources.readFile ('./repository/script_resources/script_resources.json', 'utf8', (err, jsonString) => {
-  //     if (err) {
-  //         console.log("Error reading file from disk:", err)
-  //         return
-  //     }
-  //     try {
-  //       const resource_content = JSON.parse(jsonString);
+    for (const line of this.beg_node.data.perl) {
+      this.init += line + endline;
+    }
+  }
 
-  //       for (const line in resource_content.header) {
-  //         this.header += line + "\n";
-  //       }
-
-  //       this.end = resource_content.end;
-
-  //   } catch(err) {
-  //     console.log('Error parsing JSON string:', err)
-  //   }
-  // });
-
-  // }
-
+  write_end () {
+    if (this.end_node.type === 'undefined') {
+      return;
+    }
+    
+    for (const line of this.end_node.data.perl) {
+      this.end += line + endline;
+    }
+  }
 
   export () {
+
+    this.write_beg ();
 
     this.control_flow.forEach (node => {
       // Create Subrutines for the control flow 
@@ -224,6 +231,8 @@ class Exporter {
       // Create main line of code
       this.write_main (node);      
     });
+
+    this.write_end ()
  
     return this.header +
            this.init + 
