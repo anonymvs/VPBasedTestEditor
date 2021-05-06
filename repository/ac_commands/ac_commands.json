@@ -1,0 +1,7960 @@
+{
+   "commands":[
+      {
+         "command":"Recent File List"
+      },
+      {
+         "command":"Recent Object List"
+      },
+      {
+         "command":"New..."
+      },
+      {
+         "command":"New & Reset All"
+      },
+      {
+         "command":"Open..."
+      },
+      {
+         "command":"Open/Join Teamwork Project..."
+      },
+      {
+         "command":"Close Project"
+      },
+      {
+         "command":"Close Window"
+      },
+      {
+         "command":"Save"
+      },
+      {
+         "command":"Save as..."
+      },
+      {
+         "command":"Merge..."
+      },
+      {
+         "command":"Place Hotlinked Module..."
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Hotlinked Module Settings..."
+      },
+      {
+         "command":"Hotlinked Module Settings..."
+      },
+      {
+         "command":"Save Selection as Module..."
+      },
+      {
+         "command":"Hotlink Manager..."
+      },
+      {
+         "command":"Place External Drawing..."
+      },
+      {
+         "command":"Place External Drawing from Teamwork Project ..."
+      },
+      {
+         "command":"Library Manager..."
+      },
+      {
+         "command":"Manage Server Libraries..."
+      },
+      {
+         "command":"Create Container..."
+      },
+      {
+         "command":"Extract a Container..."
+      },
+      {
+         "command":"New Object..."
+      },
+      {
+         "command":"Open Object..."
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Save Selection as Drawing Title..."
+      },
+      {
+         "command":"Save Selection as Drawing Title..."
+      },
+      {
+         "command":"Drawing Title..."
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Save Selection as Object..."
+      },
+      {
+         "command":"Save Selection as Object..."
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Save Selection as Door..."
+      },
+      {
+         "command":"Save Selection as Door..."
+      },
+      {
+         "command":"Door..."
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Save Selection as Window..."
+      },
+      {
+         "command":"Save Selection as Window..."
+      },
+      {
+         "command":"Window..."
+      },
+      {
+         "command":"Object..."
+      },
+      {
+         "comment":"  Save Selection as Custom Components",
+         "command":"Save Selection as Cabinet Door..."
+      },
+      {
+         "command":"Save Selection as Cabinet Door..."
+      },
+      {
+         "command":"Save Selection as Curtain Wall Cap..."
+      },
+      {
+         "command":"Save Selection as Curtain Wall Frame..."
+      },
+      {
+         "command":"Save Selection as CurtainWall Panel..."
+      },
+      {
+         "comment":"  Duplicated, nem hasznalt",
+         "command":"Save Selection as Handle..."
+      },
+      {
+         "command":"Save Selection as Handle..."
+      },
+      {
+         "command":"Save Selection as Door Leaf..."
+      },
+      {
+         "comment":"  Duplicated, nem hasznalt",
+         "command":"Save Selection as Custom Door Leaf..."
+      },
+      {
+         "command":"Save Selection as Custom Door Leaf..."
+      },
+      {
+         "command":"Save Selection as Knob..."
+      },
+      {
+         "command":"Save Selection as Shutter Panel..."
+      },
+      {
+         "command":"Save Selection as Window Sash..."
+      },
+      {
+         "command":"Save 3D Model as Custom MEP Part..."
+      },
+      {
+         "command":"Project Info..."
+      },
+      {
+         "command":"Project Notes"
+      },
+      {
+         "command":"Project Preview"
+      },
+      {
+         "command":"Session Report"
+      },
+      {
+         "command":"Plot Setup..."
+      },
+      {
+         "command":"Plot..."
+      },
+      {
+         "command":"Page Setup..."
+      },
+      {
+         "command":"Print..."
+      },
+      {
+         "command":"Quit"
+      },
+      {
+         "command":"Publish..."
+      },
+      {
+         "command":"Open Object by Subtype..."
+      },
+      {
+         "command":"Undo"
+      },
+      {
+         "command":"Redo"
+      },
+      {
+         "command":"Repeat Last Command"
+      },
+      {
+         "command":"Cut"
+      },
+      {
+         "command":"Copy"
+      },
+      {
+         "command":"Paste"
+      },
+      {
+         "command":"Delete"
+      },
+      {
+         "command":"Select All"
+      },
+      {
+         "command":"Find & Select..."
+      },
+      {
+         "command":"Group"
+      },
+      {
+         "command":"Ungroup"
+      },
+      {
+         "command":"Suspend Groups"
+      },
+      {
+         "command":"Autogroup"
+      },
+      {
+         "command":"Bring to Front"
+      },
+      {
+         "command":"Bring Forward"
+      },
+      {
+         "command":"Send Backward"
+      },
+      {
+         "command":"Send to Back"
+      },
+      {
+         "command":"Reset Default Order"
+      },
+      {
+         "command":"Lock"
+      },
+      {
+         "command":"Unlock"
+      },
+      {
+         "command":"Unlock All"
+      },
+      {
+         "command":"Drag"
+      },
+      {
+         "command":"Rotate"
+      },
+      {
+         "command":"Mirror"
+      },
+      {
+         "command":"Elevate..."
+      },
+      {
+         "command":"Drag a Copy"
+      },
+      {
+         "command":"Rotate a Copy"
+      },
+      {
+         "command":"Mirror a Copy"
+      },
+      {
+         "command":"Drag Multiple Copy"
+      },
+      {
+         "command":"Rotate Multiple Copy"
+      },
+      {
+         "command":"Multiply..."
+      },
+      {
+         "command":"Trim"
+      },
+      {
+         "command":"Stretch"
+      },
+      {
+         "command":"Resize..."
+      },
+      {
+         "command":"Split"
+      },
+      {
+         "command":"Fillet/Chamfer..."
+      },
+      {
+         "command":"Intersect"
+      },
+      {
+         "command":"Adjust"
+      },
+      {
+         "command":"Explode into Current View"
+      },
+      {
+         "command":"Unify"
+      },
+      {
+         "command":"Edit Selection Set..."
+      },
+      {
+         "command":"Tool Settings..."
+      },
+      {
+         "command":"Pick Up Parameters"
+      },
+      {
+         "command":"Inject Parameters"
+      },
+      {
+         "command":"Linework Consolidation..."
+      },
+      {
+         "command":"Fill Consolidation..."
+      },
+      {
+         "command":"Left"
+      },
+      {
+         "command":"Center Horizontally"
+      },
+      {
+         "command":"Right"
+      },
+      {
+         "command":"Top"
+      },
+      {
+         "command":"Center Vertically"
+      },
+      {
+         "command":"Bottom"
+      },
+      {
+         "command":"Special Align"
+      },
+      {
+         "command":"Along X"
+      },
+      {
+         "command":"Along Y"
+      },
+      {
+         "command":"Along XY"
+      },
+      {
+         "command":"Special Distribute"
+      },
+      {
+         "command":"Undo(text)"
+      },
+      {
+         "command":"Redo(text)"
+      },
+      {
+         "command":"Repeat Last Command(text)"
+      },
+      {
+         "command":"Cut(text)"
+      },
+      {
+         "command":"Copy(text)"
+      },
+      {
+         "command":"Paste(text)"
+      },
+      {
+         "command":"Clear(text)"
+      },
+      {
+         "command":"Select All(text)"
+      },
+      {
+         "command":"Text Style..."
+      },
+      {
+         "command":"Find & Replace..."
+      },
+      {
+         "command":"Find Selection"
+      },
+      {
+         "command":"Find Selection Backwards"
+      },
+      {
+         "command":"Find Again"
+      },
+      {
+         "command":"Replace Again"
+      },
+      {
+         "command":"Replace Again Backwards"
+      },
+      {
+         "command":"Go to Line..."
+      },
+      {
+         "command":"Comment"
+      },
+      {
+         "command":"Uncomment"
+      },
+      {
+         "command":"Increase Indent"
+      },
+      {
+         "command":"Decrease Indent"
+      },
+      {
+         "command":"Check Script"
+      },
+      {
+         "command":"Open Debugger..."
+      },
+      {
+         "command":"Go Up a Story"
+      },
+      {
+         "command":"Go Down a Story"
+      },
+      {
+         "command":"Go to Story..."
+      },
+      {
+         "command":"Story List"
+      },
+      {
+         "command":"Recent Stories"
+      },
+      {
+         "command":"Open Section..."
+      },
+      {
+         "command":"Recent Sections"
+      },
+      {
+         "command":"List of Sections"
+      },
+      {
+         "command":"Open Elevation..."
+      },
+      {
+         "command":"Recent Elevations"
+      },
+      {
+         "command":"List of Elevations"
+      },
+      {
+         "command":"Open Interior Elevation..."
+      },
+      {
+         "command":"Recent Interior Elevations"
+      },
+      {
+         "command":"List of Interior Elevations"
+      },
+      {
+         "command":"Open Detail Drawing..."
+      },
+      {
+         "command":"Recent Detail Drawings"
+      },
+      {
+         "command":"List of Details"
+      },
+      {
+         "command":"Open Worksheets..."
+      },
+      {
+         "command":"Recent Worksheets"
+      },
+      {
+         "command":"List of Worksheets"
+      },
+      {
+         "command":"Open 3D Documents..."
+      },
+      {
+         "command":"Recent 3D Documents"
+      },
+      {
+         "command":"List of 3D Documents"
+      },
+      {
+         "command":"Open Schedule..."
+      },
+      {
+         "command":"Recent Schedules"
+      },
+      {
+         "command":"Open Project Index..."
+      },
+      {
+         "command":"Recent ProjectIndexes"
+      },
+      {
+         "command":"Open Layout..."
+      },
+      {
+         "command":"Recent Layouts"
+      },
+      {
+         "command":"Go to First Layout"
+      },
+      {
+         "command":"Go to Previous Layout"
+      },
+      {
+         "command":"Go to Next Layout"
+      },
+      {
+         "command":"Go to Last Layout"
+      },
+      {
+         "command":"Go to Layout..."
+      },
+      {
+         "command":"Go to First Page in Layout"
+      },
+      {
+         "command":"Go to Prev Page in Layout"
+      },
+      {
+         "command":"Go to Next Page in Layout"
+      },
+      {
+         "command":"Go to Last Page in Layout"
+      },
+      {
+         "command":"List of Layouts"
+      },
+      {
+         "command":"Open Master Layout..."
+      },
+      {
+         "command":"Recent Master Layouts"
+      },
+      {
+         "command":"List of Master Layouts"
+      },
+      {
+         "command":"Clean Wall & Beam Intersections"
+      },
+      {
+         "command":"Walls & Beams Reference Lines"
+      },
+      {
+         "command":"Roof Pivot Lines"
+      },
+      {
+         "command":"Show Drafting & Editing Aids"
+      },
+      {
+         "command":"Fill Handles"
+      },
+      {
+         "command":"Textbox Handles"
+      },
+      {
+         "command":"Figure Handles"
+      },
+      {
+         "command":"Spline Handles"
+      },
+      {
+         "command":"True Line Weight"
+      },
+      {
+         "command":"Vectorial Hatching"
+      },
+      {
+         "command":"Marker Range"
+      },
+      {
+         "command":"Drawing Frames"
+      },
+      {
+         "command":"Master Items on Layout"
+      },
+      {
+         "command":"Bold Cut Lines"
+      },
+      {
+         "command":"Highlight Source Markers"
+      },
+      {
+         "command":"Ruler"
+      },
+      {
+         "command":"Grid Display"
+      },
+      {
+         "command":"Grids & Background..."
+      },
+      {
+         "command":"Orthogonal Grid"
+      },
+      {
+         "command":"Rotated Grid"
+      },
+      {
+         "command":"Set Rotated Grid"
+      },
+      {
+         "command":"Grid Snap"
+      },
+      {
+         "command":"No Grid Snap"
+      },
+      {
+         "command":"Snap Grid"
+      },
+      {
+         "command":"Construction Grid"
+      },
+      {
+         "command":"Guide Lines"
+      },
+      {
+         "command":"Main-direction Guide Lines"
+      },
+      {
+         "command":"Relative-direction Guide Lines"
+      },
+      {
+         "command":"Incremental Angles"
+      },
+      {
+         "command":"Create Guide Line Segment"
+      },
+      {
+         "command":"Remove all Guide Lines"
+      },
+      {
+         "command":"Remove Guide Line"
+      },
+      {
+         "command":"Convert to Guide Line Segment"
+      },
+      {
+         "command":"Place Guide Line"
+      },
+      {
+         "command":"Place Guide Circle"
+      },
+      {
+         "command":"Lock/Unlock to/from Guide Line"
+      },
+      {
+         "command":"Zoom In"
+      },
+      {
+         "command":"Zoom Out"
+      },
+      {
+         "command":"Special Zoom"
+      },
+      {
+         "command":"Pan"
+      },
+      {
+         "command":"Zoom to Selection"
+      },
+      {
+         "command":"Fit in Window"
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Fit InWindow"
+      },
+      {
+         "command":"Fit In Window"
+      },
+      {
+         "command":"Fit to Width"
+      },
+      {
+         "command":"Actual Size"
+      },
+      {
+         "command":"Home Zoom"
+      },
+      {
+         "command":"Set Home Zoom"
+      },
+      {
+         "command":"Rotate Orientation"
+      },
+      {
+         "command":"Reset Orientation"
+      },
+      {
+         "command":"Previous Zoom"
+      },
+      {
+         "command":"Next Zoom"
+      },
+      {
+         "command":"Show Selection in 3D"
+      },
+      {
+         "command":"Show Marquee in 3D"
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Show all in 3D"
+      },
+      {
+         "command":"Show all in 3D"
+      },
+      {
+         "command":"Show All in 3D"
+      },
+      {
+         "command":"Show Stored Selection in3D"
+      },
+      {
+         "command":"Create Custom Cutting Plane"
+      },
+      {
+         "command":"Delete All Cutting Planes"
+      },
+      {
+         "command":"Show Cutting Planes"
+      },
+      {
+         "command":"Filter Elements in 3D..."
+      },
+      {
+         "command":"3D Cutting Planes..."
+      },
+      {
+         "command":"3D Cutaway"
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"3D Window Settings..."
+      },
+      {
+         "command":"3D Window Settings..."
+      },
+      {
+         "command":"3D Projection Settings..."
+      },
+      {
+         "command":"Block"
+      },
+      {
+         "command":"Wireframe"
+      },
+      {
+         "command":"Hidden Line"
+      },
+      {
+         "command":"Shading"
+      },
+      {
+         "command":"Internal 3D Engine"
+      },
+      {
+         "command":"OpenGL 3D Engine"
+      },
+      {
+         "command":"Redraw"
+      },
+      {
+         "command":"Rebuild"
+      },
+      {
+         "command":"Rebuild & Regenerate"
+      },
+      {
+         "command":"Rebuild from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate from Model"
+      },
+      {
+         "command":"Rebuild All Sections from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate All Sections from Model"
+      },
+      {
+         "command":"Rebuild All Model Sections from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate All Model Sections from Model"
+      },
+      {
+         "command":"Rebuild All Drawing Sections from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate All Drawing Sections from Model"
+      },
+      {
+         "command":"Rebuild All Elevations from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate All Elevations from Model"
+      },
+      {
+         "command":"Rebuild All Model Elevations from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate All Model Elevations from Model"
+      },
+      {
+         "command":"Rebuild All Drawing Elevations from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate All Drawing Elevations from Model"
+      },
+      {
+         "command":"Rebuild All Interior Elevations from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate All Interior Elevations from Model"
+      },
+      {
+         "command":"Rebuild All Model Interior Elevations from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate All Model Interior Elevations from Model"
+      },
+      {
+         "command":"Rebuild All Drawing Interior Elevations from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate All Drawing Interior Elevations from Model"
+      },
+      {
+         "command":"Rebuild from Source View"
+      },
+      {
+         "command":"Rebuild All Detail from Source View"
+      },
+      {
+         "command":"Rebuild All Worksheet from Source View"
+      },
+      {
+         "command":"Rebuild All 3DDocuments from Model"
+      },
+      {
+         "command":"Rebuild & Regenerate All 3D Documents from Model"
+      },
+      {
+         "command":"Show source Marquee and Selection"
+      },
+      {
+         "command":"Open 3D Source"
+      },
+      {
+         "command":"Redefine based on the Current 3D..."
+      },
+      {
+         "command":"Redefine 3D Document..."
+      },
+      {
+         "command":"Open Master Script"
+      },
+      {
+         "command":"Open 2D Symbol"
+      },
+      {
+         "command":"Open 2D Script"
+      },
+      {
+         "command":"Open 2D Full View"
+      },
+      {
+         "command":"Open 3D Script"
+      },
+      {
+         "command":"Open 3D View"
+      },
+      {
+         "command":"Open Properties Script"
+      },
+      {
+         "command":"Open Interface Script"
+      },
+      {
+         "command":"Open Parameter Script"
+      },
+      {
+         "command":"Open Comments"
+      },
+      {
+         "command":"Open Preview Picture"
+      },
+      {
+         "command":"LibPart Pictures"
+      },
+      {
+         "command":"List of Master Scripts"
+      },
+      {
+         "command":"Library Part"
+      },
+      {
+         "command":"Open 3D Window"
+      },
+      {
+         "command":"Snap Point Methods"
+      },
+      {
+         "command":"Snap Points Menu"
+      },
+      {
+         "command":"Snap Points"
+      },
+      {
+         "command":"Snap Points Off"
+      },
+      {
+         "command":"Set Snap Point Values"
+      },
+      {
+         "command":"Along Entire Element"
+      },
+      {
+         "command":"Between Intersection Points"
+      },
+      {
+         "command":"Snap Point Variants"
+      },
+      {
+         "command":"Line Types..."
+      },
+      {
+         "command":"Fill Types..."
+      },
+      {
+         "command":"Composites..."
+      },
+      {
+         "command":"Pens & Colors..."
+      },
+      {
+         "command":"Surfaces..."
+      },
+      {
+         "command":"Zone Categories..."
+      },
+      {
+         "command":"Mark-Up Styles..."
+      },
+      {
+         "command":"MEP Systems..."
+      },
+      {
+         "command":"Working Units..."
+      },
+      {
+         "command":"Dimensions..."
+      },
+      {
+         "command":"Calculation Units & Rules..."
+      },
+      {
+         "command":"Calculation Rules..."
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Construction Elements..."
+      },
+      {
+         "command":"Construction Elements..."
+      },
+      {
+         "command":"Zones..."
+      },
+      {
+         "command":"Layouts..."
+      },
+      {
+         "command":"Element Snap"
+      },
+      {
+         "command":"Magic Wand Settings..."
+      },
+      {
+         "command":"Auto Intersection"
+      },
+      {
+         "command":"Reference Levels..."
+      },
+      {
+         "command":"Work Environment..."
+      },
+      {
+         "command":"Dialog Boxes and Palettes..."
+      },
+      {
+         "command":"Selection and Element Information..."
+      },
+      {
+         "command":"Tracker and Coordinate Input..."
+      },
+      {
+         "command":"Mouse Constraints and Methods..."
+      },
+      {
+         "command":"Guide Lines..."
+      },
+      {
+         "command":"Imaging andCalculation..."
+      },
+      {
+         "command":"Publisher..."
+      },
+      {
+         "command":"More Options..."
+      },
+      {
+         "command":"Advanced Redraw Options..."
+      },
+      {
+         "command":"On-Screen Options..."
+      },
+      {
+         "command":"Data Safety..."
+      },
+      {
+         "command":"Network and Update..."
+      },
+      {
+         "command":"Special Folders..."
+      },
+      {
+         "command":"Keyboard Shortcuts..."
+      },
+      {
+         "command":"Toolbox..."
+      },
+      {
+         "command":"Tool Settings Dialog Boxes..."
+      },
+      {
+         "command":"Info Box..."
+      },
+      {
+         "command":"Toolbars..."
+      },
+      {
+         "command":"Menus..."
+      },
+      {
+         "command":"Add-On Manager..."
+      },
+      {
+         "command":"Contacts..."
+      },
+      {
+         "command":"List of Palette Layouts"
+      },
+      {
+         "command":"ARCHICAD 8.1 Layout"
+      },
+      {
+         "command":"Internal Rendering Engine"
+      },
+      {
+         "command":"Enable all informational messages..."
+      },
+      {
+         "command":"Story Settings..."
+      },
+      {
+         "command":"Edit Elements by Stories"
+      },
+      {
+         "command":"Edit Story Levels"
+      },
+      {
+         "command":"Hide Story Levels in this Section/Elevation"
+      },
+      {
+         "command":"Open Story"
+      },
+      {
+         "command":"Profile Manager..."
+      },
+      {
+         "command":"Capture Profile of Selection"
+      },
+      {
+         "command":"Merge Walls"
+      },
+      {
+         "command":"Merge Columns"
+      },
+      {
+         "command":"Merge Beams"
+      },
+      {
+         "command":"Solid Element Operations..."
+      },
+      {
+         "command":"Crop to Single-plane Roof..."
+      },
+      {
+         "command":"Crop Zone..."
+      },
+      {
+         "command":"Update Zones..."
+      },
+      {
+         "command":"Set Origin..."
+      },
+      {
+         "command":"Set Direction..."
+      },
+      {
+         "command":"Reset Texture"
+      },
+      {
+         "command":"Create Roof Level Lines..."
+      },
+      {
+         "command":"Outline Polygon with Magic Wand"
+      },
+      {
+         "command":"System Edit Mode"
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Edit System"
+      },
+      {
+         "command":"Edit System"
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Enter System Edit Mode"
+      },
+      {
+         "command":"Enter System Edit Mode"
+      },
+      {
+         "comment":" Atneveztek B-475-ben",
+         "command":"Finish Edit System"
+      },
+      {
+         "command":"Finish Edit System"
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Exit System Edit Mode"
+      },
+      {
+         "command":"Exit System Edit Mode"
+      },
+      {
+         "command":"Curtain Wall Free Rotate"
+      },
+      {
+         "command":"Copy Cell Pattern"
+      },
+      {
+         "command":"System Settings"
+      },
+      {
+         "command":"Create Common Frames"
+      },
+      {
+         "command":"Split Curtain Wall"
+      },
+      {
+         "command":"Curtain Wall Place Label Member"
+      },
+      {
+         "comment":" ex Label Curtain Wall Members, megvaltozott a B-550-ben",
+         "command":"Label Components of Selected Elements"
+      },
+      {
+         "command":"Label Components of Selected Elements"
+      },
+      {
+         "command":"Connect Wall..."
+      },
+      {
+         "command":"Disconnect All Elements"
+      },
+      {
+         "command":"Break Connection "
+      },
+      {
+         "command":"Select Connected Walls"
+      },
+      {
+         "command":"Extract Boundary to Fill"
+      },
+      {
+         "command":"Redefine Boundary from Fill"
+      },
+      {
+         "command":"Add Fill to Boundary"
+      },
+      {
+         "command":"Subtract Fill from Boundary"
+      },
+      {
+         "command":"Edit Preview"
+      },
+      {
+         "command":"Finish Cell Editing"
+      },
+      {
+         "command":"Cancel Cell Editing"
+      },
+      {
+         "command":"Work Offline"
+      },
+      {
+         "command":"Check Connections"
+      },
+      {
+         "command":"Set Up List Schemes..."
+      },
+      {
+         "comment":"  calculate",
+         "command":"Edit Database..."
+      },
+      {
+         "command":"Edit Database..."
+      },
+      {
+         "command":"New Properties"
+      },
+      {
+         "command":"Edit Properties..."
+      },
+      {
+         "comment":"  calculate",
+         "command":"Last Selections Properties..."
+      },
+      {
+         "command":"Last Selections Properties..."
+      },
+      {
+         "command":"Link Properties to Criteria..."
+      },
+      {
+         "comment":"  element list",
+         "command":"Basic"
+      },
+      {
+         "command":"Basic"
+      },
+      {
+         "command":"Element Lists"
+      },
+      {
+         "command":"Open Element List"
+      },
+      {
+         "command":"Component Lists:"
+      },
+      {
+         "command":"Open Component List"
+      },
+      {
+         "command":"Zone Lists"
+      },
+      {
+         "command":"Open Zone List"
+      },
+      {
+         "command":"Query..."
+      },
+      {
+         "command":"Show Data Structure..."
+      },
+      {
+         "command":"Criteria"
+      },
+      {
+         "command":"Open Link Properties"
+      },
+      {
+         "comment":"  window",
+         "command":"Edit Database"
+      },
+      {
+         "command":"Edit Database"
+      },
+      {
+         "command":"Last Selections Properties(window)"
+      },
+      {
+         "command":"Share..."
+      },
+      {
+         "command":"Synchronize Revisions"
+      },
+      {
+         "command":"Send Changes"
+      },
+      {
+         "command":"Receive Changes"
+      },
+      {
+         "command":"Reload Project from Server"
+      },
+      {
+         "command":"Send & Receive Changes"
+      },
+      {
+         "command":"Send and comment"
+      },
+      {
+         "command":"Request Selected Elements"
+      },
+      {
+         "command":"Large Infotag"
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Reserve Selected Elements"
+      },
+      {
+         "command":"Reserve Selected Elements"
+      },
+      {
+         "comment":"  Release All az AC-ban",
+         "command":"Release Selected Elements and Comment"
+      },
+      {
+         "command":"Release Selected Elements and Comment"
+      },
+      {
+         "command":"Release All and Comment"
+      },
+      {
+         "command":"Release all Unmodified Elements"
+      },
+      {
+         "command":"Reserve Elements..."
+      },
+      {
+         "command":"Open Message"
+      },
+      {
+         "command":"Delete Message"
+      },
+      {
+         "command":"Mail actions"
+      },
+      {
+         "command":"Mark as Read"
+      },
+      {
+         "command":"Move to Completed"
+      },
+      {
+         "command":"Grant to User"
+      },
+      {
+         "command":"Leave Teamwork Project"
+      },
+      {
+         "command":"Force User to Leave Project"
+      },
+      {
+         "command":"Send Log Out Message..."
+      },
+      {
+         "command":"Teamwork Project Settings..."
+      },
+      {
+         "command":"Reservation Results"
+      },
+      {
+         "command":"Teamwork Comments & Log..."
+      },
+      {
+         "command":"Add Teamwork Comment..."
+      },
+      {
+         "command":"New Message..."
+      },
+      {
+         "command":"Set User Color..."
+      },
+      {
+         "command":"User Settings..."
+      },
+      {
+         "command":"Send Message..."
+      },
+      {
+         "command":"Review Selected Elements"
+      },
+      {
+         "command":"Create Independent Detail..."
+      },
+      {
+         "command":"Create Independent Worksheet..."
+      },
+      {
+         "command":"Create Independent Section..."
+      },
+      {
+         "command":"Create Independent Elevation..."
+      },
+      {
+         "command":"Create Patch..."
+      },
+      {
+         "command":"Model View Options..."
+      },
+      {
+         "command":"Model View Option Combination List"
+      },
+      {
+         "command":"Layer Settings..."
+      },
+      {
+         "command":"Show All Layers"
+      },
+      {
+         "command":"Layer Combination List"
+      },
+      {
+         "command":"Pen Set List"
+      },
+      {
+         "command":"Floor Plan Cut Plane..."
+      },
+      {
+         "command":"Floor Plan Scale..."
+      },
+      {
+         "command":"Partial Structure Display..."
+      },
+      {
+         "command":"PhotoRendering Settings..."
+      },
+      {
+         "command":"PhotoRender Projection"
+      },
+      {
+         "command":"Create Fly-Through..."
+      },
+      {
+         "command":"Create Sun Study..."
+      },
+      {
+         "command":"List of Schedules"
+      },
+      {
+         "command":"List of Indexes"
+      },
+      {
+         "command":"New Layout"
+      },
+      {
+         "command":"Layout Settings..."
+      },
+      {
+         "command":"New Master Layout"
+      },
+      {
+         "command":"Master Layout Settings..."
+      },
+      {
+         "command":"Open assigned Master Layout"
+      },
+      {
+         "command":"Book Settings..."
+      },
+      {
+         "command":"Save View and Place on Layout"
+      },
+      {
+         "command":"Open source View"
+      },
+      {
+         "command":"Open source View with Layout as Reference"
+      },
+      {
+         "command":"Modify source View Settings..."
+      },
+      {
+         "command":"Update Drawing(s)"
+      },
+      {
+         "command":"Link Drawing to..."
+      },
+      {
+         "command":"Set as Autotext Reference"
+      },
+      {
+         "command":"Create 3D Document..."
+      },
+      {
+         "command":"3D Document Settings..."
+      },
+      {
+         "command":"Close All Other Tabs and Windows"
+      },
+      {
+         "command":"List of Toolbars"
+      },
+      {
+         "command":"Palettes Only"
+      },
+      {
+         "command":"Toolbox"
+      },
+      {
+         "command":"Coordinates"
+      },
+      {
+         "command":"Control Box"
+      },
+      {
+         "command":"Info Box"
+      },
+      {
+         "command":"Navigator"
+      },
+      {
+         "command":"Navigator Preview"
+      },
+      {
+         "command":"Organizer"
+      },
+      {
+         "command":"Favorites"
+      },
+      {
+         "command":"Quick Options"
+      },
+      {
+         "command":"Issue Manager"
+      },
+      {
+         "command":"Issue Organizer"
+      },
+      {
+         "command":"Check Markers"
+      },
+      {
+         "command":"Library Loading Report"
+      },
+      {
+         "command":"Profile Manager"
+      },
+      {
+         "command":"Drawing Manager"
+      },
+      {
+         "command":"Teamwork Palette"
+      },
+      {
+         "command":"Statusbar"
+      },
+      {
+         "command":"Floor Plan"
+      },
+      {
+         "command":"3D Window"
+      },
+      {
+         "command":"List of opened Sections"
+      },
+      {
+         "command":"List of opened Elevations"
+      },
+      {
+         "command":"List of opened Interior Elevations"
+      },
+      {
+         "command":"List of opened Detail Drawings"
+      },
+      {
+         "command":"List of opened Worksheets"
+      },
+      {
+         "command":"List of opened 3D Documents"
+      },
+      {
+         "command":"List of opened Schedules"
+      },
+      {
+         "command":"List of opened Layouts"
+      },
+      {
+         "command":"List of opened Master Layouts"
+      },
+      {
+         "command":"List of Model Pictures"
+      },
+      {
+         "command":"Other Lists"
+      },
+      {
+         "command":"List of open Objects"
+      },
+      {
+         "command":"List of opened Project Indexes"
+      },
+      {
+         "command":"List Window"
+      },
+      {
+         "command":"Profile Editor Window"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Last Section"
+      },
+      {
+         "command":"Last Section"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Last Elevation"
+      },
+      {
+         "command":"Last Elevation"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Last Interior Elevation"
+      },
+      {
+         "command":"Last Interior Elevation"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Last Detail Drawing"
+      },
+      {
+         "command":"Last Detail Drawing"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Last Worksheet"
+      },
+      {
+         "command":"Last Worksheet"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Last 3D Document"
+      },
+      {
+         "command":"Last 3D Document"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Last Layout"
+      },
+      {
+         "command":"Last Layout"
+      },
+      {
+         "command":"Project Notes Window"
+      },
+      {
+         "command":"Project Preview Window"
+      },
+      {
+         "command":"Report Window"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Last Schedule"
+      },
+      {
+         "command":"Last Schedule"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Last Project Index"
+      },
+      {
+         "command":"Last Project Index"
+      },
+      {
+         "command":"3D Model Size"
+      },
+      {
+         "command":"3D Model Check"
+      },
+      {
+         "command":"3D Model List"
+      },
+      {
+         "command":"3D Model Attributes"
+      },
+      {
+         "command":"Special Hidden Line..."
+      },
+      {
+         "command":"Use Section Tool in 3D"
+      },
+      {
+         "command":"Show Special Lines"
+      },
+      {
+         "command":"Show All Lines on Surfaces"
+      },
+      {
+         "comment":" 1'\t=> [3593, 0, 0],",
+         "command":"Draw With Pen #1"
+      },
+      {
+         "command":"Draw With Pen #1"
+      },
+      {
+         "command":"Frame of Perspective"
+      },
+      {
+         "command":"Rendering w/o Autosave"
+      },
+      {
+         "command":"Capture Defaults to GRC"
+      },
+      {
+         "command":"Set Undo Queue..."
+      },
+      {
+         "command":"Show Normals"
+      },
+      {
+         "command":"Show LCOO"
+      },
+      {
+         "command":"List All Commands"
+      },
+      {
+         "command":"Ignore Priorities at Wall Intersections"
+      },
+      {
+         "command":"Export Selected Drawing as IDF"
+      },
+      {
+         "command":"Enable Attributes Replacement from GDL"
+      },
+      {
+         "command":"MEP Topology Check"
+      },
+      {
+         "command":"Frame Rate Test of 2D Drawing"
+      },
+      {
+         "command":"Place All Objects"
+      },
+      {
+         "command":"Export All Placed Objects to XML"
+      },
+      {
+         "command":"Import and Place Objects from XML"
+      },
+      {
+         "command":"Export Library to XML"
+      },
+      {
+         "command":"Test All Library Parts"
+      },
+      {
+         "command":"Run Parameter Script On Library Parts"
+      },
+      {
+         "command":"Library Check"
+      },
+      {
+         "command":"Report GDL Errors"
+      },
+      {
+         "command":"Save GDL..."
+      },
+      {
+         "command":"Search Callers..."
+      },
+      {
+         "command":"Other Platform Symbols..."
+      },
+      {
+         "command":"Update Library Parts"
+      },
+      {
+         "command":"Update Library Parts Advanced"
+      },
+      {
+         "command":"Ignore Built-in Libraries"
+      },
+      {
+         "command":"Create GUID For Migration"
+      },
+      {
+         "command":"Help Tags"
+      },
+      {
+         "command":"ARCHICAD Help"
+      },
+      {
+         "command":"Help files"
+      },
+      {
+         "command":"PDF files"
+      },
+      {
+         "command":"URL files"
+      },
+      {
+         "command":"Create Support Package..."
+      },
+      {
+         "command":"Check for Updates..."
+      },
+      {
+         "command":"License Information..."
+      },
+      {
+         "command":"About ARCHICAD..."
+      },
+      {
+         "command":"Scheme"
+      },
+      {
+         "command":"Switch Geometry Methods"
+      },
+      {
+         "command":"Switch Construction Methods"
+      },
+      {
+         "command":"Top Elevation"
+      },
+      {
+         "command":"Bottom Elevation"
+      },
+      {
+         "command":"ID"
+      },
+      {
+         "command":"Switch Orthogonal/Rotated Grid"
+      },
+      {
+         "command":"Set Reference Level"
+      },
+      {
+         "command":"Cursor Snap Variants"
+      },
+      {
+         "command":"Parallel/Perpendicular"
+      },
+      {
+         "command":"Angle Bisector Constraint"
+      },
+      {
+         "command":"Offset/Multiple Offset"
+      },
+      {
+         "command":"Special Snap Constraint"
+      },
+      {
+         "command":"Enable/Suspend Groups"
+      },
+      {
+         "command":"OK"
+      },
+      {
+         "command":"Cancel"
+      },
+      {
+         "command":"Previous Tool in Toolbox"
+      },
+      {
+         "command":"Next Tool in Toolbox"
+      },
+      {
+         "command":"Tool Settings"
+      },
+      {
+         "command":"Arrow Tool/Last Tool Toggle"
+      },
+      {
+         "command":"Change Grid Snap States"
+      },
+      {
+         "command":"Scroll Up"
+      },
+      {
+         "command":"Scroll Down"
+      },
+      {
+         "command":"Scroll Left"
+      },
+      {
+         "command":"Scroll Right"
+      },
+      {
+         "comment":"  scrollbar, masik command mint Zoom In!",
+         "command":"Zoom In (scrollbar)"
+      },
+      {
+         "command":"Zoom In (scrollbar)"
+      },
+      {
+         "comment":"  scrollbar, masik command mint Zoom Out!",
+         "command":"Zoom Out (scrollbar)"
+      },
+      {
+         "command":"Zoom Out (scrollbar)"
+      },
+      {
+         "command":"Force Guide Line Display"
+      },
+      {
+         "command":"Switch to the Next Pet Palette Item"
+      },
+      {
+         "command":"Switch to the Previous Pet Palette Item"
+      },
+      {
+         "command":"Switch to the Next Detected Element"
+      },
+      {
+         "command":"Parallel Constraint"
+      },
+      {
+         "command":"Perpendicular Constraint"
+      },
+      {
+         "command":"Align to Surface Constraint"
+      },
+      {
+         "comment":"  Larger",
+         "command":"Nudge Up"
+      },
+      {
+         "command":"Nudge Up"
+      },
+      {
+         "comment":"  Larger",
+         "command":"Nudge Down"
+      },
+      {
+         "command":"Nudge Down"
+      },
+      {
+         "comment":"  Larger",
+         "command":"Nudge Left"
+      },
+      {
+         "command":"Nudge Left"
+      },
+      {
+         "comment":"  Larger",
+         "command":"Nudge Right"
+      },
+      {
+         "command":"Nudge Right"
+      },
+      {
+         "command":"Add-On Commands in the File menu."
+      },
+      {
+         "command":"Add-On Commands in the File/External Content submenu."
+      },
+      {
+         "command":"Add-On Commands in the File/GDL Objects submenu."
+      },
+      {
+         "command":"Add-On Commands in the File/GDL Objects/New with submenu."
+      },
+      {
+         "command":"Add-On Commands in the Edit menu."
+      },
+      {
+         "command":"Add-On Commands in the Edit/Move submenu."
+      },
+      {
+         "command":"Add-On Commands in the Edit/Reshape submenu."
+      },
+      {
+         "command":"Add-On Commands in the Options menu."
+      },
+      {
+         "command":"Add-On Commands in the Layers submenu."
+      },
+      {
+         "command":"Add-On Commands in the Document/Creative Imaging submenu."
+      },
+      {
+         "command":"Add-On Commands in the Document/Set 3D view submenu."
+      },
+      {
+         "command":"Add-On Commands in the Document/Document Extras submenu."
+      },
+      {
+         "command":"Add-On Commands in the 3D View Mode submenu."
+      },
+      {
+         "command":"Add-On Commands in the Rendering Engines submenu."
+      },
+      {
+         "command":"Add-On Commands in the Document/Schedules and Lists submenu."
+      },
+      {
+         "command":"Add-On Commands in the View/Zoom submenu."
+      },
+      {
+         "command":"Add-On Commands in the Palettes submenu."
+      },
+      {
+         "command":"Add-On Commands in the Design/Design Extras submenu."
+      },
+      {
+         "comment":"  context menu",
+         "command":"Remove Marquee"
+      },
+      {
+         "command":"Remove Marquee"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Select & Activate Tool"
+      },
+      {
+         "command":"Select & Activate Tool"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Deselect All"
+      },
+      {
+         "command":"Deselect All"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open Section"
+      },
+      {
+         "command":"Open Section"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open Detail Drawing"
+      },
+      {
+         "command":"Open Detail Drawing"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Lock Layer"
+      },
+      {
+         "command":"Lock Layer"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Unlock Layer"
+      },
+      {
+         "command":"Unlock Layer"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Hide Layer"
+      },
+      {
+         "command":"Hide Layer"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Go To Info Web Page"
+      },
+      {
+         "command":"Go To Info Web Page"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Drag Here"
+      },
+      {
+         "command":"Drag Here"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Drag a Copy Here"
+      },
+      {
+         "command":"Drag a Copy Here"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Help"
+      },
+      {
+         "command":"Help"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open Section in new window"
+      },
+      {
+         "command":"Open Section in new window"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open Detail Drawing in new window"
+      },
+      {
+         "command":"Open Detail Drawing in new window"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Go to Drawing"
+      },
+      {
+         "command":"Go to Drawing"
+      },
+      {
+         "command":"Show as Trace Reference"
+      },
+      {
+         "command":"Edit this Module in separate ARCHICAD"
+      },
+      {
+         "command":"Place Drawing..."
+      },
+      {
+         "command":"Update"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open Elevation"
+      },
+      {
+         "command":"Open Elevation"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open Elevation in new window"
+      },
+      {
+         "command":"Open Elevation in new window"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open Interior Elevation"
+      },
+      {
+         "command":"Open Interior Elevation"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open Interior Elevation in new window"
+      },
+      {
+         "command":"Open Interior Elevation in new window"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open Worksheet"
+      },
+      {
+         "command":"Open Worksheet"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open Worksheet in new window"
+      },
+      {
+         "command":"Open Worksheet in new window"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Set as Source Marker"
+      },
+      {
+         "command":"Set as Source Marker"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Set as Linked Marker"
+      },
+      {
+         "command":"Set as Linked Marker"
+      },
+      {
+         "command":"Restore Interior Elevation"
+      },
+      {
+         "command":"Delete Interior Elevation"
+      },
+      {
+         "command":"Restore all Interior Elevations in Group"
+      },
+      {
+         "command":"Manage Current Default or Selected Favorite"
+      },
+      {
+         "command":"Manage All Favorites"
+      },
+      {
+         "command":"Zone List Data Type"
+      },
+      {
+         "command":"Check Markers List Header"
+      },
+      {
+         "command":"Capture Window for 3D Document..."
+      },
+      {
+         "command":"Create New Story..."
+      },
+      {
+         "command":"Rename Story"
+      },
+      {
+         "command":"Delete this Story"
+      },
+      {
+         "command":"Section Settings..."
+      },
+      {
+         "command":"Rename Section"
+      },
+      {
+         "command":"Delete Section"
+      },
+      {
+         "command":"Unlink from Model"
+      },
+      {
+         "command":"Select Section marker on the Home Story and zoom to it"
+      },
+      {
+         "command":"OpenHome Story"
+      },
+      {
+         "command":"New Independent Detail..."
+      },
+      {
+         "command":"Detail Settings..."
+      },
+      {
+         "command":"Update Linked Markers Boundary"
+      },
+      {
+         "command":"Rename Detail..."
+      },
+      {
+         "command":"Delete Detail"
+      },
+      {
+         "command":"Select Detail marker on the Source Viewand zoom to it"
+      },
+      {
+         "command":"Open Source View"
+      },
+      {
+         "command":"Sun..."
+      },
+      {
+         "command":"Open"
+      },
+      {
+         "command":"Save Current Projection"
+      },
+      {
+         "command":"Delete Path..."
+      },
+      {
+         "command":"Camera Settings..."
+      },
+      {
+         "command":"Path..."
+      },
+      {
+         "command":"Open/Bring to front in 3D Window"
+      },
+      {
+         "command":"Modify this Camera to Current view"
+      },
+      {
+         "command":"Delete Camera"
+      },
+      {
+         "command":"Delete VR Object"
+      },
+      {
+         "command":"Delete VR Scene..."
+      },
+      {
+         "command":"Delete Panoramic Camera"
+      },
+      {
+         "command":"Generate List"
+      },
+      {
+         "command":"Open Project Notes"
+      },
+      {
+         "command":"Open Report"
+      },
+      {
+         "command":"Open Teamwork Notes"
+      },
+      {
+         "command":"Open Project Preview"
+      },
+      {
+         "command":"Open ARCHICAD Help"
+      },
+      {
+         "command":"Open GRAPHISOFT home page"
+      },
+      {
+         "command":"Live Update"
+      },
+      {
+         "command":"Auto Update"
+      },
+      {
+         "command":"Manual Update"
+      },
+      {
+         "command":"Go to Location"
+      },
+      {
+         "command":"Redraw Preview"
+      },
+      {
+         "command":"New Folder"
+      },
+      {
+         "command":"Save Current View..."
+      },
+      {
+         "command":"Duplicate"
+      },
+      {
+         "command":"Rename"
+      },
+      {
+         "command":"View Settings..."
+      },
+      {
+         "command":"Open in New Window"
+      },
+      {
+         "command":"Open in New ARCHICAD Session"
+      },
+      {
+         "command":"Update Layout"
+      },
+      {
+         "command":"Rename Layout..."
+      },
+      {
+         "command":"Delete Layout"
+      },
+      {
+         "command":"Update Master Layout"
+      },
+      {
+         "command":"Rename Master..."
+      },
+      {
+         "command":"Delete Master"
+      },
+      {
+         "command":"Scheme Settings"
+      },
+      {
+         "command":"Rename Schedule"
+      },
+      {
+         "command":"Delete Schedule"
+      },
+      {
+         "command":"Index Settings"
+      },
+      {
+         "command":"Rename Index"
+      },
+      {
+         "command":"Delete Index"
+      },
+      {
+         "command":"Create New Subset"
+      },
+      {
+         "command":"Subset Settings..."
+      },
+      {
+         "command":"Drawing Settings..."
+      },
+      {
+         "command":"Set as Default"
+      },
+      {
+         "command":"Open Source View with Layout as Reference"
+      },
+      {
+         "command":"Open External Source View"
+      },
+      {
+         "command":"Update in Separate ARCHICAD"
+      },
+      {
+         "command":"Delete Subset"
+      },
+      {
+         "command":"Place on Layout"
+      },
+      {
+         "command":"Auto-hide Navigator"
+      },
+      {
+         "command":"Auto-hide Organizer"
+      },
+      {
+         "command":"Find Linked Markers..."
+      },
+      {
+         "command":"Elevation Settings..."
+      },
+      {
+         "command":"Interior Elevation Settings..."
+      },
+      {
+         "command":"Rename Interior Elevation"
+      },
+      {
+         "command":"Delete Interior Elevation Group"
+      },
+      {
+         "command":"Select Interior Elevation marker on the Home Story and zoom to it"
+      },
+      {
+         "command":"Save All Current Views..."
+      },
+      {
+         "command":"Save All Views and Place on Layout"
+      },
+      {
+         "command":"New Independent Worksheet..."
+      },
+      {
+         "command":"Worksheet Settings..."
+      },
+      {
+         "command":"Rename Worksheet..."
+      },
+      {
+         "command":"Delete Worksheet"
+      },
+      {
+         "command":"Select Worksheet marker on the Source View and zoom to it"
+      },
+      {
+         "command":"Rename Elevation"
+      },
+      {
+         "command":"DeleteElevation"
+      },
+      {
+         "command":"Select Elevation marker on the Home Story and zoom to it"
+      },
+      {
+         "command":"New Independent Section..."
+      },
+      {
+         "command":"New Independent Elevation..."
+      },
+      {
+         "command":"List Floor Plan Selection only"
+      },
+      {
+         "command":"New 3D Document..."
+      },
+      {
+         "command":"Duplicate 3D Document..."
+      },
+      {
+         "command":"Rename 3D Document..."
+      },
+      {
+         "command":"Redefine 3D Document based on current 3D Window"
+      },
+      {
+         "command":"Delete 3D Document"
+      },
+      {
+         "command":"Reserve"
+      },
+      {
+         "command":"Request"
+      },
+      {
+         "command":"Release"
+      },
+      {
+         "command":"Release & Drop Changes"
+      },
+      {
+         "command":"Release and Comment"
+      },
+      {
+         "command":"New Publisher Set..."
+      },
+      {
+         "command":"Duplicate Publisher Set..."
+      },
+      {
+         "command":"Delete Publisher Set"
+      },
+      {
+         "command":"Open Publishing Properties"
+      },
+      {
+         "command":"Move toPublic Sets"
+      },
+      {
+         "command":"Reserve View Settings"
+      },
+      {
+         "command":"Request View Settings"
+      },
+      {
+         "command":"Release View Settings"
+      },
+      {
+         "command":"Reserve free items"
+      },
+      {
+         "command":"Release all items"
+      },
+      {
+         "command":"Indents and Tabs..."
+      },
+      {
+         "command":"InsertSymbol"
+      },
+      {
+         "command":"List of autotexts"
+      },
+      {
+         "command":"Check Spelling..."
+      },
+      {
+         "command":"Check Spelling as You Type"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Break Link"
+      },
+      {
+         "command":"Break Link"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Reset List Columns"
+      },
+      {
+         "command":"Reset List Columns"
+      },
+      {
+         "command":"Visible Columns"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Update in separate ARCHICAD"
+      },
+      {
+         "command":"Update in separate ARCHICAD"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Open externalsource View"
+      },
+      {
+         "command":"Open external source View"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Read from..."
+      },
+      {
+         "command":"Read from..."
+      },
+      {
+         "comment":"  context menu",
+         "command":"Link to original Model View"
+      },
+      {
+         "command":"Link to original Model View"
+      },
+      {
+         "comment":"  context menu",
+         "command":"Link to ARCHICAD Drawing file..."
+      },
+      {
+         "command":"Link to ARCHICAD Drawing file..."
+      },
+      {
+         "command":"Request Selected Drawings"
+      },
+      {
+         "command":"Reserve Selected Drawings"
+      },
+      {
+         "command":"Release Selected Drawings"
+      },
+      {
+         "command":"PictureWindow test"
+      },
+      {
+         "command":"CODE"
+      },
+      {
+         "command":"Used Layer List"
+      },
+      {
+         "command":"Save Temporary"
+      },
+      {
+         "command":"List Add-Ons"
+      },
+      {
+         "command":"Last Undo Entries"
+      },
+      {
+         "command":"Dump Add-on manager"
+      },
+      {
+         "command":"Empty master model"
+      },
+      {
+         "command":"Dump master sight"
+      },
+      {
+         "command":"Convert Libpart to XML"
+      },
+      {
+         "command":"Convert XML to Libpart"
+      },
+      {
+         "command":"Save class versions"
+      },
+      {
+         "command":"Print class informations"
+      },
+      {
+         "command":"Print section plan connectivity info"
+      },
+      {
+         "command":"Test the Work Environment"
+      },
+      {
+         "command":"Show Status Cells"
+      },
+      {
+         "command":"Export logged application events"
+      },
+      {
+         "command":"Export logged command events"
+      },
+      {
+         "command":"Save Plan in XML format"
+      },
+      {
+         "command":"Export command id table"
+      },
+      {
+         "command":"Attribute List by typeId"
+      },
+      {
+         "command":"QuickTest"
+      },
+      {
+         "command":"Show Profile"
+      },
+      {
+         "command":"Save selected IDF in XML format"
+      },
+      {
+         "command":"Export Teamwork Class Model"
+      },
+      {
+         "command":"Export Application Class Model"
+      },
+      {
+         "command":"Tests multithreading"
+      },
+      {
+         "command":"Elemset Write/Read Full State"
+      },
+      {
+         "command":"Recreate proxy objects"
+      },
+      {
+         "command":"Fill Selected CW with Junctions"
+      },
+      {
+         "command":"Fill Selected CW with Accessories"
+      },
+      {
+         "command":"Select CWFrame neighbours"
+      },
+      {
+         "command":"Set Vardum value"
+      },
+      {
+         "command":"Set Userbreak Time"
+      },
+      {
+         "command":"Greek below"
+      },
+      {
+         "command":"Zonecheck"
+      },
+      {
+         "command":"Check status"
+      },
+      {
+         "comment":"  selectItem",
+         "command":"DUMP"
+      },
+      {
+         "command":"DUMP"
+      },
+      {
+         "command":"Settings"
+      },
+      {
+         "command":"Open DumpSet"
+      },
+      {
+         "command":"Save DumpSet"
+      },
+      {
+         "command":"Select an Item!"
+      },
+      {
+         "command":"* BRIEF LIST"
+      },
+      {
+         "command":"Show Bounds"
+      },
+      {
+         "command":"List drwIndex"
+      },
+      {
+         "command":"1 elem/elemHdl"
+      },
+      {
+         "command":"Groups"
+      },
+      {
+         "command":"Attribs"
+      },
+      {
+         "command":"Zones"
+      },
+      {
+         "command":"RegDataDefaults"
+      },
+      {
+         "command":"DataOwnerReg"
+      },
+      {
+         "command":"ModulData"
+      },
+      {
+         "command":"BinTbl"
+      },
+      {
+         "command":"Services"
+      },
+      {
+         "command":"Project"
+      },
+      {
+         "command":"SelectAll"
+      },
+      {
+         "command":"List Hotlink Groups"
+      },
+      {
+         "command":"Init Hotlink Check"
+      },
+      {
+         "command":"Hotlink Check"
+      },
+      {
+         "command":"CID_DTDummy1"
+      },
+      {
+         "command":"CID_DTDummy2"
+      },
+      {
+         "command":"CID_DTDummy3"
+      },
+      {
+         "command":"ShowWallCoords -- selected --"
+      },
+      {
+         "command":"NewWallLT"
+      },
+      {
+         "command":"AutoWallUpdate"
+      },
+      {
+         "command":"NewWallT"
+      },
+      {
+         "command":"NewWallSolid"
+      },
+      {
+         "command":"Select connected curtainwalls"
+      },
+      {
+         "command":"NewWallX"
+      },
+      {
+         "command":"Fly-through Z lefutas"
+      },
+      {
+         "command":"Redundant Lines"
+      },
+      {
+         "command":"List Frame2Slide"
+      },
+      {
+         "command":"Close Process Window"
+      },
+      {
+         "command":"Print Type hierarchy"
+      },
+      {
+         "command":"DTCheck, IMCheck"
+      },
+      {
+         "command":"ENCheck"
+      },
+      {
+         "command":"Show 3D indices"
+      },
+      {
+         "command":"Show polygons"
+      },
+      {
+         "command":"Show cpols"
+      },
+      {
+         "command":"Show average vectors"
+      },
+      {
+         "command":"Show shadow bodies"
+      },
+      {
+         "command":"Show PGON info"
+      },
+      {
+         "command":"Colors of used pens"
+      },
+      {
+         "command":"Surface, volume"
+      },
+      {
+         "command":"Debug palette"
+      },
+      {
+         "command":"Voca list"
+      },
+      {
+         "command":"ENList"
+      },
+      {
+         "command":"IMListGenUMats"
+      },
+      {
+         "command":"DNStatistic"
+      },
+      {
+         "command":"VMReport"
+      },
+      {
+         "command":"Bin3DDebugger"
+      },
+      {
+         "command":"Draw rects"
+      },
+      {
+         "command":"Draw boxes"
+      },
+      {
+         "command":"List Conditions"
+      },
+      {
+         "command":"Show lamps"
+      },
+      {
+         "command":"All Process windows"
+      },
+      {
+         "command":"VMDebugger"
+      },
+      {
+         "command":"LEOptions"
+      },
+      {
+         "command":"List HPGONs"
+      },
+      {
+         "command":"Switch HPGONs"
+      },
+      {
+         "command":"Drop HPGONs"
+      },
+      {
+         "command":"Slice model"
+      },
+      {
+         "command":"Show Hotspots"
+      },
+      {
+         "command":"Convert to LightSpace"
+      },
+      {
+         "command":"Show Room"
+      },
+      {
+         "command":"Draw UElem rects"
+      },
+      {
+         "command":"NULL pointer"
+      },
+      {
+         "command":"Invalid pointer"
+      },
+      {
+         "command":"Integer zero divide"
+      },
+      {
+         "command":"Float zero divide"
+      },
+      {
+         "command":"Float invalid operation"
+      },
+      {
+         "command":"Heap info"
+      },
+      {
+         "command":"Enable Heap scrambling"
+      },
+      {
+         "command":"Disable Heap scrambling"
+      },
+      {
+         "command":"Resource File Info"
+      },
+      {
+         "command":"Horizontal Control Box"
+      },
+      {
+         "command":"Vertical Control Box"
+      },
+      {
+         "command":"Compact Control Box"
+      },
+      {
+         "command":"Extended Control Box"
+      },
+      {
+         "command":"Horizontal Coordinate Box"
+      },
+      {
+         "command":"Vertical Coordinate Box"
+      },
+      {
+         "command":"CompactCoordinate Box"
+      },
+      {
+         "command":"Extended Coordinate Box"
+      },
+      {
+         "command":"Info Box Header at Left Edge"
+      },
+      {
+         "command":"Info Box Header on Top"
+      },
+      {
+         "command":"3D Edit"
+      },
+      {
+         "command":"Explore Model"
+      },
+      {
+         "command":"Walk"
+      },
+      {
+         "command":"Lateral Move"
+      },
+      {
+         "command":"Turn"
+      },
+      {
+         "command":"Orbit"
+      },
+      {
+         "command":"Look To"
+      },
+      {
+         "command":"Look To Perpendicular"
+      },
+      {
+         "command":"Perspective"
+      },
+      {
+         "command":"Axonometry"
+      },
+      {
+         "command":"Reset Roll Angle"
+      },
+      {
+         "command":"Horizontal View"
+      },
+      {
+         "command":"3D Sensitive Cursor"
+      },
+      {
+         "command":"Cursor Projection"
+      },
+      {
+         "command":"Animation Controls"
+      },
+      {
+         "command":"Lock Target Point"
+      },
+      {
+         "command":"Edit value in Tracker"
+      },
+      {
+         "command":"Show/Hide Tracker"
+      },
+      {
+         "command":"Prefer polar coordinates in Tracker"
+      },
+      {
+         "command":"Show Z in Tracker"
+      },
+      {
+         "command":"Expand Tracker Automatically"
+      },
+      {
+         "command":"Hide Parameter Tags"
+      },
+      {
+         "command":"Project Zero"
+      },
+      {
+         "command":"Current Story"
+      },
+      {
+         "command":"1st Reference Level"
+      },
+      {
+         "command":"2nd Reference Level"
+      },
+      {
+         "command":"Gravity"
+      },
+      {
+         "command":"Gravitate to Slab"
+      },
+      {
+         "command":"Gravitate to Mesh"
+      },
+      {
+         "command":"Gravitate to Roof"
+      },
+      {
+         "command":"Set User Origin"
+      },
+      {
+         "command":"Tracker Always On"
+      },
+      {
+         "command":"Measure"
+      },
+      {
+         "command":"Relative Coordinates in Tracker"
+      },
+      {
+         "command":"X Coordinate"
+      },
+      {
+         "command":"Y Coordinate"
+      },
+      {
+         "command":"Z Coordinate"
+      },
+      {
+         "command":"Radius/Distance"
+      },
+      {
+         "command":"Angle"
+      },
+      {
+         "command":"Home Story"
+      },
+      {
+         "command":"Lock X Coordinate"
+      },
+      {
+         "command":"Lock Y Coordinate"
+      },
+      {
+         "command":"Lock Z Coordinate"
+      },
+      {
+         "command":"Lock Radius/Distance"
+      },
+      {
+         "command":"Lock Angle"
+      },
+      {
+         "command":"Activate Next Tracker Value"
+      },
+      {
+         "command":"Activate Previous Tracker Value"
+      },
+      {
+         "command":"Elevation to current story"
+      },
+      {
+         "command":"Slope"
+      },
+      {
+         "command":"Trace"
+      },
+      {
+         "command":"Activate Reference"
+      },
+      {
+         "command":"Switch Reference with Active"
+      },
+      {
+         "command":"Recent References"
+      },
+      {
+         "command":"Drag Reference"
+      },
+      {
+         "command":"Rotate Reference"
+      },
+      {
+         "command":"Reset to Default Position"
+      },
+      {
+         "command":"Rebuild Reference"
+      },
+      {
+         "command":"Temporarily displace Reference"
+      },
+      {
+         "command":"Show/Hide Splitter"
+      },
+      {
+         "command":"Reference on Top"
+      },
+      {
+         "command":"Transparent Fills and Zones"
+      },
+      {
+         "command":"Trace and Reference"
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Trace & Reference"
+      },
+      {
+         "command":"Trace& Reference"
+      },
+      {
+         "command":"Reference - As last shown in Active Content"
+      },
+      {
+         "command":"Reference - Own Model"
+      },
+      {
+         "command":"Reference - IE Siblings"
+      },
+      {
+         "command":"Reference - Story Related"
+      },
+      {
+         "command":"Reference - Source View"
+      },
+      {
+         "command":"Reference - Help"
+      },
+      {
+         "command":"Entire Structure Display"
+      },
+      {
+         "command":"Batch Mode"
+      },
+      {
+         "command":"Quick Test"
+      },
+      {
+         "command":"Persistent2DCache Test"
+      },
+      {
+         "command":"Convert Tpl to XML"
+      },
+      {
+         "command":"Convert XML to Tpl"
+      },
+      {
+         "command":"Arrow"
+      },
+      {
+         "command":"Marquee"
+      },
+      {
+         "command":"Wall"
+      },
+      {
+         "command":"Wall End"
+      },
+      {
+         "command":"Grid Element"
+      },
+      {
+         "command":"Column"
+      },
+      {
+         "command":"Beam"
+      },
+      {
+         "command":"Window"
+      },
+      {
+         "command":"Door"
+      },
+      {
+         "command":"Object"
+      },
+      {
+         "command":"Lamp"
+      },
+      {
+         "command":"Stair"
+      },
+      {
+         "command":"Railing"
+      },
+      {
+         "command":"Slab"
+      },
+      {
+         "command":"Roof"
+      },
+      {
+         "command":"Shell"
+      },
+      {
+         "command":"Morph"
+      },
+      {
+         "command":"Connect Elem"
+      },
+      {
+         "command":"Connect Shell"
+      },
+      {
+         "command":"Trim Elements to Roof/Shell"
+      },
+      {
+         "command":"Clear All Connections"
+      },
+      {
+         "command":"Mesh"
+      },
+      {
+         "command":"Curtain Wall"
+      },
+      {
+         "command":"Dimension"
+      },
+      {
+         "command":"Radial Dimension"
+      },
+      {
+         "command":"Level Dimension"
+      },
+      {
+         "command":"Angle Dimension"
+      },
+      {
+         "command":"Text"
+      },
+      {
+         "command":"Label"
+      },
+      {
+         "command":"Zone"
+      },
+      {
+         "command":"Fill"
+      },
+      {
+         "command":"Line"
+      },
+      {
+         "command":"Arc/Circle"
+      },
+      {
+         "command":"Polyline"
+      },
+      {
+         "command":"Spline"
+      },
+      {
+         "command":"Figure"
+      },
+      {
+         "command":"Drawing"
+      },
+      {
+         "command":"Hotspot"
+      },
+      {
+         "command":"Section"
+      },
+      {
+         "command":"Elevation"
+      },
+      {
+         "command":"Interior Elevation"
+      },
+      {
+         "command":"Detail"
+      },
+      {
+         "command":"Change"
+      },
+      {
+         "command":"Worksheet"
+      },
+      {
+         "command":"Camera"
+      },
+      {
+         "comment":"  Test",
+         "command":"Prefs: read"
+      },
+      {
+         "command":"Prefs: read"
+      },
+      {
+         "comment":"  Test",
+         "command":"Prefs: dump"
+      },
+      {
+         "command":"Prefs: dump"
+      },
+      {
+         "comment":"  Test",
+         "command":"Prefs: write"
+      },
+      {
+         "command":"Prefs: write"
+      },
+      {
+         "comment":"  Test",
+         "command":"KeepInMem - true"
+      },
+      {
+         "command":"KeepInMem - true"
+      },
+      {
+         "comment":"  Test",
+         "command":"KeepInMem - false"
+      },
+      {
+         "command":"KeepInMem - false"
+      },
+      {
+         "comment":"  Test",
+         "command":"Object Settings dialog"
+      },
+      {
+         "command":"Object Settings dialog"
+      },
+      {
+         "comment":"  Test",
+         "command":"Select Library Parts dialog"
+      },
+      {
+         "command":"Select Library Parts dialog"
+      },
+      {
+         "comment":"  Test",
+         "command":"Open Library Part Save Dialog"
+      },
+      {
+         "command":"Open Library Part Save Dialog"
+      },
+      {
+         "comment":"  Test",
+         "command":"Save Selection as Object"
+      },
+      {
+         "command":"Save Selection as Object"
+      },
+      {
+         "comment":"  Test",
+         "command":"Clipping"
+      },
+      {
+         "command":"Clipping"
+      },
+      {
+         "comment":"  Test",
+         "command":"Clipping (no undo)"
+      },
+      {
+         "command":"Clipping (no undo)"
+      },
+      {
+         "comment":"  Test",
+         "command":"Search LibPart by UnID"
+      },
+      {
+         "command":"Search LibPart by UnID"
+      },
+      {
+         "comment":"  Test",
+         "command":"Search LibParts by pattern"
+      },
+      {
+         "command":"Search LibParts by pattern"
+      },
+      {
+         "comment":"  Test",
+         "command":"Verify LibPart ancestry"
+      },
+      {
+         "command":"Verify LibPart ancestry"
+      },
+      {
+         "comment":"  Test",
+         "command":"Compare LibPart UnIDs"
+      },
+      {
+         "command":"Compare LibPart UnIDs"
+      },
+      {
+         "comment":"  Test",
+         "command":"Get Symbol creator tool UnID"
+      },
+      {
+         "command":"Get Symbol creator tool UnID"
+      },
+      {
+         "comment":"  Test",
+         "command":"Calculate Window Quantities"
+      },
+      {
+         "command":"Calculate Window Quantities"
+      },
+      {
+         "comment":"  Test",
+         "command":"Calculate Door Quantities"
+      },
+      {
+         "command":"Calculate Door Quantities"
+      },
+      {
+         "comment":"  Test",
+         "command":"Set attribute user data"
+      },
+      {
+         "command":"Set attribute user data"
+      },
+      {
+         "comment":"  Test",
+         "command":"Get attribute user data"
+      },
+      {
+         "command":"Get attribute user data"
+      },
+      {
+         "comment":"  Test",
+         "command":"Clear attribute user data"
+      },
+      {
+         "command":"Clear attribute user data"
+      },
+      {
+         "comment":"  Test",
+         "command":"Test MEP System attr user data"
+      },
+      {
+         "command":"Test MEP System attr user data"
+      },
+      {
+         "comment":"  Test",
+         "command":"Copy all pictures to JPEG"
+      },
+      {
+         "command":"Copy all pictures to JPEG"
+      },
+      {
+         "comment":"  Test",
+         "command":"Test GIS"
+      },
+      {
+         "command":"Test GIS"
+      },
+      {
+         "comment":"  Test",
+         "command":"Read/Write XML prefs"
+      },
+      {
+         "command":"Read/Write XML prefs"
+      },
+      {
+         "comment":"  Test",
+         "command":"Renderingtest"
+      },
+      {
+         "command":"Rendering test"
+      },
+      {
+         "comment":"  Test",
+         "command":"Open modeless palette"
+      },
+      {
+         "command":"Open modeless palette"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch Project Notifications"
+      },
+      {
+         "command":"Catch Project Notifications"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch Teamwork Notifications"
+      },
+      {
+         "command":"Catch Teamwork Notifications"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch Project Database Changes"
+      },
+      {
+         "command":"Catch Project Database Changes"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch Window Changes"
+      },
+      {
+         "command":"Catch Window Changes"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch Story Changes"
+      },
+      {
+         "command":"Catch Story Changes"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch Library Changes"
+      },
+      {
+         "command":"Catch Library Changes"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch Navigator Events"
+      },
+      {
+         "command":"Catch Navigator Events"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch Toolbox Changes"
+      },
+      {
+         "command":"Catch Toolbox Changes"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch Selection Changes"
+      },
+      {
+         "command":"Catch Selection Changes"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch Element Defaults Changes"
+      },
+      {
+         "command":"Catch Element Defaults Changes"
+      },
+      {
+         "comment":"  Test",
+         "command":"Catch New Construction Elements"
+      },
+      {
+         "command":"Catch New Construction Elements"
+      },
+      {
+         "comment":"  Test",
+         "command":"Create Link Between Two Elements"
+      },
+      {
+         "command":"Create Link Between Two Elements"
+      },
+      {
+         "comment":"  Test",
+         "command":"Copy content of another database"
+      },
+      {
+         "command":"Copy content of another database"
+      },
+      {
+         "comment":"  Test",
+         "command":"List lines of Sections"
+      },
+      {
+         "command":"List lines of Sections"
+      },
+      {
+         "comment":"  Test",
+         "command":"Open text window"
+      },
+      {
+         "command":"Open text window"
+      },
+      {
+         "comment":"  Test",
+         "command":"Close text window"
+      },
+      {
+         "command":"Close text window"
+      },
+      {
+         "comment":"  Test",
+         "command":"Open draw window"
+      },
+      {
+         "command":"Open draw window"
+      },
+      {
+         "comment":"  Test",
+         "command":"Close draw window"
+      },
+      {
+         "command":"Close draw window"
+      },
+      {
+         "comment":"  Test",
+         "command":"Close all windows"
+      },
+      {
+         "command":"Close all windows"
+      },
+      {
+         "comment":"  Test",
+         "command":"Test - Assign Property first"
+      },
+      {
+         "command":"Test - Assign Property first"
+      },
+      {
+         "comment":"  Test",
+         "command":"Test - Assign Property last"
+      },
+      {
+         "command":"Test - Assign Property last"
+      },
+      {
+         "comment":"  Test",
+         "command":"Test - Dump structures"
+      },
+      {
+         "command":"Test - Dump structures"
+      },
+      {
+         "comment":"  Test",
+         "command":"ElemSet - Create from Selection"
+      },
+      {
+         "command":"ElemSet - Create from Selection"
+      },
+      {
+         "comment":"  Test",
+         "command":"ElemSet - Delete from Selection"
+      },
+      {
+         "command":"ElemSet - Delete from Selection"
+      },
+      {
+         "comment":"  Test",
+         "command":"ElemSet - Delete All Owned"
+      },
+      {
+         "command":"ElemSet - Delete All Owned"
+      },
+      {
+         "comment":"  Test",
+         "command":"ElemSet - Dump All Owned"
+      },
+      {
+         "command":"ElemSet - Dump All Owned"
+      },
+      {
+         "comment":"  Test",
+         "command":"ElemLink - Link"
+      },
+      {
+         "command":"ElemLink - Link"
+      },
+      {
+         "comment":"  Test",
+         "command":"ElemLink - Unlink"
+      },
+      {
+         "command":"ElemLink - Unlink"
+      },
+      {
+         "comment":"  Test",
+         "command":"ElemLink - Get Links and Dump Flags"
+      },
+      {
+         "command":"ElemLink - Get Links and Dump Flags"
+      },
+      {
+         "comment":"  Test",
+         "command":"ElemMonitor - Monitor Selected Elem"
+      },
+      {
+         "command":"ElemMonitor - Monitor Selected Elem"
+      },
+      {
+         "comment":"  Test",
+         "command":"ElemMonitor - Remove Monitor"
+      },
+      {
+         "command":"ElemMonitor - Remove Monitor"
+      },
+      {
+         "comment":"  Test",
+         "command":"ElemMonitor - Get Observed Elems"
+      },
+      {
+         "command":"ElemMonitor - Get Observed Elems"
+      },
+      {
+         "comment":"  Test",
+         "command":"Reserve Line Types"
+      },
+      {
+         "command":"Reserve Line Types"
+      },
+      {
+         "comment":"  Test",
+         "command":"Release Line Types"
+      },
+      {
+         "command":"Release Line Types"
+      },
+      {
+         "command":"Test"
+      },
+      {
+         "comment":"  Teamwork Control",
+         "command":"Watch Reservation of Selected Elements"
+      },
+      {
+         "command":"Watch Reservation of Selected Elements"
+      },
+      {
+         "comment":"  Teamwork Control",
+         "command":"Watch Attribute Reservation"
+      },
+      {
+         "command":"Watch Attribute Reservation"
+      },
+      {
+         "comment":"  SQL",
+         "command":"Execute SQL query..."
+      },
+      {
+         "command":"Execute SQL query..."
+      },
+      {
+         "comment":"  Selection Manager",
+         "command":"List Selection"
+      },
+      {
+         "command":"List Selection"
+      },
+      {
+         "comment":"  Selection Manager",
+         "command":"Select Clicked"
+      },
+      {
+         "command":"Select Clicked"
+      },
+      {
+         "comment":"  Selection Manager",
+         "command":"Deselect Clicked"
+      },
+      {
+         "command":"Deselect Clicked"
+      },
+      {
+         "comment":"  Selection Manager",
+         "command":"Delete Selected Elements"
+      },
+      {
+         "command":"Delete Selected Elements"
+      },
+      {
+         "comment":"  Selection Manager",
+         "command":"Duplicate Selected Elements"
+      },
+      {
+         "command":"Duplicate Selected Elements"
+      },
+      {
+         "comment":"  Plan Dump add-on",
+         "command":"PlanDump"
+      },
+      {
+         "command":"PlanDump"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Catch Project Changes"
+      },
+      {
+         "command":"Catch Project Changes"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Default Monitor"
+      },
+      {
+         "command":"Default Monitor"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Element Monitor (All Types)"
+      },
+      {
+         "command":"Element Monitor (All Types)"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Tool Monitor"
+      },
+      {
+         "command":"Tool Monitor"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Selection Monitor"
+      },
+      {
+         "command":"Selection Monitor"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Reservation Monitor"
+      },
+      {
+         "command":"Reservation Monitor"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Monitor Clicked Element"
+      },
+      {
+         "command":"Monitor Clicked Element"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Remove Clicked Element Monitor"
+      },
+      {
+         "command":"Remove Clicked Element Monitor"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"List all monitored elements"
+      },
+      {
+         "command":"List all monitored elements"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Mark selected elements"
+      },
+      {
+         "command":"Mark selected elements"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"List/Check owned elements"
+      },
+      {
+         "command":"List/Check owned elements"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Attach URL to clicked element"
+      },
+      {
+         "command":"Attach URL to clicked element"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Get URL from clicked element"
+      },
+      {
+         "command":"Get URL from clicked element"
+      },
+      {
+         "comment":"  Notification Manager",
+         "command":"Link selected elements to clicked element"
+      },
+      {
+         "command":"Link selected elements to clicked element"
+      },
+      {
+         "comment":"  NeigLabel",
+         "command":"Show labels for neigs"
+      },
+      {
+         "command":"Show labels for neigs"
+      },
+      {
+         "comment":"  Navigator Functions",
+         "command":"Open Navigator Test"
+      },
+      {
+         "command":"Open Navigator Test"
+      },
+      {
+         "comment":"  ModulData Manager",
+         "command":"Manage Customer Data..."
+      },
+      {
+         "command":"Manage Customer Data..."
+      },
+      {
+         "comment":"  Listing Manager",
+         "command":"ListData"
+      },
+      {
+         "command":"ListData"
+      },
+      {
+         "comment":"  LibPart Test",
+         "command":"Create Library Part"
+      },
+      {
+         "command":"Create Library Part"
+      },
+      {
+         "comment":"  LibPart Test",
+         "command":"Create Window from Hatch"
+      },
+      {
+         "command":"Create Window from Hatch"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Open Control Palette"
+      },
+      {
+         "command":"Open Control Palette"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Show Palette"
+      },
+      {
+         "command":"Show Palette"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Get a Point"
+      },
+      {
+         "command":"Get a Point"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Get a Line"
+      },
+      {
+         "command":"Get a Line"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Get an Arc"
+      },
+      {
+         "command":"Get an Arc"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Get a Rectangle"
+      },
+      {
+         "command":"Get a Rectangle"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Get a Rotated Rectangle"
+      },
+      {
+         "command":"Get a Rotated Rectangle"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Get a Polygon"
+      },
+      {
+         "command":"Get a Polygon"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Get a Polygon of Perpendicular Segments"
+      },
+      {
+         "command":"Get a Polygon of Perpendicular Segments"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Cylindrical Columns"
+      },
+      {
+         "command":"Cylindrical Columns"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Rubber Line Mode"
+      },
+      {
+         "command":"Rubber Line Mode"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Custom Cursor Set Mode"
+      },
+      {
+         "command":"Custom Cursor Set Mode"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Default Feedback"
+      },
+      {
+         "command":"Default Feedback"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Input with Pet Palette"
+      },
+      {
+         "command":"Input with Pet Palette"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"2D, 3D, Section, Elevation, Interior Elevation"
+      },
+      {
+         "command":"2D, 3D, Section, Elevation, Interior Elevation"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"2D, 3D, Section, Elevation, Interior Elevation (selection)"
+      },
+      {
+         "command":"2D, 3D, Section, Elevation, Interior Elevation (selection)"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"2D only"
+      },
+      {
+         "command":"2D only"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"2D only (selection)"
+      },
+      {
+         "command":"2D only (selection)"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"3D only"
+      },
+      {
+         "command":"3D only"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"3D only (selection)"
+      },
+      {
+         "command":"3D only (selection)"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Section, Elevation, Interior Elevation only"
+      },
+      {
+         "command":"Section, Elevation, Interior Elevation only"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Section, Elevation, Interior Elevation only (selection)"
+      },
+      {
+         "command":"Section, Elevation, Interior Elevation only (selection)"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Disabled by default"
+      },
+      {
+         "command":"Disabled by default"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Checked by default"
+      },
+      {
+         "command":"Checked by default"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"2D, Detail"
+      },
+      {
+         "command":"2D, Detail"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"2D, Layout"
+      },
+      {
+         "command":"2D, Layout"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"2D, Elevation"
+      },
+      {
+         "command":"2D, Elevation"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"2D, Interior Elevation"
+      },
+      {
+         "command":"2D, Interior Elevation"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Item 1"
+      },
+      {
+         "command":"Item 1"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Item 2"
+      },
+      {
+         "command":"Item 2"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Item 3"
+      },
+      {
+         "command":"Item 3"
+      },
+      {
+         "comment":"  Interface Functions",
+         "command":"Item 4"
+      },
+      {
+         "command":"Item 4"
+      },
+      {
+         "comment":"  GSRoot Test",
+         "command":"Memory Test"
+      },
+      {
+         "command":"Memory Test"
+      },
+      {
+         "comment":"  GSRoot Test",
+         "command":"Array Test"
+      },
+      {
+         "command":"Array Test"
+      },
+      {
+         "comment":"  GSRoot Test",
+         "command":"DateTime Test"
+      },
+      {
+         "command":"DateTime Test"
+      },
+      {
+         "comment":"  GSRoot Test",
+         "command":"Timer Test"
+      },
+      {
+         "command":"Timer Test"
+      },
+      {
+         "comment":"  GSRoot Test",
+         "command":"Send debug text"
+      },
+      {
+         "command":"Send debug text"
+      },
+      {
+         "comment":"  GSRoot Test",
+         "command":"Show debug flags"
+      },
+      {
+         "command":"Show debug flags"
+      },
+      {
+         "comment":"  GSRoot Test",
+         "command":"Invert debug flags (BMTrace)"
+      },
+      {
+         "command":"Invert debug flags (BMTrace)"
+      },
+      {
+         "comment":"  GSRoot Test",
+         "command":"Create ACCESS_VIOLATION"
+      },
+      {
+         "command":"Create ACCESS_VIOLATION"
+      },
+      {
+         "comment":" GSRoot Test",
+         "command":"Generate Debug Break (ASSERTION)"
+      },
+      {
+         "command":"Generate Debug Break (ASSERTION)"
+      },
+      {
+         "comment":"  GSRoot Test",
+         "command":"Generate MEMORY LEAK"
+      },
+      {
+         "command":"Generate MEMORY LEAK"
+      },
+      {
+         "comment":"  Goodie Functions",
+         "command":"Convert BMP to GIF"
+      },
+      {
+         "command":"Convert BMP to GIF"
+      },
+      {
+         "comment":"  Goodie Functions",
+         "command":"Select topmost Slab"
+      },
+      {
+         "command":"Select topmost Slab"
+      },
+      {
+         "comment":"  Goodie Functions",
+         "command":"Triangulate a Slab"
+      },
+      {
+         "command":"Triangulate a Slab"
+      },
+      {
+         "comment":"  Goodie Functions",
+         "command":"Approximate a Spline"
+      },
+      {
+         "command":"Approximate a Spline"
+      },
+      {
+         "comment":"  Goodie Functions",
+         "command":"Dump autotexts"
+      },
+      {
+         "command":"Dump autotexts"
+      },
+      {
+         "comment":"  Goodie Functions",
+         "command":"Set some autotexts"
+      },
+      {
+         "command":"Set some autotexts"
+      },
+      {
+         "comment":"  Goodie Functions",
+         "command":"Create an autotext"
+      },
+      {
+         "command":"Create an autotext"
+      },
+      {
+         "comment":"  Goodie Functions",
+         "command":"Delete an autotext"
+      },
+      {
+         "command":"Delete an autotext"
+      },
+      {
+         "comment":"  Goodie Functions",
+         "command":"Get library part unID of element"
+      },
+      {
+         "command":"Get library part unID of element"
+      },
+      {
+         "comment":"  Geometry Test",
+         "command":"Rotate Cube"
+      },
+      {
+         "command":"Rotate Cube"
+      },
+      {
+         "comment":"  Favorite Test",
+         "command":"List Favorites"
+      },
+      {
+         "command":"List Favorites"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Server Application Info"
+      },
+      {
+         "command":"Server Application Info"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"List Project Info"
+      },
+      {
+         "command":"List Project Info"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"List Preferences"
+      },
+      {
+         "command":"List Preferences"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"List Location"
+      },
+      {
+         "command":"List Location"
+      },
+      {
+         "comment":"Environment Control",
+         "command":"List 3D Projection"
+      },
+      {
+         "command":"List 3D Projection"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"List Stories"
+      },
+      {
+         "command":"List Stories"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"List 3D Document Default Settings"
+      },
+      {
+         "command":"List 3D Document Default Settings"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Change Project Notes"
+      },
+      {
+         "command":"Change Project Notes"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Add a Story"
+      },
+      {
+         "command":"Add a Story"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Change Story Height"
+      },
+      {
+         "command":"Change Story Height"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Change Trace Story"
+      },
+      {
+         "command":"Change Trace Story"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Crete a Trace Record"
+      },
+      {
+         "command":"Crete a Trace Record"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Hide Application"
+      },
+      {
+         "command":"Hide Application"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"New library"
+      },
+      {
+         "command":"New library"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Switch to Arrow mode"
+      },
+      {
+         "command":"Switch to Arrow mode"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"List loaded libraries"
+      },
+      {
+         "command":"List loaded libraries"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Change Navigator Item"
+      },
+      {
+         "command":"Change Navigator Item"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Change 3D Document Default Settings"
+      },
+      {
+         "command":"Change 3D Document Default Settings"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Dump Partial Structure Display state"
+      },
+      {
+         "command":"Dump Partial Structure Display state"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Change Partial Structure Display state"
+      },
+      {
+         "command":"Change Partial Structure Display state"
+      },
+      {
+         "comment":"  Environment Control",
+         "command":"Change Model View Options"
+      },
+      {
+         "command":"Change Model View Options"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Count Lines"
+      },
+      {
+         "command":"Count Lines"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Line"
+      },
+      {
+         "command":"Create Line"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Get a Line by unId"
+      },
+      {
+         "command":"Get a Line by unId"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Detail Marker"
+      },
+      {
+         "command":"Create Detail Marker"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Label"
+      },
+      {
+         "command":"Create Label"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Label (associative)"
+      },
+      {
+         "command":"Create Label (associative)"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Automatic zone"
+      },
+      {
+         "command":"Create Automatic zone"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Octagon zone"
+      },
+      {
+         "command":"Create Octagon zone"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Zone with hole and arcs"
+      },
+      {
+         "command":"Create Zone with hole and arcs"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Camset (same type as active)"
+      },
+      {
+         "command":"Create Camset (same type as active)"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Camera"
+      },
+      {
+         "command":"Create Camera"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Picture"
+      },
+      {
+         "command":"Create Picture"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Grouped lines"
+      },
+      {
+         "command":"Create Grouped lines"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create CutPlane"
+      },
+      {
+         "command":"Create CutPlane"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Interior Elevation"
+      },
+      {
+         "command":"Create Interior Elevation"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Window"
+      },
+      {
+         "command":"Create Window"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Skylight"
+      },
+      {
+         "command":"Create Skylight"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Multi-plane Roof"
+      },
+      {
+         "command":"Create Multi-plane Roof"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Extruded Shell"
+      },
+      {
+         "command":"Create Extruded Shell"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Revolved Shell"
+      },
+      {
+         "command":"Create Revolved Shell"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Ruled Shell"
+      },
+      {
+         "command":"Create Ruled Shell"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Morph Shell"
+      },
+      {
+         "command":"Create Morph Shell"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Slab (with custom edge trims)"
+      },
+      {
+         "command":"Create Slab (with custom edge trims)"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Curved wall"
+      },
+      {
+         "command":"Create Curved wall"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Curved beam"
+      },
+      {
+         "command":"Create Curved beam"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Curtain Wall"
+      },
+      {
+         "command":"Create Curtain Wall"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Stair"
+      },
+      {
+         "command":"Create Stair"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Railing"
+      },
+      {
+         "command":"Create Railing"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Word"
+      },
+      {
+         "command":"Create Word"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Drawing Element"
+      },
+      {
+         "command":"Create Drawing Element"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Drawing Element From Plan View"
+      },
+      {
+         "command":"Create Drawing Element From PlanView"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Drawing Element From Selected Elements"
+      },
+      {
+         "command":"Create Drawing Element From Selected Elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Select clicked"
+      },
+      {
+         "command":"Select clicked"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Delete clicked"
+      },
+      {
+         "command":"Delete clicked"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Pick up clicked"
+      },
+      {
+         "command":"Pick up clicked"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Change clicked"
+      },
+      {
+         "command":"Change clicked"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Explode clicked"
+      },
+      {
+         "command":"Explode clicked"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Copy clicked (to one story above)"
+      },
+      {
+         "command":"Copy clicked (to one story above)"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Pick up Linked Properties"
+      },
+      {
+         "command":"Pick up Linked Properties"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Fill Linked Properties"
+      },
+      {
+         "command":"Fill Linked Properties"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Dumpclicked"
+      },
+      {
+         "command":"Dump clicked"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Drag"
+      },
+      {
+         "command":"Selected: Drag"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Stretch"
+      },
+      {
+         "command":"Selected: Stretch"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Resize"
+      },
+      {
+         "command":"Selected: Resize"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Rotate"
+      },
+      {
+         "command":"Selected: Rotate"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Mirror"
+      },
+      {
+         "command":"Selected: Mirror"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Elevate (2M)"
+      },
+      {
+         "command":"Selected: Elevate (2M)"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Drag"
+      },
+      {
+         "command":"Clicked: Drag"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Stretch"
+      },
+      {
+         "command":"Clicked: Stretch"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Resize"
+      },
+      {
+         "command":"Clicked: Resize"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Rotate"
+      },
+      {
+         "command":"Clicked: Rotate"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Mirror"
+      },
+      {
+         "command":"Clicked: Mirror"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Elevate (2M)"
+      },
+      {
+         "command":"Clicked: Elevate (2M)"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Group elements"
+      },
+      {
+         "command":"Selected: Group elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Ungroup elements"
+      },
+      {
+         "command":"Selected: Ungroup elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Lock elements"
+      },
+      {
+         "command":"Selected: Lock elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Unlock elements"
+      },
+      {
+         "command":"Selected: Unlock elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Selected: Bring Forward elements"
+      },
+      {
+         "command":"Selected: Bring Forward elements"
+      },
+      {
+         "comment":"Element Test",
+         "command":"Selected: Send Backward elements"
+      },
+      {
+         "command":"Selected: Send Backward elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Group elements"
+      },
+      {
+         "command":"Clicked: Group elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Ungroup elements"
+      },
+      {
+         "command":"Clicked: Ungroup elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Lock elements"
+      },
+      {
+         "command":"Clicked: Lock elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Unlock elements"
+      },
+      {
+         "command":"Clicked: Unlock elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Bring Forward elements"
+      },
+      {
+         "command":"Clicked: Bring Forward elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Send Backward elements"
+      },
+      {
+         "command":"Clicked: Send Backward elements"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Switch Suspend groups"
+      },
+      {
+         "command":"Switch Suspend groups"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Change info"
+      },
+      {
+         "command":"Clicked: Change info"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Clicked: Change (element specific)"
+      },
+      {
+         "command":"Clicked: Change (element specific)"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Defaults: Change (element specific)"
+      },
+      {
+         "command":"Defaults: Change (element specific)"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Poly: Adjust node"
+      },
+      {
+         "command":"Poly: Adjust node"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Poly: Insert node"
+      },
+      {
+         "command":"Poly: Insert node"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Poly: Delete node"
+      },
+      {
+         "command":"Poly: Delete node"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Poly: Delete hole"
+      },
+      {
+         "command":"Poly: Delete hole"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Poly: New hole"
+      },
+      {
+         "command":"Poly: New hole"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Wall: stretch"
+      },
+      {
+         "command":"Wall: stretch"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Column: drag and rotate"
+      },
+      {
+         "command":"Column: drag and rotate"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Beam: enlarge holes"
+      },
+      {
+         "command":"Beam: enlarge holes"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Window: change fixPoint"
+      },
+      {
+         "command":"Window: change fixPoint"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Object: drag and rotate"
+      },
+      {
+         "command":"Object: drag and rotate"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Slab: delete node and change pen"
+      },
+      {
+         "command":"Slab: delete node and change pen"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Roof: add node and reset sides"
+      },
+      {
+         "command":"Roof: add node and reset sides"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Mesh: curve edges and modify ridges"
+      },
+      {
+         "command":"Mesh: curve edges and modify ridges"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Zone: change height, layer"
+      },
+      {
+         "command":"Zone: change height, layer"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Word: new content"
+      },
+      {
+         "command":"Word: new content"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"2D: make red and put arrow"
+      },
+      {
+         "command":"2D: make red and put arrow"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Hotspot: drag, change layer and make blue"
+      },
+      {
+         "command":"Hotspot: drag, change layer and make blue"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Spline: remove arrow"
+      },
+      {
+         "command":"Spline: remove arrow"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"CutPlane: reverse direction andincrease depth"
+      },
+      {
+         "command":"CutPlane: reverse direction and increase depth"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Hatch: delete node, change pen and rotate ref.vector"
+      },
+      {
+         "command":"Hatch: delete node, change pen and rotate ref.vector"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"PolyLine: change pen, layer, arrow..."
+      },
+      {
+         "command":"PolyLine: change pen, layer, arrow..."
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Label: change..."
+      },
+      {
+         "command":"Label: change..."
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Dimension: change..."
+      },
+      {
+         "command":"Dimension: change..."
+      },
+      {
+         "comment":"  Element Test",
+         "command":"LevelDimension: change..."
+      },
+      {
+         "command":"LevelDimension: change..."
+      },
+      {
+         "comment":"  Element Test",
+         "command":"RadialDimension: change..."
+      },
+      {
+         "command":"RadialDimension: change..."
+      },
+      {
+         "comment":"  Element Test",
+         "command":"AngleDimension: change..."
+      },
+      {
+         "command":"AngleDimension: change..."
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Detail: change..."
+      },
+      {
+         "command":"Detail: change..."
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Dimensions: change to custom text"
+      },
+      {
+         "command":"Dimensions: change to custom text"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Drawing: change position, border and title"
+      },
+      {
+         "command":"Drawing: change position, border and title"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Int. Elevation: change a few segments"
+      },
+      {
+         "command":"Int. Elevation: change a few segments"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Avoid flashing - (bad)"
+      },
+      {
+         "command":"Avoid flashing - (bad)"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Avoid flashing - (better)"
+      },
+      {
+         "command":"Avoid flashing - (better)"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Avoid flashing - (best)"
+      },
+      {
+         "command":"Avoid flashing - (best)"
+      },
+      {
+         "comment":"Element Test",
+         "command":"Create custom group"
+      },
+      {
+         "command":"Create custom group"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"List my groups"
+      },
+      {
+         "command":"List my groups"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Change my groups"
+      },
+      {
+         "command":"Change my groups"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Unbind my groups"
+      },
+      {
+         "command":"Unbind my groups"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create element set from selection"
+      },
+      {
+         "command":"Create element set from selection"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Delete element sets of selected"
+      },
+      {
+         "command":"Delete element sets of selected"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Solid Operation Link"
+      },
+      {
+         "command":"Create Solid Operation Link"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Remove Solid Operation Link"
+      },
+      {
+         "command":"Remove Solid Operation Link"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"List Solid Link Targets"
+      },
+      {
+         "command":"List Solid Link Targets"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"List Solid Link Operators"
+      },
+      {
+         "command":"List Solid Link Operators"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Create Hotlink"
+      },
+      {
+         "command":"Create Hotlink"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Update Hotlink"
+      },
+      {
+         "command":"Update Hotlink"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Delete Hotlink"
+      },
+      {
+         "command":"Delete Hotlink"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Break Hotlink"
+      },
+      {
+         "command":"Break Hotlink"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"List Hotlinks"
+      },
+      {
+         "command":"List Hotlinks"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Delete the active camera set"
+      },
+      {
+         "command":"Delete the active camera set"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Delete same type camera set"
+      },
+      {
+         "command":"Delete same type camera set"
+      },
+      {
+         "comment":" Element Test",
+         "command":"Dump Zone"
+      },
+      {
+         "command":"Dump Zone"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Dump Wall"
+      },
+      {
+         "command":"Dump Wall"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Neig to coordinate"
+      },
+      {
+         "command":"Neig to coordinate"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Bounds of an element"
+      },
+      {
+         "command":"Bounds of an element"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Draw Symbol Hotspots"
+      },
+      {
+         "command":"Draw Symbol Hotspots"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Calculate quantities"
+      },
+      {
+         "command":"Calculate quantities"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"List components"
+      },
+      {
+         "command":"List components"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Set toolbox item to be clicked"
+      },
+      {
+         "command":"Set toolbox item to be clicked"
+      },
+      {
+         "comment":"  Element Test",
+         "command":"Change Subtype settings"
+      },
+      {
+         "command":"Change Subtype settings"
+      },
+      {
+         "comment":"  DG Test",
+         "command":"Fill Settings"
+      },
+      {
+         "command":"Fill Settings"
+      },
+      {
+         "comment":"  DG Test",
+         "command":"Library Browser"
+      },
+      {
+         "command":"Library Browser"
+      },
+      {
+         "comment":"  DG Test",
+         "command":"User item drawing"
+      },
+      {
+         "command":"User item drawing"
+      },
+      {
+         "comment":"  DG Test",
+         "command":"Tree view test"
+      },
+      {
+         "command":"Tree view test"
+      },
+      {
+         "comment":"  DG Test",
+         "command":"Custom materials"
+      },
+      {
+         "command":"Custom materials"
+      },
+      {
+         "comment":"  DG Test",
+         "command":"Progress window"
+      },
+      {
+         "command":"Progress window"
+      },
+      {
+         "comment":"  DG Test",
+         "command":"UC test"
+      },
+      {
+         "command":"UC test"
+      },
+      {
+         "comment":"  DG Test",
+         "command":"Profile Controls"
+      },
+      {
+         "command":"Profile Controls"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Create new detail database"
+      },
+      {
+         "command":"Create new detail database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Rename detail database"
+      },
+      {
+         "command":"Rename detail database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Delete detail database"
+      },
+      {
+         "command":"Delete detail database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Dump details"
+      },
+      {
+         "command":"Dump details"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Create new layout database"
+      },
+      {
+         "command":"Create new layout database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Rename layout database"
+      },
+      {
+         "command":"Rename layout database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Delete layout database"
+      },
+      {
+         "command":"Delete layout database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Dump layouts"
+      },
+      {
+         "command":"Dump layouts"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Dump drawing link info"
+      },
+      {
+         "command":"Dump drawing link info"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Change all drawings"
+      },
+      {
+         "command":"Change all drawings"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Change Master"
+      },
+      {
+         "command":"Change Master"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Dump sections"
+      },
+      {
+         "command":"Dump sections"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Dump elevations"
+      },
+      {
+         "command":"Dump elevations"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Dump interior elevations"
+      },
+      {
+         "command":"Dump interior elevations"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Create new worksheet database"
+      },
+      {
+         "command":"Create new worksheet database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Rename worksheet database"
+      },
+      {
+         "command":"Rename worksheet database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Delete worksheet database"
+      },
+      {
+         "command":"Delete worksheet database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Dump worksheets"
+      },
+      {
+         "command":"Dump worksheets"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Create new document 3D database"
+      },
+      {
+         "command":"Create new document 3D database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Rename document 3D database"
+      },
+      {
+         "command":"Rename document 3D database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Delete document 3D database"
+      },
+      {
+         "command":"Delete document 3D database"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Dump document3Ds"
+      },
+      {
+         "command":"Dump document3Ds"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Change document3D settings"
+      },
+      {
+         "command":"Change document3D settings"
+      },
+      {
+         "comment":"  Database Control add-on",
+         "command":"Create Subset"
+      },
+      {
+         "command":"Create Subset"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Null Pointer"
+      },
+      {
+         "command":"Null Pointer"
+      },
+      {
+         "comment":"  Crash Detection add-on # duplicated command name",
+         "command":"Invalid Pointer"
+      },
+      {
+         "command":"Invalid Pointer"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Double free"
+      },
+      {
+         "command":"Double free"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Double delete"
+      },
+      {
+         "command":"Double delete"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Null Pointer in a new thread"
+      },
+      {
+         "command":"Null Pointer in a new thread"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Allocate 0.5GBytes"
+      },
+      {
+         "command":"Allocate 0.5GBytes"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Recursive stack overflow"
+      },
+      {
+         "command":"Recursive stack overflow"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Main thread hang"
+      },
+      {
+         "command":"Main thread hang"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Main thread hang (10)"
+      },
+      {
+         "command":"Mainthread hang (10)"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Main thread hang (45)"
+      },
+      {
+         "command":"Main thread hang (45)"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Main thread hang crash (35)"
+      },
+      {
+         "command":"Main thread hang crash(35)"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Debug Break"
+      },
+      {
+         "command":"Debug Break"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Future Command 3"
+      },
+      {
+         "command":"Future Command 3"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Future Command 4"
+      },
+      {
+         "command":"Future Command 4"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Catch Exceptions"
+      },
+      {
+         "command":"Catch Exceptions"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Integer Zero divide"
+      },
+      {
+         "command":"Integer Zero divide"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Float Zero divide"
+      },
+      {
+         "command":"Float Zero divide"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Report Fatal Error"
+      },
+      {
+         "command":"Report Fatal Error"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Report Non-fatal Error"
+      },
+      {
+         "command":"Report Non-fatal Error"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"STATUS_HEAP_CORRUPTION"
+      },
+      {
+         "command":"STATUS_HEAP_CORRUPTION"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Overwrite return address"
+      },
+      {
+         "command":"Overwrite return address"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Crash with WER"
+      },
+      {
+         "command":"Crash with WER"
+      },
+      {
+         "comment":"  Crash Detection add-on",
+         "command":"Stack smash w/o SIGABRT"
+      },
+      {
+         "command":"Stack smash w/o SIGABRT"
+      },
+      {
+         "comment":"  Communication Manager",
+         "command":"Pass Custom Parameters"
+      },
+      {
+         "command":"Pass Custom Parameters"
+      },
+      {
+         "comment":"  Communication Manager",
+         "command":"Avoid the Setting Dialog"
+      },
+      {
+         "command":"Avoid the Setting Dialog"
+      },
+      {
+         "comment":"  Communication Manager",
+         "command":"Test \"Put Text\" availability"
+      },
+      {
+         "command":"Test \"Put Text\" availability"
+      },
+      {
+         "comment":"  Communication Manager",
+         "command":"Call \"Put Text\""
+      },
+      {
+         "command":"Call \"Put Text\""
+      },
+      {
+         "comment":"  Communication Manager",
+         "command":"Link to client"
+      },
+      {
+         "command":"Link to client"
+      },
+      {
+         "comment":"  Communication Manager",
+         "command":"Dump the 3D Model"
+      },
+      {
+         "command":"Dump the 3D Model"
+      },
+      {
+         "comment":"  Communication Manager",
+         "command":"Save External Files as DWG"
+      },
+      {
+         "command":"Save External Files as DWG"
+      },
+      {
+         "comment":"  Communication Manager",
+         "command":"Open DWG into library part"
+      },
+      {
+         "command":"Open DWG into library part"
+      },
+      {
+         "comment":"  Communication Client",
+         "command":"Place Text"
+      },
+      {
+         "command":"Place Text"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Save As Tiff"
+      },
+      {
+         "command":"Save As Tiff"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Save As Ifc"
+      },
+      {
+         "command":"Save As Ifc"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Load Libraries"
+      },
+      {
+         "command":"Load Libraries"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Print"
+      },
+      {
+         "command":"Print"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Copy to Clipboard (6.00)"
+      },
+      {
+         "command":"Copy to Clipboard (6.00)"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Copy to Clipboard (Current)"
+      },
+      {
+         "command":"Copy to Clipboard (Current)"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Switch to plan"
+      },
+      {
+         "command":"Switch to plan"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Switch to section"
+      },
+      {
+         "command":"Switch to section"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Switch to detail drawing"
+      },
+      {
+         "command":"Switch to detail drawing"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Switch to 3D"
+      },
+      {
+         "command":"Switch to 3D"
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Switch to Section..."
+      },
+      {
+         "command":"Switch to Section..."
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Switch to Elevation..."
+      },
+      {
+         "command":"Switch to Elevation..."
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Switch to Interior Elevation..."
+      },
+      {
+         "command":"Switch to Interior Elevation..."
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Switch to Detail..."
+      },
+      {
+         "command":"Switch to Detail..."
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Switch to Master Layout..."
+      },
+      {
+         "command":"Switch to Master Layout..."
+      },
+      {
+         "comment":"  Automate Functions add-on",
+         "command":"Switch to Layout..."
+      },
+      {
+         "command":"Switch to Layout..."
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Count attributes"
+      },
+      {
+         "command":"Count attributes"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"List attributes"
+      },
+      {
+         "command":"List attributes"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Rename attributes"
+      },
+      {
+         "command":"Rename attributes"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Copy attributes"
+      },
+      {
+         "command":"Copy attributes"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Delete attributes"
+      },
+      {
+         "command":"Delete attributes"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Create a layer: Training"
+      },
+      {
+         "command":"Create a layer: Training"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Create linetypes: Training XXX"
+      },
+      {
+         "command":"Create linetypes: Training XXX"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Create fills:  Training XXX"
+      },
+      {
+         "command":"Create fills:  Training XXX"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Create compWall:  Extended CompWall (API)"
+      },
+      {
+         "command":"Create compWall:  Extended CompWall (API)"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Create Profile"
+      },
+      {
+         "command":"Create Profile"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Create pen table"
+      },
+      {
+         "command":"Create pen table"
+      },
+      {
+         "comment":" Attribute Test",
+         "command":"Create MEP System"
+      },
+      {
+         "command":"Create MEP System"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Hide layer: 2D Drafting - General"
+      },
+      {
+         "command":"Hide layer: 2D Drafting - General"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Change linetype: Wave"
+      },
+      {
+         "command":"Change linetype: Wave"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Change compWall: Extended CompWall"
+      },
+      {
+         "command":"Change compWall: Extended CompWall"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Create attributes"
+      },
+      {
+         "command":"Create attributes"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Rename my attributes"
+      },
+      {
+         "command":"Rename my attributes"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Delete my attributes"
+      },
+      {
+         "command":"Delete my attributes"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Invert layer: 2D Drafting - General"
+      },
+      {
+         "command":"Invert layer: 2D Drafting - General"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Create layer combination: \"My TW Layercomb\""
+      },
+      {
+         "command":"Create layer combination: \"My TW Layercomb\""
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"List layers"
+      },
+      {
+         "command":"List layers"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"List layer combinations"
+      },
+      {
+         "command":"List layer combinations"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Create layer: AAAA"
+      },
+      {
+         "command":"Create layer: AAAA"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Delete layer: AAAA"
+      },
+      {
+         "command":"Delete layer: AAAA"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Lock/Unlock layer: AAAA"
+      },
+      {
+         "command":"Lock/Unlock layer: AAAA"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Lock and Hide layer: ARCHICAD"
+      },
+      {
+         "command":"Lock and Hide layer: ARCHICAD"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Create layer combination: BBBB"
+      },
+      {
+         "command":"Create layer combination: BBBB"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Delete layer combination: BBBB"
+      },
+      {
+         "command":"Delete layer combination: BBBB"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"Show/Hide layers in combination: BBBB"
+      },
+      {
+         "command":"Show/Hide layers in combination: BBBB"
+      },
+      {
+         "comment":"  Attribute Test",
+         "command":"List all profile descriptions"
+      },
+      {
+         "command":"List all profile descriptions"
+      },
+      {
+         "comment":"  APIOutputFramework_Test",
+         "command":"Find by GUID"
+      },
+      {
+         "command":"Find by GUID"
+      },
+      {
+         "comment":"  3D Test",
+         "command":"Get 3D of the clicked element"
+      },
+      {
+         "command":"Get 3D of the clicked element"
+      },
+      {
+         "comment":"  3D Test",
+         "command":"Get actual 3D model"
+      },
+      {
+         "command":"Get actual 3D model"
+      },
+      {
+         "comment":"  SkyLight",
+         "command":"x"
+      },
+      {
+         "command":"x"
+      },
+      {
+         "comment":"  SkyLight",
+         "command":"y"
+      },
+      {
+         "command":"y"
+      },
+      {
+         "comment":"  SkyLight",
+         "command":"z"
+      },
+      {
+         "command":"z"
+      },
+      {
+         "comment":"  SkyLight",
+         "command":"t"
+      },
+      {
+         "command":"t"
+      },
+      {
+         "comment":"  Selections",
+         "command":"Selections"
+      },
+      {
+         "command":"Selections"
+      },
+      {
+         "comment":"  Search  Replace",
+         "command":"Search & Replace Text..."
+      },
+      {
+         "command":"Search & Replace Text..."
+      },
+      {
+         "comment":"  Quick Layers",
+         "command":"Show/Hide Toggle"
+      },
+      {
+         "command":"Show/Hide Toggle"
+      },
+      {
+         "comment":"  Quick Layers",
+         "command":"Lock/Unlock Toggle"
+      },
+      {
+         "command":"Lock/Unlock Toggle"
+      },
+      {
+         "comment":"  Quick Layers",
+         "command":"Hide Selections"
+      },
+      {
+         "command":"Hide Selections"
+      },
+      {
+         "comment":"  Quick Layers",
+         "command":"Lock Selections"
+      },
+      {
+         "command":"Lock Selections"
+      },
+      {
+         "comment":"  Quick Layers",
+         "command":"Unlock Selections"
+      },
+      {
+         "command":"Unlock Selections"
+      },
+      {
+         "comment":"  Quick Layers",
+         "command":"Hide Others"
+      },
+      {
+         "command":"Hide Others"
+      },
+      {
+         "comment":"  Quick Layers",
+         "command":"Lock Others"
+      },
+      {
+         "command":"Lock Others"
+      },
+      {
+         "comment":"  Quick Layers",
+         "command":"Undo Layer Change"
+      },
+      {
+         "command":"Undo Layer Change"
+      },
+      {
+         "comment":"  Quick Layers",
+         "command":"Redo Layer Change"
+      },
+      {
+         "command":"Redo Layer Change"
+      },
+      {
+         "comment":"  Quick Layers",
+         "command":"Quick Layers"
+      },
+      {
+         "command":"Quick Layers"
+      },
+      {
+         "comment":"  Modify Wall",
+         "command":"Reference Line..."
+      },
+      {
+         "command":"Reference Line..."
+      },
+      {
+         "comment":"  Modify Wall",
+         "command":"Invert Direction"
+      },
+      {
+         "command":"Invert Direction"
+      },
+      {
+         "comment":"  Merge Engine",
+         "command":"Smart Merge Options..."
+      },
+      {
+         "command":"Smart Merge Options..."
+      },
+      {
+         "comment":"  Interactive Schedule",
+         "command":"Scheme Settings..."
+      },
+      {
+         "command":"Scheme Settings..."
+      },
+      {
+         "comment":"  Interactive Schedule",
+         "command":"Project Index Schemes..."
+      },
+      {
+         "command":"Project Index Schemes..."
+      },
+      {
+         "comment":"  Find by Properties",
+         "command":"Property Objects..."
+      },
+      {
+         "command":"Property Objects..."
+      },
+      {
+         "comment":"  Find by Properties",
+         "command":"Elements..."
+      },
+      {
+         "command":"Elements..."
+      },
+      {
+         "comment":"  Element Information",
+         "command":"Element Information"
+      },
+      {
+         "command":"Element Information"
+      },
+      {
+         "comment":"  Element ID Manager",
+         "command":"Element ID Manager..."
+      },
+      {
+         "command":"Element ID Manager..."
+      },
+      {
+         "comment":"  Automatic Dimensioning",
+         "command":"Exterior Dimensioning..."
+      },
+      {
+         "command":"Exterior Dimensioning..."
+      },
+      {
+         "comment":"  Automatic Dimensioning",
+         "command":"Interior Dimensioning..."
+      },
+      {
+         "command":"Interior Dimensioning..."
+      },
+      {
+         "comment":"  Automatic Dimensioning",
+         "command":"Show neig IDs"
+      },
+      {
+         "command":"Show neig IDs"
+      },
+      {
+         "comment":"  Attribute Manager",
+         "command":"Attribute Manager ..."
+      },
+      {
+         "command":"Attribute Manager ..."
+      },
+      {
+         "comment":"  Attribute Manager",
+         "command":"Attribute Manager Test"
+      },
+      {
+         "command":"Attribute Manager Test"
+      },
+      {
+         "command":"Replace Attributes..."
+      },
+      {
+         "comment":"  Active Layer",
+         "command":"Active Layer"
+      },
+      {
+         "command":"Active Layer"
+      },
+      {
+         "comment":"  MEP Modeler Test",
+         "command":"Test MEP Add-On"
+      },
+      {
+         "command":"Test MEP Add-On"
+      },
+      {
+         "comment":"  MEP Modeler",
+         "command":"MEP Routing"
+      },
+      {
+         "command":"MEP Routing"
+      },
+      {
+         "comment":"  MEP Modeler",
+         "command":"MEP Preferences..."
+      },
+      {
+         "command":"MEP Preferences..."
+      },
+      {
+         "comment":"  MEP Modeler",
+         "command":"Select Connected Elements"
+      },
+      {
+         "command":"Select Connected Elements"
+      },
+      {
+         "comment":"  MEP Modeler",
+         "command":"Resize MEP Elements..."
+      },
+      {
+         "command":"Resize MEP Elements..."
+      },
+      {
+         "comment":"  MEP Modeler",
+         "command":"Detect Collisions"
+      },
+      {
+         "command":"Detect Collisions"
+      },
+      {
+         "comment":"  MEP Modeler",
+         "command":"Edit Selected Elements..."
+      },
+      {
+         "command":"Edit Selected Elements..."
+      },
+      {
+         "comment":"  MEP Modeler",
+         "command":"Enable MEP Modeling"
+      },
+      {
+         "command":"Enable MEP Modeling"
+      },
+      {
+         "comment":"  MEP Modeler",
+         "command":"MEP Object Dump Guids"
+      },
+      {
+         "command":"MEP Object Dump Guids"
+      },
+      {
+         "comment":"  TOP Stempel",
+         "command":"TOP Stempel platzieren..."
+      },
+      {
+         "command":"TOP Stempel platzieren..."
+      },
+      {
+         "comment":"  TOP Stempel",
+         "command":"TOP Stempel aktualisieren"
+      },
+      {
+         "command":"TOP Stempel aktualisieren"
+      },
+      {
+         "comment":"  TOP Stempel",
+         "command":"Alle TOP Stempel lschen"
+      },
+      {
+         "command":"Alle TOP Stempel lschen"
+      },
+      {
+         "comment":"  Spell Check",
+         "command":"Open Spell Checker"
+      },
+      {
+         "command":"Open Spell Checker"
+      },
+      {
+         "comment":"  Spell Check",
+         "command":"Find & Save Errors in Editable Elements"
+      },
+      {
+         "command":"Find & Save Errors in Editable Elements"
+      },
+      {
+         "comment":"  Spell Check",
+         "command":"Find & Save Errors in All Elements"
+      },
+      {
+         "command":"Find & Save Errors in All Elements"
+      },
+      {
+         "comment":"  Spell Check",
+         "command":"Word Services"
+      },
+      {
+         "command":"Word Services"
+      },
+      {
+         "comment":"  Spell Check",
+         "command":"System"
+      },
+      {
+         "command":"System"
+      },
+      {
+         "comment":"  SiteMaker",
+         "command":"Open coordinate file"
+      },
+      {
+         "command":"Open coordinate file"
+      },
+      {
+         "comment":"  SiteMaker",
+         "command":"Create New Site"
+      },
+      {
+         "command":"Create New Site"
+      },
+      {
+         "comment":"  SiteMaker",
+         "command":"Current Site Report"
+      },
+      {
+         "command":"Current Site Report"
+      },
+      {
+         "comment":"  SiteMaker",
+         "command":"Preferences"
+      },
+      {
+         "command":"Preferences"
+      },
+      {
+         "comment":"  SiteMaker",
+         "command":"Show Toolbox"
+      },
+      {
+         "command":"Show Toolbox"
+      },
+      {
+         "comment":"  Secondary Dimensions",
+         "command":"Convert Dimensions..."
+      },
+      {
+         "command":"Convert Dimensions..."
+      },
+      {
+         "comment":"  Secondary Dimensions",
+         "command":"Refresh Converted Dimensions"
+      },
+      {
+         "command":"Refresh Converted Dimensions"
+      },
+      {
+         "comment":"  Secondary Dimensions",
+         "command":"Remove Converted Dimensions"
+      },
+      {
+         "command":"Remove Converted Dimensions"
+      },
+      {
+         "comment":"  Parapet Dimensions",
+         "command":"Create..."
+      },
+      {
+         "command":"Create..."
+      },
+      {
+         "comment":"  Parapet Dimensions",
+         "command":"Refresh"
+      },
+      {
+         "command":"Refresh"
+      },
+      {
+         "comment":"  Parapet Dimensions",
+         "command":"Remove"
+      },
+      {
+         "command":"Remove"
+      },
+      {
+         "comment":"  List Areas",
+         "command":"Area List..."
+      },
+      {
+         "command":"Area List..."
+      },
+      {
+         "comment":"  Grid Tool",
+         "command":"Grid System ..."
+      },
+      {
+         "command":"Grid System ..."
+      },
+      {
+         "comment":"  CostGroup",
+         "command":"Calculation about Costgroups and Tasks"
+      },
+      {
+         "command":"Calculation about Costgroups and Tasks"
+      },
+      {
+         "comment":"  CostGroup",
+         "command":"Calculation about AVA"
+      },
+      {
+         "command":"Calculation about AVA"
+      },
+      {
+         "comment":"  ArchitectsJURY Uploader",
+         "command":"ArchitectsJURY Uploader"
+      },
+      {
+         "command":"ArchitectsJURY Uploader"
+      },
+      {
+         "comment":" ArchiGlazing",
+         "command":"ArchiGlazing"
+      },
+      {
+         "command":"ArchiGlazing"
+      },
+      {
+         "comment":"  Align View",
+         "command":"Align View..."
+      },
+      {
+         "command":"Align View..."
+      },
+      {
+         "comment":"  Modify Library Parts",
+         "command":"Add Parameters..."
+      },
+      {
+         "command":"Add Parameters..."
+      },
+      {
+         "comment":"  Modify Library Parts",
+         "command":"Add Text to Scripts..."
+      },
+      {
+         "command":"Add Text to Scripts..."
+      },
+      {
+         "comment":"  IFC 2x3",
+         "command":"IFC Manager"
+      },
+      {
+         "command":"IFC Manager"
+      },
+      {
+         "comment":"  IFC 2x3",
+         "command":"Options..."
+      },
+      {
+         "command":"Options..."
+      },
+      {
+         "command":"Merge to IFC model..."
+      },
+      {
+         "comment":"  DWG/DXF Input/Output",
+         "command":"Xref Manager..."
+      },
+      {
+         "command":"Xref Manager..."
+      },
+      {
+         "comment":"  DWG/DXF Input/Output",
+         "command":"Attach Xref..."
+      },
+      {
+         "command":"Attach Xref..."
+      },
+      {
+         "comment":"  DWG/DXF Input/Output",
+         "command":"Import Blocks from DXF/DWG"
+      },
+      {
+         "command":"Import Blocks from DXF/DWG"
+      },
+      {
+         "comment":"  DWG/DXF Input/Output",
+         "command":"DXF-DWG Translation Setup..."
+      },
+      {
+         "command":"DXF-DWG Translation Setup..."
+      },
+      {
+         "comment":"  DGN In-Out",
+         "command":"Draw color set"
+      },
+      {
+         "command":"Draw color set"
+      },
+      {
+         "comment":"  DGN In-Out",
+         "command":"Draw line set"
+      },
+      {
+         "command":"Draw line set"
+      },
+      {
+         "comment":"  DGN In-Out",
+         "command":"Draw text set"
+      },
+      {
+         "command":"Draw text set"
+      },
+      {
+         "comment":"  DGN In-Out",
+         "command":"Draw hatch set"
+      },
+      {
+         "command":"Draw hatch set"
+      },
+      {
+         "comment":"  CINEMA 4D Exchange",
+         "command":"Edit selected elements in CINEMA 4D"
+      },
+      {
+         "command":"Edit selected elements in CINEMA 4D"
+      },
+      {
+         "comment":"  CINEMA 4D Exchange",
+         "command":"Create new element in CINEMA 4D"
+      },
+      {
+         "command":"Create new element in CINEMA 4D"
+      },
+      {
+         "comment":"  CINEMA 4D Exchange",
+         "command":"Remove CINEMA 4D preferences"
+      },
+      {
+         "command":"Remove CINEMA 4D preferences"
+      },
+      {
+         "comment":"  Search  Replace in Library Parts",
+         "command":"Library Parts..."
+      },
+      {
+         "command":"Library Parts..."
+      },
+      {
+         "comment":"  Search  Replace in Library Parts",
+         "command":"Library Part Parameters..."
+      },
+      {
+         "command":"Library Part Parameters..."
+      },
+      {
+         "comment":"  RAL Colors",
+         "command":"Import RAL Colors..."
+      },
+      {
+         "command":"Import RAL Colors..."
+      },
+      {
+         "comment":"  PolyCount",
+         "command":"PolyCount"
+      },
+      {
+         "command":"PolyCount"
+      },
+      {
+         "comment":"  Mesh to Roof",
+         "command":"Create Roofs from Mesh"
+      },
+      {
+         "command":"Create Roofs from Mesh"
+      },
+      {
+         "comment":"  Lider",
+         "command":"Import LIDER"
+      },
+      {
+         "command":"Import LIDER"
+      },
+      {
+         "comment":"  Intersections in Layer Combinations",
+         "command":"Intersections in Layer Combinations"
+      },
+      {
+         "command":"Intersections in Layer Combinations"
+      },
+      {
+         "comment":"  Fiebdc",
+         "command":"Import FIEBDC"
+      },
+      {
+         "command":"Import FIEBDC"
+      },
+      {
+         "comment":"  IFC 2x2",
+         "command":"IFC GUIDs of selected elements"
+      },
+      {
+         "command":"IFC GUIDs of selected elements"
+      },
+      {
+         "comment":"  IFC 2x2",
+         "command":"Tree View..."
+      },
+      {
+         "command":"Tree View..."
+      },
+      {
+         "comment":"  IFC 2x2",
+         "command":"Update with custom PSET..."
+      },
+      {
+         "command":"Update with custom PSET..."
+      },
+      {
+         "comment":"  IFC 2x2",
+         "command":"Associate covering"
+      },
+      {
+         "command":"Associate covering"
+      },
+      {
+         "comment":"  IFC 2x2",
+         "command":"Update properties..."
+      },
+      {
+         "command":"Update properties..."
+      },
+      {
+         "comment":"  IFC 2x2",
+         "command":"Import IFC properties and hierarchy..."
+      },
+      {
+         "command":"Import IFC properties and hierarchy..."
+      },
+      {
+         "comment":"  IFC 2x2",
+         "command":"Check for IFC Add-on Updates..."
+      },
+      {
+         "command":"Check for IFC Add-on Updates..."
+      },
+      {
+         "comment":"  Construction Simulation",
+         "command":"Show Task List"
+      },
+      {
+         "command":"Show Task List"
+      },
+      {
+         "comment":"  Construction Simulation",
+         "command":"Open Project..."
+      },
+      {
+         "command":"Open Project..."
+      },
+      {
+         "comment":"  Construction Simulation",
+         "command":"Save Project..."
+      },
+      {
+         "command":"Save Project..."
+      },
+      {
+         "comment":"  Construction Simulation",
+         "command":"Save Project As..."
+      },
+      {
+         "command":"Save Project As..."
+      },
+      {
+         "comment":"  Construction Simulation",
+         "command":"Create Animation..."
+      },
+      {
+         "command":"Create Animation..."
+      },
+      {
+         "comment":"  Check Duplicates # duplicated command name",
+         "command":"Select..."
+      },
+      {
+         "command":"Select..."
+      },
+      {
+         "comment":"  Check Duplicates",
+         "command":"Delete..."
+      },
+      {
+         "command":"Delete..."
+      },
+      {
+         "comment":"  3DStudio In",
+         "command":"Convert 3ds to GDL object..."
+      },
+      {
+         "command":"Convert 3ds to GDL object..."
+      },
+      {
+         "comment":"  3Dconnexion Enabler",
+         "command":"Camera Mode"
+      },
+      {
+         "command":"Camera Mode"
+      },
+      {
+         "comment":"  3Dconnexion Enabler",
+         "command":"Object Mode"
+      },
+      {
+         "command":"Object Mode"
+      },
+      {
+         "comment":"  TrussMaker",
+         "command":"Create Truss..."
+      },
+      {
+         "command":"Create Truss..."
+      },
+      {
+         "comment":"  TrussMaker",
+         "command":"Edit Truss..."
+      },
+      {
+         "command":"Edit Truss..."
+      },
+      {
+         "comment":"  Structural Property",
+         "command":"Import Standard Steel Profile"
+      },
+      {
+         "command":"Import Standard Steel Profile"
+      },
+      {
+         "comment":"  RoofMaker",
+         "command":"Create a rafter..."
+      },
+      {
+         "command":"Create a rafter..."
+      },
+      {
+         "comment":"  RoofMaker",
+         "command":"Create multiple rafters..."
+      },
+      {
+         "command":"Create multiple rafters..."
+      },
+      {
+         "comment":"  RoofMaker",
+         "command":"Create a hip or valley rafter..."
+      },
+      {
+         "command":"Create a hip or valley rafter..."
+      },
+      {
+         "comment":"  RoofMaker",
+         "command":"Create a trimmer..."
+      },
+      {
+         "command":"Create a trimmer..."
+      },
+      {
+         "comment":"  RoofMaker",
+         "command":"Create a purlin..."
+      },
+      {
+         "command":"Create a purlin..."
+      },
+      {
+         "comment":"  RoofMaker",
+         "command":"Create an eaves purlin..."
+      },
+      {
+         "command":"Createan eaves purlin..."
+      },
+      {
+         "comment":"  RoofMaker",
+         "command":"Create collar beams..."
+      },
+      {
+         "command":"Create collar beams..."
+      },
+      {
+         "comment":"  RoofMaker",
+         "command":"Create tie beams..."
+      },
+      {
+         "command":"Create tie beams..."
+      },
+      {
+         "comment":"  RoofMaker",
+         "command":"Roof Wizard..."
+      },
+      {
+         "command":"Roof Wizard..."
+      },
+      {
+         "comment":"  RoofMaker",
+         "command":"Show RoofMaker toolbox"
+      },
+      {
+         "command":"Show RoofMaker toolbox"
+      },
+      {
+         "comment":"  Profiler",
+         "command":"Profiler"
+      },
+      {
+         "command":"Profiler"
+      },
+      {
+         "comment":"  Interior Wizard",
+         "command":"Create Room Accessories"
+      },
+      {
+         "command":"Create Room Accessories"
+      },
+      {
+         "comment":"  Interior Wizard",
+         "command":"Update Room Accessories"
+      },
+      {
+         "command":"Update Room Accessories"
+      },
+      {
+         "comment":"  ArchiCADMoviePlayer",
+         "command":"ARCHICAD Movie Player"
+      },
+      {
+         "command":"ARCHICAD Movie Player"
+      },
+      {
+         "comment":"  Accessories",
+         "command":"Roof Accessories..."
+      },
+      {
+         "command":"Roof Accessories..."
+      },
+      {
+         "comment":"  Accessories",
+         "command":"Slab Accessories..."
+      },
+      {
+         "command":"Slab Accessories..."
+      },
+      {
+         "comment":"  Accessories",
+         "command":"Wall Accessories..."
+      },
+      {
+         "command":"Wall Accessories..."
+      },
+      {
+         "command":"Junction"
+      },
+      {
+         "command":"Frame"
+      },
+      {
+         "command":"Panel"
+      },
+      {
+         "command":"Accessory"
+      },
+      {
+         "command":"Trees"
+      },
+      {
+         "command":"Corner-Window"
+      },
+      {
+         "command":"SkylightOld"
+      },
+      {
+         "command":"Skylight"
+      },
+      {
+         "command":"Duct Straight"
+      },
+      {
+         "command":"Duct Bend"
+      },
+      {
+         "command":"Duct Terminal"
+      },
+      {
+         "command":"Duct Tee"
+      },
+      {
+         "command":"Duct Transition"
+      },
+      {
+         "command":"Equipment"
+      },
+      {
+         "comment":"  renamed",
+         "command":"Duct In-line"
+      },
+      {
+         "command":"Duct In-line"
+      },
+      {
+         "command":"Duct Take-off"
+      },
+      {
+         "command":"Duct Wye"
+      },
+      {
+         "comment":"  renamed",
+         "command":"Duct More Fittings"
+      },
+      {
+         "command":"Duct More Fittings"
+      },
+      {
+         "command":"Flexible Duct"
+      },
+      {
+         "command":"Pipe Straight"
+      },
+      {
+         "comment":"  duplicated command name",
+         "command":"Pipe Bend"
+      },
+      {
+         "command":"Pipe Bend"
+      },
+      {
+         "comment":"  renamed",
+         "command":"Pipe Terminal"
+      },
+      {
+         "command":"Pipe Terminal"
+      },
+      {
+         "comment":"  duplicated command name",
+         "command":"Pipe Tee"
+      },
+      {
+         "command":"Pipe Tee"
+      },
+      {
+         "comment":"  duplicated command name",
+         "command":"Pipe Wye"
+      },
+      {
+         "command":"Pipe Wye"
+      },
+      {
+         "comment":"  duplicated command name",
+         "command":"Pipe Transition"
+      },
+      {
+         "command":"Pipe Transition"
+      },
+      {
+         "comment":"  duplicated command name",
+         "command":"Pipe Take-off"
+      },
+      {
+         "command":"Pipe Take-off"
+      },
+      {
+         "comment":"  renamed",
+         "command":"Pipe In-line"
+      },
+      {
+         "command":"Pipe In-line"
+      },
+      {
+         "comment":"  renamed",
+         "command":"Pipe More Fittings"
+      },
+      {
+         "command":"Pipe More Fittings"
+      },
+      {
+         "command":"Cable Carrier"
+      },
+      {
+         "comment":"  renamed",
+         "command":"Cable Bend"
+      },
+      {
+         "command":"Cable Bend"
+      },
+      {
+         "comment":"  duplicated command name",
+         "command":"Cable Tee"
+      },
+      {
+         "command":"Cable Tee"
+      },
+      {
+         "command":"Cable Reducer"
+      },
+      {
+         "comment":"  renamed",
+         "command":"Cable More Fittings"
+      },
+      {
+         "command":"Cable More Fittings"
+      },
+      {
+         "comment":"  MEP",
+         "command":"Run Unit Tests"
+      },
+      {
+         "command":"Run Unit Tests"
+      },
+      {
+         "comment":"  IFC",
+         "command":"Run IFC Unit Tests"
+      },
+      {
+         "command":"Run IFC Unit Tests"
+      },
+      {
+         "command":"Browse for Trace Reference..."
+      },
+      {
+         "command":"Reserve All"
+      },
+      {
+         "command":"Offset Constraint"
+      },
+      {
+         "command":"Multiple Offset Constraint"
+      },
+      {
+         "command":"Offset"
+      },
+      {
+         "command":"Create Travel Pack"
+      },
+      {
+         "command":"Import Travel Pack"
+      },
+      {
+         "command":"Local Data Manager"
+      },
+      {
+         "command":"Place Mesh from Surveyors Data..."
+      },
+      {
+         "command":"IFC Translation Setup..."
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Options...(IFC 2x3)"
+      },
+      {
+         "command":"Options...(IFC 2x3)"
+      },
+      {
+         "command":"Import custom IFC Property Set...(IFC 2x3)"
+      },
+      {
+         "command":"Detect IFC Model Changes..."
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"Section Scale..."
+      },
+      {
+         "command":"Section Scale..."
+      },
+      {
+         "command":"Options...(3DStudio In)"
+      },
+      {
+         "command":"Renovation Filter Options..."
+      },
+      {
+         "command":"Graphic Override Rules..."
+      },
+      {
+         "command":"Graphic Override Combinations..."
+      },
+      {
+         "command":"Graphic Overrides from Properties"
+      },
+      {
+         "command":"Renovation Palette"
+      },
+      {
+         "command":"Operation Profiles..."
+      },
+      {
+         "command":"Create Polygonal Opening"
+      },
+      {
+         "command":"Join (and Trim) SelectedElements"
+      },
+      {
+         "command":"Join (and Trim) to Roof/Shell"
+      },
+      {
+         "command":"Disconnect Elements"
+      },
+      {
+         "command":"Extruded Bodies"
+      },
+      {
+         "command":"Split into Single-plane Roofs"
+      },
+      {
+         "command":"Convert Selection to Morph(s)"
+      },
+      {
+         "command":"Thermal Bridge Simulation..."
+      },
+      {
+         "command":"EcoDesigner..."
+      },
+      {
+         "command":"Merge Trimming Bodies"
+      },
+      {
+         "command":"Migrate prepared Projects..."
+      },
+      {
+         "comment":"  Duplicated",
+         "command":"IFC Options..."
+      },
+      {
+         "command":"IFC Options..."
+      },
+      {
+         "command":"Update with IFC Model..."
+      },
+      {
+         "command":"Prepare for Migration..."
+      },
+      {
+         "command":"Google Options..."
+      },
+      {
+         "comment":"  Google Earth Connection",
+         "command":"About..."
+      },
+      {
+         "command":"About..."
+      },
+      {
+         "command":"ED Model Review"
+      },
+      {
+         "command":"Export for BIM Explorer"
+      },
+      {
+         "comment":"  Teamwork Control",
+         "command":"Release Selected Elements"
+      },
+      {
+         "command":"Release Selected Elements"
+      },
+      {
+         "command":"Set Project North"
+      },
+      {
+         "command":"Energy Model Review"
+      },
+      {
+         "command":"Surface Snap"
+      },
+      {
+         "command":"Union"
+      },
+      {
+         "command":"Subtract..."
+      },
+      {
+         "comment":"  Menuben 'Intersect', csak van mar ilyen",
+         "command":"Intersect Morphs' => [847, 0, 0], # Menuben 'Intersect"
+      },
+      {
+         "command":"Intersect Morphs' => [847, 0, 0], # Menuben 'Intersect"
+      },
+      {
+         "command":"Check Solidity"
+      },
+      {
+         "command":"Cover with Faces"
+      },
+      {
+         "command":"Curve & Merge Edges"
+      },
+      {
+         "command":"Smooth & Merge Faces..."
+      },
+      {
+         "command":"Modify Segmentation..."
+      },
+      {
+         "command":"Intersect Morph Faces"
+      },
+      {
+         "command":"Hidden Morph Geometry"
+      },
+      {
+         "command":"Sub-Element Selection"
+      },
+      {
+         "command":"Environment Settings..."
+      },
+      {
+         "command":"Building Systems..."
+      },
+      {
+         "command":"Energy Source Factors..."
+      },
+      {
+         "command":"Energy Costs..."
+      },
+      {
+         "command":"Share GDL Object"
+      },
+      {
+         "command":"Project Location..."
+      },
+      {
+         "command":"Modify Wall Reference Line..."
+      },
+      {
+         "command":"Invert Wall Direction"
+      },
+      {
+         "command":"Modify Slab Reference Plane..."
+      },
+      {
+         "command":"Modify Home Story..."
+      },
+      {
+         "command":"Reload Libraries"
+      },
+      {
+         "command":"Customer Experience..."
+      },
+      {
+         "command":"Adjust Elements to Slabs..."
+      },
+      {
+         "command":"Check for inverted elements"
+      },
+      {
+         "command":"Building Materials..."
+      },
+      {
+         "command":"Adjust Elements to Slabs..."
+      },
+      {
+         "command":"Open Dxf"
+      },
+      {
+         "command":"Publish Dxf"
+      },
+      {
+         "command":"Publish BIMx Hyper-model..."
+      },
+      {
+         "command":"Merge Elements"
+      },
+      {
+         "command":"Reset GDL Tool defaults"
+      },
+      {
+         "command":"Energy Simulation Options..."
+      },
+      {
+         "command":"Reset Renovation Status"
+      },
+      {
+         "command":"Dump All Migration Tables"
+      },
+      {
+         "command":"GSM Observer"
+      },
+      {
+         "command":"Rhino LCF Observer"
+      },
+      {
+         "command":"Create revisions changes"
+      },
+      {
+         "command":"Close and Create revisions issue"
+      },
+      {
+         "command":"Write revision structure in XML"
+      },
+      {
+         "command":"Enable Saving Surface as GSM"
+      },
+      {
+         "command":"Change Manager"
+      },
+      {
+         "command":"Render Safe Frame"
+      },
+      {
+         "command":"Render Marquee Region"
+      },
+      {
+         "command":"RenderMarquee Region and Crop"
+      },
+      {
+         "command":"Legacy..."
+      },
+      {
+         "command":"Generate TW General Error"
+      },
+      {
+         "command":"Generate TW General Warning"
+      },
+      {
+         "command":"Generate TW GetContent Error"
+      },
+      {
+         "command":"Generate TW Receive Error (Autosave)"
+      },
+      {
+         "command":"Generate TW Receive Error (GetContent)"
+      },
+      {
+         "command":"Export to renderer"
+      },
+      {
+         "command":"Issue History..."
+      },
+      {
+         "command":"Create Background Conversion Timer"
+      },
+      {
+         "command":"Wait for the next Background Conversion and log timer if created"
+      },
+      {
+         "command":"Application Frame"
+      },
+      {
+         "command":"Surface Painter"
+      },
+      {
+         "command":"TabBar"
+      },
+      {
+         "command":"SelectNextTab"
+      },
+      {
+         "command":"DockUndockTab"
+      },
+      {
+         "command":"SelectPreviousTab"
+      },
+      {
+         "command":"Label Selected Elements"
+      },
+      {
+         "command":"Import Point Clouds..."
+      },
+      {
+         "command":"Move Selected Point Clouds by Origin"
+      },
+      {
+         "command":"Snap Guides"
+      },
+      {
+         "command":"Snap Guides and Points"
+      },
+      {
+         "command":"Undo All Crops"
+      },
+      {
+         "command":"Editing Plane Display"
+      },
+      {
+         "command":"Between Nodes"
+      },
+      {
+         "command":"Snap Points From Middle"
+      },
+      {
+         "command":"Climate Data"
+      },
+      {
+         "command":"Check Background Update Compatibility"
+      },
+      {
+         "comment":"  from Test menu",
+         "command":"IFC Hook Test Add-on"
+      },
+      {
+         "command":"IFC Hook Test Add-on"
+      },
+      {
+         "command":"Property Manager"
+      },
+      {
+         "command":"3D Window Styles..."
+      },
+      {
+         "command":"Set Window Size"
+      },
+      {
+         "command":"Classification Manager..."
+      },
+      {
+         "command":"Always Send GDL Messages"
+      },
+      {
+         "command":"Merkmalserver Connection..."
+      },
+      {
+         "command":"Grasshopper Connection"
+      },
+      {
+         "command":"Design Tool Frame"
+      },
+      {
+         "command":"Design Tool Panel"
+      },
+      {
+         "command":"Design Tool Junction"
+      },
+      {
+         "command":"Design Tool Accessory"
+      },
+      {
+         "command":"Design Tool Scheme"
+      },
+      {
+         "command":"Import Rhino 3DM File as Object..."
+      },
+      {
+         "command":"Analytical Model"
+      },
+      {
+         "command":"ARCHICAD Help Center Options"
+      },
+      {
+         "command":"Create New Issue..."
+      },
+      {
+         "command":"Edit Truss..."
+      },
+      {
+         "command":"Element Transfer Settings..."
+      },
+      {
+         "command":"Polyline Accessories..."
+      },
+      {
+         "command":"Select and Manage Scenes..."
+      },
+      {
+         "command":"Stair Rules and Standards..."
+      },
+      {
+         "command":"Redefine 3D Document..."
+      },
+      {
+         "command":"Import 3ds as GDL Object..."
+      },
+      {
+         "command":"Library Part Maker..."
+      },
+      {
+         "command":"Bluebeam Connection"
+      },
+      {
+         "command":"Place Hotlink..."
+      },
+      {
+         "command":"Hotlink Module Manager..."
+      },
+      {
+         "command":"3D Styles..."
+      },
+      {
+         "command":"IFC Project Manager..."
+      },
+      {
+         "command":"IFC Translators..."
+      },
+      {
+         "command":"3ds to GDL Conversion Options..."
+      },
+      {
+         "command":"CINEMA 4D settings"
+      },
+      {
+         "command":"Grasshopper Connection..."
+      },
+      {
+         "command":"Property Manager..."
+      },
+      {
+         "command":"Opening"
+      },
+      {
+         "command":"Opening Cutting Bodies"
+      },
+      {
+         "command":"Opening Reference Planes"
+      },
+      {
+         "command":"Toggle Analytical Model On/Off"
+      },
+      {
+         "command":"Show Nodes"
+      },
+      {
+         "command":"Show End Releases"
+      },
+      {
+         "command":"Show Cross Sections"
+      },
+      {
+         "command":"Show Local Coordinate Systems"
+      },
+      {
+         "command":"Analytical Link"
+      },
+      {
+         "command":"Structural Analytical Model Generation Rules..."
+      },
+      {
+         "command":"Export Property Values from Schedule..."
+      },
+      {
+         "command":"Import Property Values into Elements..."
+      },
+      {
+         "command":"Check Surfaces..."
+      },
+      {
+         "command":"Action Center..."
+      },
+      {
+         "command":"Create Openings From Selection..."
+      },
+      {
+         "command":"Cut Additional Element with Opening"
+      },
+      {
+         "command":"Save Selection as Railing Post..."
+      },
+      {
+         "command":"Save Selection as Railing Panel..."
+      },
+      {
+         "command":"Upload Software Key"
+      },
+      {
+         "command":"Crop Drawing(s) to Frame"
+      },
+      {
+         "command":"Uncrop Drawing(s)"
+      },
+      {
+         "command":"Create Structural Links..."
+      },
+      {
+         "command":"SAF Translators..."
+      },
+      {
+         "command":"Project Change Tracking"
+      },
+      {
+         "command":"Merge from BIMcloud..."
+      },
+      {
+         "command":"Export to BIMcloud..."
+      },
+      {
+         "command":"Structural Analytical Model Quality..."
+      },
+      {
+         "command":"Physical Model Quality..."
+      },
+      {
+         "command":"Structural Support"
+      },
+      {
+         "command":"Structural Analytical Model Representation..."
+      },
+      {
+         "command":"Structural Analytical Model Units..."
+      },
+      {
+         "command":"Model Compare"
+      },
+      {
+         "command":"Model Check Report..."
+      },
+      {
+         "command":"Show Structural Analytical Model"
+      },
+      {
+         "command":"Structural Link"
+      },
+      {
+         "command":"Show Transparent Physical Model"
+      },
+      {
+         "command":"Generation Rules..."
+      },
+      {
+         "command":"Create Library Package..."
+      },
+      {
+         "command":"Extract Library Package..."
+      },
+      {
+         "command":"Dump Library Parts of Selected Elem"
+      },
+      {
+         "command":"Import Mapping Value Table..."
+      },
+      {
+         "command":"Export Mapping Value Table..."
+      },
+      {
+         "command":"DumpMapping Value Table..."
+      },
+      {
+         "command":"Use Folders as Library Packages"
+      },
+      {
+         "command":"Check For Missing Attributes..."
+      },
+      {
+         "command":"Disable Library Localization"
+      },
+      {
+         "command":"Import RFA as GDL Object..."
+      },
+      {
+         "command":"Show Profiles of Load-BearingCores..."
+      },
+      {
+         "command":"Send & Receive, then Compare"
+      },
+      {
+         "command":"Receive, then Compare"
+      },
+      {
+         "command":"Download & Open from BIMcloud..."
+      },
+      {
+         "command":"Structural Point Load"
+      },
+      {
+         "command":"Structural Edge Load"
+      },
+      {
+         "command":"Structural Surface Load"
+      },
+      {
+         "command":"Create Structural Supports..."
+      },
+      {
+         "command":"Load Manager..."
+      },
+      {
+         "command":"Load Combinations..."
+      },
+      {
+         "command":"Structural Analytical Model Load Units..."
+      },
+      {
+         "command":"Create Self Weight Loads"
+      },
+      {
+         "command":"Update Self Weight Loads"
+      },
+      {
+         "command":"Show Survey Point"
+      },
+      {
+         "command":"Show Survey Point Coordinates"
+      },
+      {
+         "command":"Location Settings..."
+      },
+      {
+         "command":"Hide Selection in 3D"
+      },
+      {
+         "command":"Solibri Connection..."
+      },
+      {
+         "command":"Library Localization Preferences..."
+      },
+      {
+         "command":"Sign In or Out"
+      },
+      {
+         "command":"New PARAM-O Object..."
+      },
+      {
+         "command":"Open Selected PARAM-O Object..."
+      },
+      {
+         "command":"PARAM-O Manager..."
+      },
+      {
+         "command":"Show Loads with active Load Case"
+      },
+      {
+         "command":"Load Case Palette..."
+      }
+   ]
+}
