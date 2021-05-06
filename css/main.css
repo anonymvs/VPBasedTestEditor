@@ -20,6 +20,10 @@ hr {
     background-color: #3c415c !important;
 }
 
+.navbar-light-dark {
+    background-color: #494e6d !important;
+}
+
 .dropdown-menu {
     background-color: #d6d2d2;
 }
@@ -148,4 +152,42 @@ input[type=number], input[type=text] {
 
 .node-editor div :first-child {
     stroke: rgb(183, 187, 0) !important;
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    width: 70px;
+    height: calc(100vh - 56px);
+    margin-top:56px;
+    vertical-align: top;
+    align-items: initial;
+}
+
+.sidebar-sticky ul {
+    margin-top: 10px;
+}
+
+.active-item .img-box {
+    background-color: rgb(192, 220, 243);
+}
+
+.img-box {
+    width: 40px;
+    height: 40px;
+    line-height:34px;
+
+    background-color:#d6d2d2;
+    border-radius: 20px;
+
+    padding: 0px !important;
+    margin-bottom:10px;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.img-box:hover {
+    background-color:#f0eeee;
 }
