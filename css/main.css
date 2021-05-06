@@ -1,3 +1,21 @@
+/* Html */
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.margin {
+    margin-left: 8px;
+}
+
+hr {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+/* Navbar */
+
 .navbar-dark {
     background-color: #3c415c !important;
 }
@@ -15,16 +33,27 @@
     background-color: #f0eeee;
 }
 
-hr {
-    margin-top: 2px;
-    margin-bottom: 2px;
+
+/* Input */
+
+input[type=number], input[type=text] {
+    background-color: #d6d2d2;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
 }
+
+
+/* Rete */
 
 #rete {
     width: 100hh;
     height: 100vh;
     background-color:rgb(42, 42, 42);
 }
+
+
+/* Node*/
 
 .node {
     background-color: rgb(61, 64, 67) !important;
@@ -37,21 +66,6 @@ hr {
     background-color: rgb(58, 101, 158) !important;
     border-radius: 8px 8px 0px 0px !important;
 }
-
-
-.no-padding {
-    padding: 0px !important;
-}
-
-.margin {
-    margin-left: 8px;
-}
-
-.void {
-    border-radius: 0px !important;
-}
-
-
 
 .node.coordinate2d, .node.coordinate3d, .node.number, .node.string {
     border-color: rgb(48, 101, 63) !important;
@@ -71,4 +85,67 @@ hr {
 
 .node.selected {
     border-color: rgb(183, 187, 0) !important;
+}
+
+.input-title {
+    line-height: 18px !important;
+}
+
+
+/* Socket */
+
+.socket.output {
+    margin-right: -9px !important;
+}
+.socket.input {
+    margin-left: -9px !important;
+}
+
+.socket {
+    width: 18px !important;
+    height: 18px !important;
+    background-color: rgb(61, 64, 67) !important;
+    border-color:rgb(58, 101, 158) !important;
+    border-width: 3px !important;
+}
+
+.socket:hover {
+    background-color: rgb(78, 79, 83) !important;
+}
+
+.socket.coordinate2d, .socket.coordinate3d, .socket.number, .socket.string {
+    border-color:rgb(48, 101, 63) !important;
+}
+
+.socket.void {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 0px !important;
+    border-width: 2px !important;
+}
+
+.socket.void.output {
+    margin-right: -8px !important;
+}
+.socket.void.input {
+    margin-left: -8px !important;
+}
+
+
+/* Connection */
+
+.connection .main-path {
+    stroke-width: 3px !important;
+}
+
+.connection.input-coordinate2d .main-path, .connection.input-coordinate3d .main-path, .connection.input-number .main-path, .connection.input-string .main-path {
+    stroke: rgb(48, 101, 63) !important;
+}
+
+.connection.input-void .main-path {
+    stroke: rgb(58, 101, 158) !important;
+}
+
+.node-editor div :first-child {
+    stroke: rgb(183, 187, 0) !important;
 }
