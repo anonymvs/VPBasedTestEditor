@@ -156,7 +156,7 @@ $('#new_open').click (async function(event) {
     let begin, end;
     try {
         begin = editor.getComponent ('Begin');
-        end = editor.getComponent ('End');
+        end   = editor.getComponent ('End');
     } catch (e) {
         alert ('there is no begin and end component wtf!');
     } 
@@ -195,8 +195,22 @@ function download(data, filename, type) {
 
 $('#save').click (async function(event) {
     var json = editor.toJSON();
-    download (JSON.stringify(json, null, 2), "nice_name", 'text/plain');
+    download (JSON.stringify(json, null, 2), "nice_name", '.json');
 });
+
+// Open file ==========================================================================================================
+
+function register_components (node) {
+    try {
+        editor.getComponent (node.name);
+    } catch (e) {
+        let comp = new SimpleComponent (node.name);
+  
+        editor.register (comp);
+        engine.register (comp);
+    } 
+}
+
 
 $("#open").click(function() {
     // creating input on-the-fly
@@ -206,9 +220,8 @@ $("#open").click(function() {
 
     input.on ('change', function (event) {
         let files = event.target.files;
-        if (files.length == 0) {
-            alert ('select only one file');
-        }
+        if (files.length == 0) 
+            alert ('select only one file');        
         
         if (!files[0])
             alert ('Failed to load file');
@@ -216,6 +229,11 @@ $("#open").click(function() {
         var readFile = new FileReader();
         readFile.onload = function(e) { 
             let json = JSON.parse(e.target.result);
+            Object.entries(json['nodes']).forEach((entry) => {
+                const [key, value] = entry;
+
+                register_components (value);
+            });
             
             editor.fromJSON (json);
         };
@@ -225,8 +243,7 @@ $("#open").click(function() {
     // add onchange handler if you wish to get the file :)
     input.trigger("click"); // opening dialog
 
-    // var file = input.attr('files') .files[0];
-    // console.log (file);
-
     return false; // avoiding navigation
 });
+
+// ====================================================================================================================
