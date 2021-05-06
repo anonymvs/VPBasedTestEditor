@@ -67,6 +67,9 @@ $('#delete').click (function (event) {
 
 
 $(document).keydown(function(e){
+    if($(e.target).is('input'))
+        return;
+
     if (e.keyCode == 46)
         deleteComponent ();
 });
