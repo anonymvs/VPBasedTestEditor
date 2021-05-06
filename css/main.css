@@ -113,7 +113,7 @@ input[type=number], input[type=text] {
     background-color: rgb(78, 79, 83) !important;
 }
 
-.socket.coordinate2d, .socket.coordinate3d, .socket.number, .socket.string {
+.socket.coord2d, .socket.coord3d, .socket.number, .socket.string {
     border-color:rgb(48, 101, 63) !important;
 }
 
@@ -138,11 +138,11 @@ input[type=number], input[type=text] {
     stroke-width: 3px !important;
 }
 
-.connection.input-coordinate2d .main-path, .connection.input-coordinate3d .main-path, .connection.input-number .main-path, .connection.input-string .main-path {
+.connection.output-coord2d .main-path, .connection.output-coord3d .main-path, .connection.output-number .main-path, .connection.output-string .main-path {
     stroke: rgb(48, 101, 63) !important;
 }
 
-.connection.input-void .main-path {
+.connection.output-void .main-path {
     stroke: rgb(58, 101, 158) !important;
 }
 
