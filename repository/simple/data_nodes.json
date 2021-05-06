@@ -37,11 +37,11 @@
                     }
                 ],
                 "perl" : [
-                    "my @path_separated = Split (',', $path_in_tree)",
+                    "my @path_separated = split (',', $path_in_tree);",
                     "setDialog ('Navigator');",
                     "checkIn ('ViewMap');",
                     "setDialog ('Navigator-ViewMap');",
-                    "openViewInNavigator ('Tree', @path_separated);",
+                    "openViewInNavigator ('Tree', \\@path_separated);",
                     "waitForAC;"
                 ]
             },
@@ -56,7 +56,9 @@
                         "type" : "string"
                     }
                 ],
-                "perl" : "openFile ($file_name);"
+                "perl" : [
+                    "openFile ($file_name);"
+                ]
             },
 
             "MigrateLibraries" : {
@@ -77,23 +79,35 @@
                 ]
             },
 
-            "BitmapCheckView" : {
-                "name": "BitmapCheck",
-                "description" : "BitmapChecks a given view (view) giving it a name (bitmap_name)",
+            "BitmapCheck2DView" : {
+                "name": "BitmapCheck2DView",
+                "description" : "BitmapChecks the 2D view that is currently open giving it a name (bitmap_name)",
                 "data_guid" : "{CF29651C-B328-444D-A527-BE47DB0A32FF}",
-                "input" : [
-                    {
-                        "name" : "view",
-                        "type" : "string"
-                    },
-                    
+                "input" : [           
                     {
                         "name" : "bitmap_name",
                         "type" : "string"
                     }
                 ],
                 "perl" :  [
-                    "bitmapCheck ($bitmap_name, $view);"
+                    "setDialog ('Floorplan');",
+                    "bitmapCheck ($bitmap_name, 'Plan');"
+                ]
+            },
+
+            "BitmapCheck3DView" : {
+                "name": "BitmapCheck3DView",
+                "description" : "BitmapChecks the 3D view that is currently open giving it a name (bitmap_name)",
+                "data_guid" : "{292AC25D-26B2-4442-BEA6-FE7A74E2047A}",
+                "input" : [                
+                    {
+                        "name" : "bitmap_name",
+                        "type" : "string"
+                    }
+                ],
+                "perl" :  [
+                    "setDialog ('3D');",
+                    "bitmapCheck ($bitmap_name, '3D');"
                 ]
             },
 
@@ -124,6 +138,16 @@
                 ],
                 "perl" :  [
                     "setDialog ($dialog_name);"
+                ]
+            },
+
+            "QuitAC" : {
+                "name": "QuitAC",
+                "description" : "Closes ArchiCAD",
+                "data_guid" : "{0B3025DC-F348-4404-93BD-0F82BF6363C9}",
+                "input" : [],
+                "perl" :  [
+                    "quitAC ();"
                 ]
             }
 
