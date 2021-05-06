@@ -47,9 +47,8 @@ function getPosition (nodeWidth, nodeHeight) {
 
 
 function deleteComponent () {
-    if (editor.selected.list.length > 0) {
-        editor.removeNode (editor.selected.list[0]);
-        selectedNode = null;
+    for (node of editor.selected.list) {
+        editor.removeNode (node);
     }
 }
 
