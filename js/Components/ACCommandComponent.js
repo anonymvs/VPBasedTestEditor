@@ -1,5 +1,3 @@
-var selected;
-
 var VueACCommandControl = {
   props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],
   template: `
@@ -29,6 +27,7 @@ var VueACCommandControl = {
     },
     chosen () {
       if (this.dirty) {
+        let selected = $('#myTable tr.selected').find('td:first').html();
         this.value = selected;
         this.label.innerHTML = selected;
       }
