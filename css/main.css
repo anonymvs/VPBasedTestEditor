@@ -1,34 +1,47 @@
-#d3ne {
-    height: 100%;
+.navbar-dark {
+    background-color: #3c415c !important;
 }
 
-.socket.data {
-    background: rgb(143, 125, 224)
+.dropdown-menu {
+    background-color: #d6d2d2;
 }
 
-.socket.act {
-    background: rgb(16, 202, 16);
-    border-radius: 0 !important;
-    width: 16px !important;
+.dropdown-item:hover {
+    background-color: #f0eeee;
+    color: #212529;
 }
 
-id {
-    position: absolute;
-    left: -6px;
-    top: -6px;
-    background: white;
+.dropdown-item:hover {
+    background-color: #f0eeee;
 }
 
-.void {
-    border-radius: 0px !important;
+hr {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
-
 
 #rete {
     width: 100hh;
     height: 100vh;
-    background-color:rgb(234, 248, 255);
+    background-color:rgb(42, 42, 42);
 }
+
+.node {
+    background-color: rgb(61, 64, 67) !important;
+    border-width: 2px !important;
+    border-color: rgb(58, 101, 158) !important;
+    border-radius: 10px !important;
+}
+
+.node.selected {
+    border-color: yellow !important;
+}
+
+.node .title {
+    background-color: rgb(58, 101, 158) !important;
+    border-radius: 8px 8px 0px 0px !important;
+}
+
 
 .no-padding {
     padding: 0px !important;
@@ -36,4 +49,8 @@ id {
 
 .margin {
     margin-left: 8px;
+}
+
+.void {
+    border-radius: 0px !important;
 }
