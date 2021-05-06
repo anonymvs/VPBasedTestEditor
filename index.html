@@ -13,6 +13,7 @@
 
         <script src="js/JQuery/jquery.min.js"></script>
         <script src="js/Bootstrap/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
 
         <script src="js/Rete.js/rete.min.js"></script>
         <script src="js/Rete.js/vue.min.js"></script>
@@ -33,6 +34,7 @@
         <script src="js/Components/SimpleComponent.js"></script>
         <script src="js/Components/BeginComponent.js"></script>
         <script src="js/Components/EndComponent.js"></script>
+        <script src="js/Components/ACCommandComponent.js"></script>
 
         <script src="js/globals.js"></script>
         
@@ -200,5 +202,31 @@
         </div>
         </div>
     </div>
+
+    <!-- AC Command Modal -->
+    <div class="modal fade" id="acCommandModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="acCommandModalLabel">Choose a command</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <table class="table table-bordered" id="ac_command_table">
+                       <!-- TODO VALAKI CSINALJON TABLAZATOT MERT EN MEG AKAROM OLNI MAGAM MIATTA -->
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="new_open">Choose</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
     </body>
 </html>
