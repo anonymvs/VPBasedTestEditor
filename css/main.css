@@ -178,7 +178,7 @@ input[type=number], input[type=text] {
 .img-box {
     width: 40px;
     height: 40px;
-    line-height:34px;
+    line-height:36px;
 
     background-color:#d6d2d2;
     border-radius: 20px;
@@ -192,4 +192,11 @@ input[type=number], input[type=text] {
 
 .img-box:hover {
     background-color:#f0eeee;
+}
+
+.icon-flipped {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
 }
