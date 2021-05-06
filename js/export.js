@@ -19,7 +19,6 @@ class Exporter {
     this.end_node = nodes.find (node => node.name === 'End');
 
     this.export = this.export.bind (this);
-    //this.process_input = this.process_input.bind (this);
   }
 
 
@@ -34,13 +33,6 @@ class Exporter {
       let current = start;
       while (current !== end) {
         for (let key of current.outputs.keys()) {
-          
-          //  //current.getConnections ();
-          //  for (let connections of current.getConnections ()) {
-          //   if (typeof connections.output !== 'undefined') {
-  
-          //     for (let c of connections.output.connections) {
-          //       let output = c.input;
 
           if (key === 'void') {  // type key of socket e.i.: 'str'
             let connections = current.outputs.get (key).connections;
@@ -152,17 +144,31 @@ class Exporter {
       if (!this.processed_inputs.has (input_node.id)) {  
         // Processes variable name and value, and return the declaration string 
         this.main += this.process_input (input_name, input_node.name, input_node.id, input_node.data);
-      } else {
-        this.processed_inputs.get(input_node.id).push (input_name);
+      }
+    }
+
+    let input_variables = [];
+
+    for (let [key, value] of node.inputs) {
+      if (key === 'void')
+        continue;
+
+      let input_node;
+      let connections = value.connections;
+      if (typeof connections !== 'undefined') {
+        input_node = connections[0].output.node;  
+      }      
+
+      // Declaring variables if not processed already
+      if (this.processed_inputs.has (input_node.id)) {  
+        // Processes variable name and value, and return the declaration string 
+        for (let value of this.processed_inputs.get (input_node.id)) {
+          input_variables.push (value);
+        }
       }
     }
 
     let func_name       = this.get_signature_name (node);
-    let input_variables = [];
-    for (let value of this.processed_inputs.values ()) {
-      input_variables.push.apply(input_variables, value);
-    }
-    // let input_variables = this.processed_inputs.get (input_node.id);
 
     // function call
     this.main += '_' + func_name + ' (';
@@ -187,7 +193,6 @@ class Exporter {
         this.subrutines += "my $" + param.name + "_x = shift @_;" + endline;
         this.subrutines += "my $" + param.name + "_y = shift @_;" + endline;
         this.subrutines += "my $" + param.name + "_z = shift @_;" + endline;
-
       } else {
         this.subrutines += "my $" + param.name + " = shift @_;" + endline;
       }
@@ -235,9 +240,9 @@ class Exporter {
     this.write_end ()
  
     return this.header +
-           this.init + 
-           this.main + 
-           this.end +
+           this.init + endline +
+           this.main + endline +
+           this.end + endline +
            this.subrutines;
   }
 
