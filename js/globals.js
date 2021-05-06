@@ -43,8 +43,53 @@ async function loadCommands() {
   }
 }
 
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
 window.addEventListener ('load', function () {
   (async() => {  
     await loadCommands ();
+
+    var table = document.getElementById("myTable");
+    for (const command of ac_commands) {
+      let row = table.insertRow(0);
+      let cell = row.insertCell(0);
+      cell.innerHTML = command;
+    }
+   
+    // $('.ok').on('click', function(e){
+    //    //alert($("#myTable tr.selected td:first").html());
+    // });
+
   })(); 
+
+  // let table = document.getElementById("myTable");
+  // table.addEventListener ('click', e => function (e) {
+  //   var thisIsTheShit = e.target;
+  //   console.log (thisIsTheShit);
+  // });
 })
+
+
+
+
+

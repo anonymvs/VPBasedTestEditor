@@ -1,25 +1,37 @@
-var data = []
-
 var VueACCommandControl = {
   props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],
-  template: '<input type="button" :readonly="readonly" :value="value" @input="change($event)" @click="click()" />',
+  //template: '<input type="button" :readonly="readonly" :value="value" @input="change($event)" @click="click()" />',
   // template: '<button type="button" class="btn btn-secondary btn-lg margin" :readonly="readonly" :value="value" @input="change($event)" data-toggle="modal" data-target="#acCommandModal">Choose command</button>',
-  template: '<button class="btn btn-secondary btn-lg margin" :readonly="readonly" @click="click()">Choose command</button>',
+  template: `
+    <div>
+      <label :value="value">test</label><br>
+      <button class="btn btn-secondary btn-lg margin" :readonly="readonly" @click="click($event)">Choose command</button>
+    </div>`,
+
   data() {
     return {
       value: "",
     }
   },
   methods: {
-    click () {
+    click (e) {
+       $("#myTable tr").click(function(){
+          $(this).addClass('selected').siblings().removeClass('selected');  
+      });
+
+      $("#choose_command").click(this.chosen);
+
+      $('#acCommandModal').on('hidden.bs.modal', this.update);
+
       $('#acCommandModal').modal('toggle');
 
+      this.label = e.target.parentElement.firstElementChild;
     },
-    // change(e){
-
-    //   this.value = e.target.value;
-    //   this.update();
-    // },
+    chosen (label) {
+      let selected = $("#myTable tr.selected").find('td:first').html();
+      this.value = selected;
+      this.label.innerHTML = selected;
+    },
     update() {
       if (this.ikey)
         this.putData(this.ikey, this.value)
@@ -30,10 +42,6 @@ var VueACCommandControl = {
     this.value = this.getData(this.ikey);
   }
 }
-
-$('#ac_command_table').bootstrapTable({
-  data: data
-});
 
 class ACCommandControl extends Rete.Control {
 
@@ -51,12 +59,10 @@ class ACCommandControl extends Rete.Control {
 class ACCommandComponent extends Rete.Component {
   constructor(){
       super('ACCommand');
-  }
-
-  
+  }  
 
   builder(node) { 
-    node.addControl(new ACCommandControl(this.editor, 'command', false));
+    node.addControl(new ACCommandControl(this.editor, 'command'));
 
     let voidInput = new Rete.Input ('void',"Void", voidSocket);
     node.addInput (voidInput);

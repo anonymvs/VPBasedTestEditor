@@ -228,14 +228,15 @@
             </div>
             <div class="modal-body">
                 <div class="container">
-                    <table class="table table-bordered" id="ac_command_table">
-                       <!-- TODO VALAKI CSINALJON TABLAZATOT MERT EN MEG AKAROM OLNI MAGAM MIATTA -->
-                    </table>
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for commands..">
+                    <div style="width:100%; height:400px; overflow:auto;">
+                        <table id="myTable"></table>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal" id="new_open">Choose</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="choose_command">Choose</button>
             </div>
         </div>
         </div>
