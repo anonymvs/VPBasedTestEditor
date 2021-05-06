@@ -2,16 +2,22 @@ var VueACCommandControl = {
   props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],
   template: `
     <div>
-      <label :value="value"></label><br>
-      <button class="btn btn-secondary btn-lg margin" :readonly="readonly" @click="click($event)">Choose command</button>
+      <label class="ac_command_label" @click="init_label($event)"></label><br>
+      <button class="btn btn-secondary btn-lg margin" @click="click($event)">Choose command</button>
     </div>`,
 
   data() {
     return {
-      value: "",
+      value: this.value,
     }
   },
   methods: {
+    // I HATE MYSELF
+    // see rant in open files event handler in component.js
+    init_label(e) {
+      if (typeof this.value !== 'undefined')
+        e.target.innerHTML = this.value;
+    },
     click (e) {
        $("#myTable tr").click(function(){
           $(this).addClass('selected').siblings().removeClass('selected');  
@@ -35,19 +41,29 @@ var VueACCommandControl = {
     update() {
       this.dirty = false;
       if (this.ikey)
-        this.putData(this.ikey, this.value)
+        this.putData(this.ikey, this.value);
       this.emitter.trigger('process');
+    },
+    find_elem (e) {
+      this.label = e.target;
+      this.label.innerHTML = this.value;
+    },
+    init (data) {
+      this.value = data['command']; 
     }
   },
   mounted() {
     this.value = this.getData(this.ikey);
-  }
+    this.update ();
+  },
+  
 }
 
 class ACCommandControl extends Rete.Control {
 
   constructor(emitter, key, readonly) {
     super(key);
+    this.render = 'vue';
     this.component = VueACCommandControl;
     this.props = { emitter, ikey: key, readonly };
   }
@@ -63,7 +79,14 @@ class ACCommandComponent extends Rete.Component {
   }  
 
   builder(node) { 
-    node.addControl(new ACCommandControl(this.editor, 'command' + node.id));
+    let control = new ACCommandControl(this.editor, 'command')
+    node.addControl(control);
+
+    if (node.data && Object.keys(node.data).length !== 0) {
+      control.component.methods.init (node.data);
+    }
+
+    node.update ();
 
     let voidInput = new Rete.Input ('void',"Void", voidSocket);
     node.addInput (voidInput);

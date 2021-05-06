@@ -274,12 +274,25 @@ $("#open").click(function() {
             });
             
             editor.fromJSON (json);
+            
+            // I HATE MYSELF
+            // I am adding a class to html elemts that are created, and because rete is too fucking slow to 
+            // render the fucking control element out i have to guess how much time does it take then trigger
+            // all of them. 
+            // AAAAAANDDD 
+            // after all that I am clicking them because that is the only fucking event that seems to work from
+            // that string as @click="func($event)" i dont even knwo what that fuck is this, how this syntax works
+            // but fuck that if I have to click every single one of them I sure am going to do it.
+            setTimeout(function() {
+                $('.ac_command_label').trigger('click');
+            }, 100);
         };
         readFile.readAsText(files[0]); 
     });
 
     // add onchange handler if you wish to get the file :)
     input.trigger("click"); // opening dialog
+    
 
     return false; // avoiding navigation
 });
