@@ -1,6 +1,5 @@
 const endline = '\n';
 
-
 class Exporter {
   constructor(nodes){
     // TODO: make it into a more reasonable data structure for a graph
@@ -226,6 +225,17 @@ class Exporter {
     }
   }
 
+  downloadToFile (content, filename, contentType) {
+    const a = document.createElement('a');
+    const file = new Blob([content], {type: contentType});
+    
+    a.href= URL.createObjectURL(file);
+    a.download = filename;
+    a.click();
+  
+    URL.revokeObjectURL(a.href);
+  };
+
   export () {
 
     this.write_beg ();
@@ -238,12 +248,14 @@ class Exporter {
     });
 
     this.write_end ()
- 
-    return this.header +
-           this.init + endline +
-           this.main + endline +
-           this.end + endline +
-           this.subrutines;
+
+    content = this.header +
+              this.init + endline +
+              this.main + endline +
+              this.end + endline +
+              this.subrutines;
+              
+    this.downloadToFile (content, "script.pl", "text/plain");
   }
 
 }
@@ -251,8 +263,7 @@ class Exporter {
 
 $('#export').click (async function(event) {
   let exporter = new Exporter (editor.nodes);
-  let script = exporter.export ();
-  console.log (script);
+  exporter.export ();
 });
 
 // window.onload = function () {
