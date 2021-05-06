@@ -4485,9 +4485,6 @@
          "command":"List loaded libraries"
       },
       {
-         "command":"List loaded libraries"
-      },
-      {
          "comment":"  Environment Control",
          "command":"Change Navigator Item"
       },
