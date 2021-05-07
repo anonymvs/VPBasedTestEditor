@@ -15,12 +15,14 @@ var components = [
   new NumComponent (), 
   new StrComponent (), 
   new Coord2DComponent (), 
-  new Coord3DComponent (), 
-  new SimpleComponent (''), 
+  new Coord3DComponent (),
+  new BoolComponent (),
+  //new SimpleComponent (''), 
   new BeginComponent (), 
   new EndComponent (),
   new ACCommandComponent (),
-  new StepComponent ()
+  new If (),
+  new EndIf ()
 ];
 
 var simple_command_descriptors = [];
