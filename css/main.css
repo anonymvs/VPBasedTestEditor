@@ -118,11 +118,11 @@ input[type=number], input[type=text] {
     border-radius: 8px 8px 0px 0px !important;
 }
 
-.node.coordinate2d, .node.coordinate3d, .node.number, .node.string {
+.node.coordinate2d, .node.coordinate3d, .node.number, .node.string, .node.bool {
     border-color: rgb(48, 101, 63) !important;
 }
 
-.node.coordinate2d .title, .node.coordinate3d .title, .node.number .title, .node.string .title {
+.node.coordinate2d .title, .node.coordinate3d .title, .node.number .title, .node.string .title, .node.bool .title {
     background-color: rgb(48, 101, 63) !important;
 }
 
@@ -164,7 +164,7 @@ input[type=number], input[type=text] {
     background-color: rgb(78, 79, 83) !important;
 }
 
-.socket.coord2d, .socket.coord3d, .socket.number, .socket.string {
+.socket.coord2d, .socket.coord3d, .socket.number, .socket.string, .socket.bool {
     border-color:rgb(48, 101, 63) !important;
 }
 
@@ -192,11 +192,11 @@ input[type=number], input[type=text] {
     stroke: rgb(58, 101, 158) !important;
 }
 
-.connection.output-coord2d .main-path, .connection.output-coord3d .main-path, .connection.output-number .main-path, .connection.output-string .main-path {
+.connection.output-coord2d .main-path, .connection.output-coord3d .main-path, .connection.output-number .main-path, .connection.output-string .main-path, .connection.output-bool .main-path {
     stroke: rgb(48, 101, 63) !important;
 }
 
-.connection.output-void .main-path {
+.connection.output-void .main-path, .connection.output-true .main-path, .connection.output-false .main-path {
     stroke: rgb(58, 101, 158) !important;
 }
 
@@ -211,8 +211,8 @@ input[type=number], input[type=text] {
     top: 0px;
     left: 0px;
     width: 65px;
-    height: calc(100vh - 64px);
-    margin-top:64px;
+    height: calc(100vh - 56px);
+    margin-top:56px;
     vertical-align: top;
     align-items: initial;
     padding: 0px;
