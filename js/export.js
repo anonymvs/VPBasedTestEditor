@@ -185,7 +185,7 @@ class Exporter {
     this.subrutines += "sub _" + this.get_signature_name(node) + " {" + endline;
 
     if (node.name === "ACCommand") {
-      this.subrutines += node.name + "(" + node.data.command + ");" + endline;
+      this.subrutines += node.name + "('" + node.data.command + "');" + endline;
     }
 
     if (typeof node.data.input !== 'undefined' && typeof node.data.perl !== 'undefined') {
