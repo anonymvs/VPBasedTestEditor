@@ -1,3 +1,4 @@
+
 (async () => {
     var container = document.querySelector('#rete');
     // var components = [new NumComponent (), new StrComponent (), new Coord2DComponent (), new Coord3DComponent ()];
@@ -70,6 +71,12 @@
       console.log('process');
         await engine.abort();
         await engine.process(editor.toJSON());
+    });
+
+    editor.bind ('myevent');
+
+    editor.on ('myevent', async () => {
+        alert ('we got it');
     });
 
     // editor.on('nodeselect', (node) => {

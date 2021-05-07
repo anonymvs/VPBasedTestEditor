@@ -144,6 +144,42 @@ $('#debug_component').click (async function (event) {
     selectNode (node);
 });
 
+
+
+// Async
+function getTemplate(beg_node, end_node, template_type) {
+
+    let file_path = '';
+
+    switch (template_type) {
+        case 'default_test_template':
+            file_path += './repository/script_resources/_template.json';
+          break;
+  
+        case 'datadriven_test_template':
+            file_path += './repository/script_resources/_template_data_driven.json';
+            break;
+  
+        case 'speed_test_template':
+            file_path += './repository/script_resources/_template_speed.json';
+            break;
+        default:
+            alert ('Resource for template type does not exist yet.');
+            return;
+    }
+            
+            
+    fetch(file_path)
+      .then(response => response.json())
+      .then(response => {
+          beg_node.data.perl = response['start'];
+          end_node.data.perl = response['end']
+      }
+      );
+      
+  }
+
+
 $('#new_open').click (async function(event) {
 
     editor.clear ();
@@ -162,7 +198,7 @@ $('#new_open').click (async function(event) {
     let beg_node = await begin.createNode();
     let end_node = await end.createNode();
 
-    getTemplate (beg_node, end_node, active_option)
+    await getTemplate (beg_node, end_node, active_option)
 
     let size = getReteSize (); 
     let offset = size.width / 6;
@@ -261,6 +297,49 @@ $("#open").click(function() {
 
 // ====================================================================================================================
 
+// Imprt ==============================================================================================================
+
+// var create_step_button = document.querySelector ('#import');
+// create_step_button.addEventListener ('click', function () {
+//     // creating input on-the-fly
+//     var input = $(document.createElement("input"));
+//     input.attr("type", "file");
+//     input.attr("accept", ".json,.txt");
+
+//     input.on ('change', function (event) {
+//         let files = event.target.files;
+//         if (files.length == 0) 
+//             alert ('select only one file');        
+        
+//         if (!files[0])
+//             alert ('Failed to load file');
+
+//         var readFile = new FileReader();
+//         readFile.onload = function(e) { 
+//             let json = JSON.parse(e.target.result);
+//             Object.entries(json['nodes']).forEach((entry) => {
+//                 const [key, value] = entry;
+
+//                 register_simple_component (value);
+//             });
+            
+//             editor.fromJSON (json);
+            
+//             setTimeout(function() {
+//                 $('.ac_command_label').trigger('click');
+//             }, 100);
+//         };
+//         readFile.readAsText(files[0]); 
+//     });
+
+//     // add onchange handler if you wish to get the file :)
+//     input.trigger("click"); // opening dialog
+// });
+
+// ====================================================================================================================
+
+// Create Step ========================================================================================================
+
 function get_step_component () {
     try {
         return editor.getComponent ('Step');
@@ -276,6 +355,16 @@ function get_step_component () {
 
 var create_step_button = document.querySelector ('#create_step_button');
 create_step_button.addEventListener ('click', function () {
+    let maxId = 0;
+    for (let node of editor.nodes) {
+        maxId = Math.max(node.id, maxId);
+    }
+
+    maxId++;
+
+    for (let node of editor.nodes) {
+        node.data['step'] = maxId;
+    }
     var save = editor.toJSON ();
 
     let exporter = new Exporter (editor.nodes);
@@ -288,18 +377,18 @@ create_step_button.addEventListener ('click', function () {
 
     editor.clear ();
 
-    // everyone should register itself when needed
-    // components.map(c => {
-    //     editor.register(c);
-    //     engine.register(c);
-    // });
-
-    (async() => {     
+    (async(m) => {     
         let comp = get_step_component ();
         let node = await comp.createNode (data);
         node.position = getPosition (222, 131);
 
+        if (m !== node.id)
+            alert ('nem egyenlo');
+
         editor.addNode(node);
         selectNode (node);
-    })();
+    })(maxId);
 });
+
+// ====================================================================================================================
+
