@@ -212,7 +212,7 @@ class Exporter {
   }
 
   write_beg () {
-    if (this.beg_node.type === 'undefined') {
+    if (typeof this.beg_node === 'undefined') {
       return;
     }
     
@@ -222,7 +222,7 @@ class Exporter {
   }
 
   write_end () {
-    if (this.end_node.type === 'undefined') {
+    if (typeof this.end_node === 'undefined') {
       return;
     }
     
@@ -242,7 +242,21 @@ class Exporter {
     URL.revokeObjectURL(a.href);
   };
 
+  fillTemplateIfNeeded () {
+    if (typeof this.beg_node.data.perl !== 'undefined'
+      && typeof this.end_node.data.perl !== 'undefined')
+      return;
+
+    alert (`Something went wrong, you either forgot to choose a template
+    or deleted something from the opened template.
+    Export will happen with a default template.`);
+
+    getTemplate (this.beg_node, this.end_node, 'default_test_template');
+  }
+
   export () {
+
+    this.fillTemplateIfNeeded ();
 
     this.write_beg ();
 
@@ -256,10 +270,10 @@ class Exporter {
     this.write_end ()
 
     let content = this.header +
-              this.init + endline +
-              this.main + endline +
-              this.end + endline +
-              this.subrutines;
+                  this.init + endline +
+                  this.main + endline +
+                  this.end + endline +
+                  this.subrutines;
               
     return content;
   }
@@ -271,5 +285,5 @@ $('#export').click (async function(event) {
   let exporter = new Exporter (editor.nodes);
   let script = exporter.export ();
 
-  this.downloadToFile (script, "script.pl", "text/plain");
+  exporter.downloadToFile (script, "script.pl", "text/plain");
 });

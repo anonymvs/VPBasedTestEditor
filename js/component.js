@@ -144,42 +144,6 @@ $('#debug_component').click (async function (event) {
     selectNode (node);
 });
 
-
-
-// Async
-function getTemplate(beg_node, end_node, template_type) {
-
-    let file_path = '';
-
-    switch (template_type) {
-        case 'default_test_template':
-            file_path += './repository/script_resources/_template.json';
-          break;
-  
-        case 'datadriven_test_template':
-            file_path += './repository/script_resources/_template_data_driven.json';
-            break;
-  
-        case 'speed_test_template':
-            file_path += './repository/script_resources/_template_speed.json';
-            break;
-        default:
-            alert ('Resource for template type does not exist yet.');
-            return;
-    }
-            
-            
-    fetch(file_path)
-      .then(response => response.json())
-      .then(response => {
-          beg_node.data.perl = response['start'];
-          end_node.data.perl = response['end']
-      }
-      );
-      
-  }
-
-
 $('#new_open').click (async function(event) {
 
     editor.clear ();
@@ -198,7 +162,7 @@ $('#new_open').click (async function(event) {
     let beg_node = await begin.createNode();
     let end_node = await end.createNode();
 
-    await getTemplate (beg_node, end_node, active_option)
+    getTemplate (beg_node, end_node, active_option)
 
     let size = getReteSize (); 
     let offset = size.width / 6;

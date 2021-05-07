@@ -91,6 +91,39 @@ window.addEventListener ('load', function () {
 })
 
 
+function getTemplate (beg_node, end_node, template_type) {
+
+  let file_path = '';
+
+  switch (template_type) {
+      case 'default_test_template':
+          file_path += './repository/script_resources/_template.json';
+        break;
+
+      case 'datadriven_test_template':
+          file_path += './repository/script_resources/_template_data_driven.json';
+          break;
+
+      case 'speed_test_template':
+          file_path += './repository/script_resources/_template_speed.json';
+          break;
+      default:
+          alert ('Resource for template type does not exist yet.');
+          return;
+  }
+          
+          
+  fetch(file_path)
+    .then(response => response.json())
+    .then(response => {
+        beg_node.data.perl = response['start'];
+        end_node.data.perl = response['end']
+    }
+    );
+    
+}
+
+
 
 
 
