@@ -85,9 +85,9 @@ class ACCommandComponent extends Rete.Component {
       control.component.methods.init (node.data);
     }
 
-    let voidInput = new Rete.Input ('void',"Void", voidSocket);
+    let voidInput = new Rete.Input ('void',"", voidSocket);
     node.addInput (voidInput);
-    var voidOutput = new Rete.Output ('void', "Void", voidSocket);
+    var voidOutput = new Rete.Output ('void', "", voidSocket);
     node.addOutput (voidOutput);
 }
 

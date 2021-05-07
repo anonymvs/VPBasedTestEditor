@@ -4,7 +4,7 @@ class BeginComponent extends Rete.Component {
     }
 
     builder(node) {
-        var voidOutput = new Rete.Output ('void', "Void", voidSocket);
+        var voidOutput = new Rete.Output ('void', "", voidSocket);
         node.addOutput (voidOutput);
     }
 

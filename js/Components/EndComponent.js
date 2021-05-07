@@ -4,7 +4,7 @@ class EndComponent extends Rete.Component {
     }
 
     builder(node) {
-        let voidInput = new Rete.Input ('void',"Void", voidSocket);
+        let voidInput = new Rete.Input ('void',"", voidSocket);
         node.addInput (voidInput);
     }
 

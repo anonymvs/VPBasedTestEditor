@@ -52,9 +52,9 @@ class StepComponent extends Rete.Component {
       node.addControl(new StrControl(this.editor, 'str'));
       node.addControl(new StepOpenButtonControl(this.editor, 'step', node.id));
 
-      let voidInput = new Rete.Input ('void',"Void", voidSocket);
+      let voidInput = new Rete.Input ('void',"", voidSocket);
       node.addInput (voidInput);
-      var voidOutput = new Rete.Output ('void', "Void", voidSocket);
+      var voidOutput = new Rete.Output ('void', "", voidSocket);
       node.addOutput (voidOutput);
   }
 

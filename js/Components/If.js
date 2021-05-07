@@ -5,7 +5,7 @@ class If extends Rete.Component {
 
     builder(node) {
         let condInput = new Rete.Input ('bool',"Bool", boolSocket);
-        let voidInput = new Rete.Input ('void',"Void", voidSocket);
+        let voidInput = new Rete.Input ('void',"", voidSocket);
         node.addInput (condInput);
         node.addInput (voidInput);
 
@@ -27,12 +27,12 @@ class EndIf extends Rete.Component {
     }
 
     builder(node) {
-        let trueInput = new Rete.Input ('true',"Void", voidSocket);
-        let falseInput = new Rete.Input ('false',"Void", voidSocket);
+        let trueInput = new Rete.Input ('true',"", voidSocket);
+        let falseInput = new Rete.Input ('false',"", voidSocket);
         node.addInput (trueInput);
         node.addInput (falseInput);
 
-        let voidOutput = new Rete.Output ('void',"Void", voidSocket);
+        let voidOutput = new Rete.Output ('void',"", voidSocket);
         node.addOutput (voidOutput);
     }
 
