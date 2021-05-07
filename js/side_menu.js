@@ -3,12 +3,20 @@ Object.freeze(SideMenus);
 
 let selectedElem = SideMenus.Cursor;
 
+let activeDrag = false;
+let mouseDown = {x : 0, y : 0};
+let mouseUp = {x : 0, y : 0};
+
 
 function refreshSideMenu () {
     $('.side-link').removeClass ('active-item');
 
     $('.side-link[menu-id=' + selectedElem + ']').addClass ('active-item');
+}
 
+function isBeingInserted () {
+    let elements = [4, 5, 6, 7];
+    return elements.includes (selectedElem);
 }
 
 
@@ -23,11 +31,10 @@ $('.side-link').click (function (event) {
 
     selectedElem = menuId;
 
-    if (!(menuId == 1 || menuId == 2 || menuId == 3)) {
+    if (isBeingInserted ())
         $('#rete').css ('cursor', 'copy');
-    } else {
+    else
         $('#rete').css ('cursor', 'default');
-    }
 
     refreshSideMenu ();
 });
@@ -51,7 +58,36 @@ $('#side-arrange').click (async function (event) {
     AreaPlugin.zoomAt(editor);
 });
 
+$('#rete').mousedown (function (e) {
+    mouseDown.x = e.pageX;
+    mouseDown.y = e.pageY;
+    activeDrag = true;
+
+    console.log ('a');
+});
+
+$('#rete').mousemove (function(event) {
+    if (!activeDrag)
+        return; 
+    
+    $('#rete').css ('cursor', 'grab');
+});
+
+$('#rete').mouseup (function (e) {
+    mouseUp.x = e.pageX;
+    mouseUp.y = e.pageY;
+    activeDrag = false;
+
+    if (isBeingInserted ())
+        $('#rete').css ('cursor', 'copy');
+    else
+        $('#rete').css ('cursor', 'default');
+});
+
 $('#rete').click (async function (e) {
+    if (!(mouseDown.x == mouseUp.x && mouseDown.y == mouseUp.y))
+        return;
+
     if(!$(e.target).is('div#rete'))
         return;
 
@@ -79,7 +115,7 @@ $('#rete').click (async function (e) {
 
     var node = await components[id].createNode();
 
-    node.position = getPosition2 (e.pageX, e.pageY, 0, 0);
+    node.position = getDivPositionToCursor (e.pageX, e.pageY, 0, 0);
 
     editor.addNode(node);
 

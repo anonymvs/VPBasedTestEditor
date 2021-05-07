@@ -46,7 +46,7 @@ function getPosition (nodeWidth, nodeHeight) {
 }
 
 // TODO
-function getPosition2 (screenX, screenY, nodeWidth, nodeHeight) {
+function getDivPositionToCursor (screenX, screenY, nodeWidth, nodeHeight) {
     let transform = getRetePosition ();
 
     let zoom = transform.zoom;
