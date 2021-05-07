@@ -45,6 +45,21 @@ function getPosition (nodeWidth, nodeHeight) {
     return position;
 }
 
+// TODO
+function getPosition2 (screenX, screenY, nodeWidth, nodeHeight) {
+    let transform = getRetePosition ();
+
+    let zoom = transform.zoom;
+    let reciprocalZoom = 1.0 / transform.zoom;
+
+    let positionX = reciprocalZoom * -transform.x + reciprocalZoom * screenX - zoom * nodeWidth / 2;
+    let positionY = reciprocalZoom * -transform.y + reciprocalZoom * screenY - zoom * nodeHeight / 2;
+
+    let position = [positionX, positionY];
+
+    return position;
+}
+
 
 function deleteComponent () {
     for (node of editor.selected.list) {
@@ -129,23 +144,6 @@ $('#debug_component').click (async function (event) {
     selectNode (node);
 });
 
-
-$('#auto_arrange').click (async function (event) {
-    if (editor.selected.list.length == 0) {
-        alert ("Please select a node!");
-        return;
-    }
-
-    editor.trigger('arrange', { node: editor.selected.list[0] });
-
-    editor.view.resize();
-    AreaPlugin.zoomAt(editor);
-});
-
-$('#fit_window').click (async function (event) {
-    editor.view.resize();
-    AreaPlugin.zoomAt(editor);
-});
 
 
 // Async
