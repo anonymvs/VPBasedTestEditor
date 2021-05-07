@@ -123,10 +123,11 @@ $('#rete').click (async function (e) {
 });
 
 $(document).keydown(function(e){
-    if (e.keyCode == 27)
-        deleteComponent ();
+    if (e.keyCode == 27) {
+        selectedElem = 1;
+        refreshSideMenu ();
 
-    selectedElem = 1;
-
-    refreshSideMenu ();
+        editor.selected.clear ();
+        editor.nodes.map(n => n.update());
+    }
 });

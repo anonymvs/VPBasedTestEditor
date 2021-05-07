@@ -169,6 +169,8 @@ input[type=number], input[type=text] {
     height: 16px !important;
     border-radius: 0px !important;
     border-width: 2px !important;
+    background-color: rgb(61, 64, 67) !important;
+    border-color:rgb(58, 101, 158) !important;
 }
 
 .socket.void.output {
@@ -183,6 +185,7 @@ input[type=number], input[type=text] {
 
 .connection .main-path {
     stroke-width: 3px !important;
+    stroke: rgb(58, 101, 158) !important;
 }
 
 .connection.output-coord2d .main-path, .connection.output-coord3d .main-path, .connection.output-number .main-path, .connection.output-string .main-path {

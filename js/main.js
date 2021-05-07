@@ -12,7 +12,7 @@
     // editor.use(CommentPlugin.default);
     // editor.use(HistoryPlugin);
     // editor.use(ConnectionMasteryPlugin.default);
-    editor.use(AutoArrangePlugin.default, { margin: {x: 50, y: 50 }, depth: 0 });
+    editor.use(AutoArrangePlugin.default, { margin: {x: 100, y: 100 }, depth: 0 });
 
     engine = new Rete.Engine('demo@0.1.0');
     
