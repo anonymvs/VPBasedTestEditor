@@ -255,7 +255,7 @@ class Exporter {
 
     this.write_end ()
 
-    content = this.header +
+    let content = this.header +
               this.init + endline +
               this.main + endline +
               this.end + endline +

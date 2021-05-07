@@ -238,7 +238,7 @@ $('#save').click (async function(event) {
 
 // Open file ==========================================================================================================
 
-function register_components (node) {
+function register_simple_component (node) {
     try {
         editor.getComponent (node.name);
     } catch (e) {
@@ -270,7 +270,7 @@ $("#open").click(function() {
             Object.entries(json['nodes']).forEach((entry) => {
                 const [key, value] = entry;
 
-                register_components (value);
+                register_simple_component (value);
             });
             
             editor.fromJSON (json);
@@ -298,3 +298,46 @@ $("#open").click(function() {
 });
 
 // ====================================================================================================================
+
+function get_step_component () {
+    try {
+        return editor.getComponent ('Step');
+    } catch (e) {
+        let comp = new StepComponent ();
+  
+        editor.register (comp);
+        engine.register (comp);
+
+        return comp;
+    } 
+}
+
+var create_step_button = document.querySelector ('#create_step_button');
+create_step_button.addEventListener ('click', function () {
+    var save = editor.toJSON ();
+
+    let exporter = new Exporter (editor.nodes);
+    let script = exporter.export ();
+    
+    let data = {
+        'save' : save,
+        'perl' : script
+    }
+
+    editor.clear ();
+
+    // everyone should register itself when needed
+    // components.map(c => {
+    //     editor.register(c);
+    //     engine.register(c);
+    // });
+
+    (async() => {     
+        let comp = get_step_component ();
+        let node = await comp.createNode (data);
+        node.position = getPosition (222, 131);
+
+        editor.addNode(node);
+        selectNode (node);
+    })();
+});

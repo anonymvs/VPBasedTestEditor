@@ -19,7 +19,8 @@ var components = [
   new SimpleComponent (''), 
   new BeginComponent (), 
   new EndComponent (),
-  new ACCommandComponent ()
+  new ACCommandComponent (),
+  new StepComponent ()
 ];
 
 var simple_command_descriptors = [];

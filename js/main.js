@@ -24,9 +24,9 @@
     // editor.register(comp);
     // engine.register(comp);
 
-    // let test = await components[7].createNode ();
-    // test.position = [80, 200];
-    // editor.addNode(test);
+    let test = await components[8].createNode ({'save' : 'fdafsf', 'perl' : 'script'});
+    test.position = [80, 200];
+    editor.addNode(test);
 
     //  let n1 = await components[4].createNode(
     //     {
