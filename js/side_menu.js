@@ -1,4 +1,4 @@
-const SideMenus = {"Cursor" : 1, "Fit" : 2, "Arrange" : 3, "Number" : 4, "String" : 5, "Coord2d" : 6, "Coord3d" : 7};
+const SideMenus = {"Cursor" : 1, "Fit" : 2, "Arrange" : 3, "Number" : 4, "String" : 5, "Coord2d" : 6, "Coord3d" : 7, "if" : 8};
 Object.freeze(SideMenus);
 
 let selectedElem = SideMenus.Cursor;
@@ -20,7 +20,7 @@ function refreshSideMenu () {
 }
 
 function isBeingInserted () {
-    let elements = [4, 5, 6, 7];
+    let elements = [4, 5, 6, 7, 8];
     return elements.includes (selectedElem);
 }
 
@@ -28,7 +28,7 @@ function isBeingInserted () {
 $('.side-link').click (function (event) {
     var menuId = parseInt ($(event.currentTarget).attr ('menu-id'));
 
-    if (!(menuId >= 1 && menuId <= 7))
+    if (!(menuId >= 1 && menuId <= 8))
         return;
 
     if (menuId == 1 || menuId == 2 || menuId == 3)
@@ -106,20 +106,39 @@ $('#rete').click (async function (e) {
         case 7:
             id = 3;
             break;
+        case 8:
+            id = 8;
+            break;
         default:
             return;
     }    
 
-    console.log (e.pageX);
-    console.log (e.pageY);
+    if (id == 8) {
+        var n1 = await components[8].createNode();
+        var n2 = await components[9].createNode();
 
-    var node = await components[id].createNode();
+        var position = getDivPositionToCursor (e.pageX, e.pageY, 0, 0);
+        var x = position[0];
+        var y = position[1];
 
-    node.position = getDivPositionToCursor (e.pageX, e.pageY, 0, 0);
+        n1.position = [x-200, y];
+        n2.position = [x+100, y];
+        
+        editor.addNode(n1);
+        editor.addNode(n2);
 
-    editor.addNode(node);
+        return;
+    } else {
+        var node = await components[id].createNode();
 
-    selectNode (node);
+        node.position = getDivPositionToCursor (e.pageX, e.pageY, 0, 0);
+
+        editor.addNode(node);
+
+        selectNode (node);
+    }
+
+    
 });
 
 $(document).keydown(function(e){
