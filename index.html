@@ -46,6 +46,9 @@
         <script src="js/controls.js" defer="defer"></script>
 
         
+        <script src="js/side_menu.js" defer="defer"></script>
+
+        
         <!-- <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script> -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/alight@0.14.1/alight.min.js"></script> -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/rete-auto-arrange-plugin@0.4.0/src/auto-arrange.js"></script> -->
@@ -108,39 +111,31 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link img-box no-href active-item" href="#"><i class="bi bi-cursor-fill"></i></a>
+                            <a id="side-cursor" class="nav-link img-box no-href side-link active-item" menu-id="1" href="#"><i class="bi bi-cursor-fill"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link img-box no-href" href="#"><i class="bi bi-arrows-fullscreen"></i></a>
+                            <a id="side-fit" class="nav-link img-box no-href side-link" menu-id="2" href="#"><i class="bi bi-arrows-fullscreen"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link img-box no-href" href="#"><i class="bi bi-share-fill"></i></a>
+                            <a id="side-arrange" class="nav-link img-box no-href side-link" menu-id="3" href="#"><i class="bi bi-share-fill"></i></a>
                         </li>
                     </ul>
 
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link img-box no-href" href="#">N</a>
+                            <a id="side-number" class="nav-link img-box no-href side-link" menu-id="4" href="#">N</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link img-box no-href" href="#">S</a>
+                            <a id="side-string" class="nav-link img-box no-href side-link" menu-id="5" href="#">S</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link img-box no-href" href="#">2D</a>
+                            <a id="side-coord2d" class="nav-link img-box no-href side-link" menu-id="6" href="#">2D</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link img-box no-href" href="#">3D</a>
+                            <a id="side-coord3d" class="nav-link img-box no-href side-link" menu-id="7" href="#">3D</a>
                         </li>
                     </ul>
                 </div>
-            </nav>
-
-            <!-- Bottom Navbar -->
-            <nav class="navbar fixed-bottom navbar-expand">
-                <button type="button" class="btn btn-danger btn-lg" id="delete">Delete</button>
-                <button type="button" class="btn btn-info btn-lg margin" id="fit_window">Fit to window</button>
-                <button type="button" class="btn btn-info btn-lg margin" id="auto_arrange">Auto arrange</button>
-                <button type="button" class="btn btn-info btn-lg margin" id="debug_component">Test Component</button>
             </nav>
         </div>
 

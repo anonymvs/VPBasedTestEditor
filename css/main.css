@@ -94,9 +94,9 @@ input[type=number], input[type=text] {
     cursor: default;
 }
 
-#rete:active {
+/* #rete:active {
     cursor: grabbing;
-}
+} */
 
 
 
