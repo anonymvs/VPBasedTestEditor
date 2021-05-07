@@ -261,7 +261,7 @@ class Exporter {
               this.end + endline +
               this.subrutines;
               
-    this.downloadToFile (content, "script.pl", "text/plain");
+    return content;
   }
 
 }
@@ -269,5 +269,7 @@ class Exporter {
 
 $('#export').click (async function(event) {
   let exporter = new Exporter (editor.nodes);
-  exporter.export ();
+  let script = exporter.export ();
+
+  this.downloadToFile (script, "script.pl", "text/plain");
 });
