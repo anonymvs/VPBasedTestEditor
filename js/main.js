@@ -72,11 +72,6 @@
         await engine.process(editor.toJSON());
     });
 
-    editor.on('mousemove renderconnection', async () => {
-        var nemtudom =  $('.ac_command_label');
-        $('.ac_command_label').trigger('click');
-    })
-
     // editor.on('nodeselect', (node) => {
     //   selectedNode = node;
     // });

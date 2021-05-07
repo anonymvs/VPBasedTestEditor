@@ -23,7 +23,7 @@ var VueACCommandControl = {
           $(this).addClass('selected').siblings().removeClass('selected');  
           selected = $(this).find('td:first').html();
       });
-
+      
       this.label = e.target.parentElement.firstElementChild;
       this.dirty = true;
 
@@ -54,7 +54,6 @@ var VueACCommandControl = {
   },
   mounted() {
     this.value = this.getData(this.ikey);
-    this.update ();
   },
   
 }
@@ -85,8 +84,6 @@ class ACCommandComponent extends Rete.Component {
     if (node.data && Object.keys(node.data).length !== 0) {
       control.component.methods.init (node.data);
     }
-
-    node.update ();
 
     let voidInput = new Rete.Input ('void',"Void", voidSocket);
     node.addInput (voidInput);
