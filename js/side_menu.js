@@ -12,6 +12,11 @@ function refreshSideMenu () {
     $('.side-link').removeClass ('active-item');
 
     $('.side-link[menu-id=' + selectedElem + ']').addClass ('active-item');
+
+    if (isBeingInserted ())
+        $('#rete').css ('cursor', 'copy');
+    else
+        $('#rete').css ('cursor', 'default');
 }
 
 function isBeingInserted () {
@@ -30,11 +35,6 @@ $('.side-link').click (function (event) {
         menuId = 1;
 
     selectedElem = menuId;
-
-    if (isBeingInserted ())
-        $('#rete').css ('cursor', 'copy');
-    else
-        $('#rete').css ('cursor', 'default');
 
     refreshSideMenu ();
 });
@@ -120,4 +120,13 @@ $('#rete').click (async function (e) {
     editor.addNode(node);
 
     selectNode (node);
+});
+
+$(document).keydown(function(e){
+    if (e.keyCode == 27)
+        deleteComponent ();
+
+    selectedElem = 1;
+
+    refreshSideMenu ();
 });
