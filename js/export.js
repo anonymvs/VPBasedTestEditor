@@ -167,7 +167,7 @@ class Exporter {
       }
     }
 
-    let func_name       = this.get_signature_name (node);
+    let func_name = this.get_signature_name (node);
 
     // function call
     this.main += '_' + func_name + ' (';
@@ -184,21 +184,27 @@ class Exporter {
 
     this.subrutines += "sub _" + this.get_signature_name(node) + " {" + endline;
 
-    for (const param of node.data.input) {
-      if (param.type === 'coord2d') {
-        this.subrutines += "my $" + param.name + "_x = shift @_;" + endline;
-        this.subrutines += "my $" + param.name + "_y = shift @_;" + endline;
-      } else if (param.type === 'coord3d') {
-        this.subrutines += "my $" + param.name + "_x = shift @_;" + endline;
-        this.subrutines += "my $" + param.name + "_y = shift @_;" + endline;
-        this.subrutines += "my $" + param.name + "_z = shift @_;" + endline;
-      } else {
-        this.subrutines += "my $" + param.name + " = shift @_;" + endline;
-      }
+    if (node.name === "ACCommand") {
+      this.subrutines += node.name + "(" + node.data.command + ");" + endline;
     }
-    
-    for (const line of node.data.perl) {
-      this.subrutines += line + endline;
+
+    if (typeof node.data.input !== 'undefined' && typeof node.data.perl !== 'undefined') {
+      for (const param of node.data.input) {
+        if (param.type === 'coord2d') {
+          this.subrutines += "my $" + param.name + "_x = shift @_;" + endline;
+          this.subrutines += "my $" + param.name + "_y = shift @_;" + endline;
+        } else if (param.type === 'coord3d') {
+          this.subrutines += "my $" + param.name + "_x = shift @_;" + endline;
+          this.subrutines += "my $" + param.name + "_y = shift @_;" + endline;
+          this.subrutines += "my $" + param.name + "_z = shift @_;" + endline;
+        } else {
+          this.subrutines += "my $" + param.name + " = shift @_;" + endline;
+        }
+      }
+      
+      for (const line of node.data.perl) {
+        this.subrutines += line + endline;
+      }
     }
 
     this.subrutines += "}" + endline + endline;
@@ -265,46 +271,3 @@ $('#export').click (async function(event) {
   let exporter = new Exporter (editor.nodes);
   exporter.export ();
 });
-
-// window.onload = function () {
-
-//   document.getElementById("export").addEventListener("click", function() {
-//     alert("Export");
-//     console.log("Megnyomtuk az exportot");
-
-//     var myNum = 100;
-//     var myNode = editor.nodes;
-
-//     console.log (myNode[0].id);
-
-//     console.log("fun times");
-
-//     console.log (editor.toJSON());
-
-//     // Ideiglenes export
-//     // var myJSON = JSON.stringify(editor.toJSON());
-//     // document.getElementById("asd").innerHTML = myJSON;
-
-//   });
-
-// }
-
-
-// start 
-
-// // Variable type node's output
-// my @node1_string = "fdsaafadfsd";
-
-// //OpenFile - param node1-tol ami string
-// _node2_name(node1_string)
-
-// my @node35_x = 1;
-// my @node35_y = 1;
-// my @node35_z = 1;
-
-// _node3_name(node35_x, node35_y, node35_z)
-
-// end
-
-// sub
-//  ...
