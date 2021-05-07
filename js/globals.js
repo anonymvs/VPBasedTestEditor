@@ -22,7 +22,8 @@ var components = [
   new EndComponent (),
   new ACCommandComponent (),
   new If (),
-  new EndIf ()
+  new EndIf (),
+  new Operation ()
 ];
 
 var simple_command_descriptors = [];
