@@ -95,8 +95,9 @@ input[type=number], input[type=text] {
 }
 
 #rete:active {
-    cursor: move;
+    cursor: grabbing;
 }
+
 
 
 /* Node*/
