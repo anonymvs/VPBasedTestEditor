@@ -272,15 +272,6 @@ $("#open").click(function() {
             });
             
             editor.fromJSON (json);
-            
-            // I HATE MYSELF
-            // I am adding a class to html elemts that are created, and because rete is too fucking slow to 
-            // render the fucking control element out i have to guess how much time does it take then trigger
-            // all of them. 
-            // AAAAAANDDD 
-            // after all that I am clicking them because that is the only fucking event that seems to work from
-            // that string as @click="func($event)" i dont even knwo what that fuck is this, how this syntax works
-            // but fuck that if I have to click every single one of them I sure am going to do it.
             setTimeout(function() {
                 $('.ac_command_label').trigger('click');
             }, 100);
@@ -299,42 +290,44 @@ $("#open").click(function() {
 
 // Imprt ==============================================================================================================
 
-// var create_step_button = document.querySelector ('#import');
-// create_step_button.addEventListener ('click', function () {
-//     // creating input on-the-fly
-//     var input = $(document.createElement("input"));
-//     input.attr("type", "file");
-//     input.attr("accept", ".json,.txt");
 
-//     input.on ('change', function (event) {
-//         let files = event.target.files;
-//         if (files.length == 0) 
-//             alert ('select only one file');        
+var create_step_button = document.querySelector ('#import');
+create_step_button.addEventListener ('click', function () {
+    // creating input on-the-fly
+    var input = $(document.createElement("input"));
+    input.attr("type", "file");
+    input.attr("accept", ".json,.txt");
+
+    input.on ('change', function (event) {
+        let files = event.target.files;
+        if (files.length == 0) 
+            alert ('select only one file');        
         
-//         if (!files[0])
-//             alert ('Failed to load file');
+        if (!files[0])
+            alert ('Failed to load file');
 
-//         var readFile = new FileReader();
-//         readFile.onload = function(e) { 
-//             let json = JSON.parse(e.target.result);
-//             Object.entries(json['nodes']).forEach((entry) => {
-//                 const [key, value] = entry;
+        var readFile = new FileReader();
+        readFile.onload = function(e) { 
+            let json = JSON.parse(e.target.result);
+            Object.entries(json['nodes']).forEach((entry) => {
+                const [key, value] = entry;
 
-//                 register_simple_component (value);
-//             });
+                register_simple_component (value);
+            });
             
-//             editor.fromJSON (json);
+            //editor.fromJSON (json);
+            manual_import (editor, json);
             
-//             setTimeout(function() {
-//                 $('.ac_command_label').trigger('click');
-//             }, 100);
-//         };
-//         readFile.readAsText(files[0]); 
-//     });
+            setTimeout(function() {
+                $('.ac_command_label').trigger('click');
+            }, 100);
+        };
+        readFile.readAsText(files[0]); 
+    });
 
-//     // add onchange handler if you wish to get the file :)
-//     input.trigger("click"); // opening dialog
-// });
+    // add onchange handler if you wish to get the file :)
+    input.trigger("click"); // opening dialog
+});
 
 // ====================================================================================================================
 
@@ -353,7 +346,7 @@ function get_step_component () {
     } 
 }
 
-var create_step_button = document.querySelector ('#create_step_button');
+var create_step_button = document.querySelector ('#create_step_btn');
 create_step_button.addEventListener ('click', function () {
     let maxId = 0;
     for (let node of editor.nodes) {
@@ -391,4 +384,9 @@ create_step_button.addEventListener ('click', function () {
 });
 
 // ====================================================================================================================
+
+// var create_step_button = document.querySelector ('#create_step_from_selected_btn');
+// create_step_button.addEventListener ('click', function () {
+
+// });
 

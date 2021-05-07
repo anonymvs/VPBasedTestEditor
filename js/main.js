@@ -25,9 +25,9 @@
     // editor.register(comp);
     // engine.register(comp);
 
-    let test = await components[8].createNode ({'save' : 'fdafsf', 'perl' : 'script'});
-    test.position = [80, 200];
-    editor.addNode(test);
+    // let test = await components[8].createNode ({'save' : 'fdafsf', 'perl' : 'script'});
+    // test.position = [80, 200];
+    // editor.addNode(test);
 
     //  let n1 = await components[4].createNode(
     //     {
@@ -75,8 +75,17 @@
 
     editor.bind ('myevent');
 
-    editor.on ('myevent', async () => {
-        alert ('we got it');
+    editor.on ('myevent', async (id) => {
+        for (let node of editor.nodes) {
+            if (node.id === id) {
+                let json = node.data['save'];
+
+                editor.removeNode (node);
+
+                manual_import (editor, json);
+            }
+        }
+       // alert ('we got it: ' + id);
     });
 
     // editor.on('nodeselect', (node) => {

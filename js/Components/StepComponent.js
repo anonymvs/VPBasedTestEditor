@@ -1,21 +1,25 @@
 var VueOpenStepControl = {
-  props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],
+  props: ['readonly', 'emitter', 'ikey', 'iid', 'getData', 'putData'],
   template: '<button class="btn btn-secondary btn-lg margin" @click="change($event)">Expand</button>',
   data() {
     return {
-      value: "",
+      value: 'undefined',
     }
   },
   methods: {
-    change(e){
-      this.emitter.trigger ('myevent');
-      //this.update();
+    change(e){      
+      this.update();
     },
     update() {
-      // if (this.ikey)
-      //   this.putData(this.ikey, this.value)
-      // this.emitter.trigger('process');
+      if (this.ikey)
+        this.putData(this.ikey, this.value)
+      //this.emitter.trigger('process');
+      this.emitter.trigger ('myevent', this.iid);
+    },
+    init (id) {
+      this.value = id;
     }
+
   },
   mounted() {
     this.value = this.getData(this.ikey);
@@ -24,10 +28,11 @@ var VueOpenStepControl = {
 
 class StepOpenButtonControl extends Rete.Control {
 
-  constructor(emitter, key, readonly) {
+  constructor(emitter, key, id, readonly) {
     super(key);
     this.component = VueOpenStepControl;
-    this.props = { emitter, ikey: key, readonly };
+    this.props = { emitter, ikey: key, iid: id, readonly };
+    this.component.methods.init (id);
   }
 
   setValue(val) {
@@ -45,7 +50,7 @@ class StepComponent extends Rete.Component {
       // var node.data['perl'];      
 
       node.addControl(new StrControl(this.editor, 'str'));
-      node.addControl(new StepOpenButtonControl(this.editor, 'step_open'));
+      node.addControl(new StepOpenButtonControl(this.editor, 'step', node.id));
 
       let voidInput = new Rete.Input ('void',"Void", voidSocket);
       node.addInput (voidInput);
