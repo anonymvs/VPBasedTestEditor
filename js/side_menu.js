@@ -127,6 +127,9 @@ $('#rete').click (async function (e) {
         editor.addNode(n1);
         editor.addNode(n2);
 
+        selectNode (n1);
+        selectNode (n2, false);
+
         return;
     } else {
         var node = await components[id].createNode();

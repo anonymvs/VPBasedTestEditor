@@ -68,8 +68,9 @@ function deleteComponent () {
 }
 
 
-function selectNode (node) {
-    editor.selected.clear ();
+function selectNode (node, clear = true) {
+    if (clear)
+        editor.selected.clear ();
     editor.selected.list.push (node);
     editor.nodes.map(n => n.update());
 }
