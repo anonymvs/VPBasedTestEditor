@@ -12,6 +12,7 @@
                     }
                 ],
                 "perl" : [
+                    "setDialog ('3D');",
                     "ACClick ($in_coord_x, $in_coord_y, $in_coord_z);"
                 ]
             },
@@ -24,7 +25,10 @@
                         "name" : "in_coord",
                         "type" : "coord2d"
                     }],
-                "perl" : [ "ACClick ($in_coord_x, $in_coord_y);" ]
+                "perl" : [
+                    "setDialog ('Floorplan');",
+                    "ACClick ($in_coord_x, $in_coord_y);" 
+                ]
             },
             "OpenView" : {
                 "name": "OpenView",
@@ -148,6 +152,21 @@
                 "input" : [],
                 "perl" :  [
                     "quitAC ();"
+                ]
+            },
+
+            "ClickOn" : {
+                "name": "ClickOn",
+                "description" : "Clicks on a control in a dialog",
+                "data_guid" : "",
+                "input" : [
+                    {
+                        "name" : "control_name",
+                        "type" : "string"
+                    }
+                ],
+                "perl" :  [
+                    "clickOn ($control_name);"
                 ]
             }
         }
