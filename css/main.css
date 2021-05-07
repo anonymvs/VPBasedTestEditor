@@ -126,6 +126,14 @@ input[type=number], input[type=text] {
     background-color: rgb(48, 101, 63) !important;
 }
 
+.node.if, .node.endif {
+    border-color: rgb(107, 17, 17) !important;
+}
+
+.node.if .title, .node.endif .title {
+    background-color: rgb(107, 17, 17) !important;
+}
+
 .node.begin, .node.end {
     border-color: rgb(78, 79, 83) !important;
 }
@@ -196,7 +204,9 @@ input[type=number], input[type=text] {
     stroke: rgb(48, 101, 63) !important;
 }
 
-.connection.output-void .main-path, .connection.output-true .main-path, .connection.output-false .main-path {
+.connection.socket-output-void .main-path, .connection.output-void .main-path,
+.connection.socket-output-true .main-path, .connection.output-true .main-path, 
+.connection.socket-output-false .main-path, .connection.output-false .main-path{
     stroke: rgb(58, 101, 158) !important;
 }
 
