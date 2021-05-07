@@ -109,6 +109,10 @@ input[type=number], input[type=text] {
     cursor: grab !important;
 }
 
+.node:hover {
+    opacity: 0.7;
+}
+
 .node:active {
     cursor: grabbing !important;
 }
