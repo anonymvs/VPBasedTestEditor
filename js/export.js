@@ -30,9 +30,13 @@ class Exporter {
     if (typeof start !== 'undefined' && typeof end !== 'undefined') {
 
       let current = start;
+      let prev;
       while (current !== end) {
-        for (let key of current.outputs.keys()) {
+        if (prev === current)
+          return [];
 
+        prev = current;
+        for (let key of current.outputs.keys()) {
           if (key === 'void') {  // type key of socket e.i.: 'str'
             let connections = current.outputs.get (key).connections;
             if (typeof connections !== 'undefined') {
@@ -43,16 +47,18 @@ class Exporter {
 
                 break;
               } else {
-                alert ('Multiple routes for control flow found.');
+                //alert ('Multiple routes for control flow found.');
+                return [];
               }
             }
           }
         }
+        
       }
 
       return ret;
     } else {
-      alert ("You can't export a sequence without a start- and an endnode.");
+      //alert ("You can't export a sequence without a start- and an endnode.");
       return [];
     }
   }
