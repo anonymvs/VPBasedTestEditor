@@ -36,17 +36,17 @@ editor.on ('expand_step', async (id) => {
 var exit_step_button = document.querySelector ('#exit_step_button');
 exit_step_button.addEventListener ('click', async function () {
   
-  let step_json = editor.toJSON (); 
+  let step_json = await editor.toJSON (); 
 
   await editor.clear ();
   await editor.fromJSON (state.editor_reference);
 
   let step_view_controls = document.querySelector('#step_view_controls');
   step_view_controls.hidden = true;
-  let step_id = step_view_controls.getAttribute ('step_id').value;
+  let attr = step_view_controls.getAttribute ('step_id');
 
   for (let node of editor.nodes) {
-    if (node.id === step_id) {
+    if (node.id == attr) {
       node.data['save'] = step_json;
     }
   }
