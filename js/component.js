@@ -210,6 +210,9 @@ $('#new_open').click (async function(event) {
     editor.addNode(end_node);
     
     editor.trigger('process');
+
+    let step_view_controls = document.querySelector('#step_view_controls');
+    step_view_controls.hidden = true;
 });
 
 function download(data, filename, type) {
@@ -282,7 +285,9 @@ $("#open").click(function() {
 
     // add onchange handler if you wish to get the file :)
     input.trigger("click"); // opening dialog
-    
+
+    let step_view_controls = document.querySelector('#step_view_controls');
+    step_view_controls.hidden = true;
 
     return false; // avoiding navigation
 });

@@ -78,6 +78,16 @@ hr {
     background-color: #f0eeee;
 }
 
+/* Current step */
+
+#step_view_controls {
+    color: #a0a0a0;
+}
+
+#open_step_name {
+    color: #ebebeb;
+    padding: 10px;
+}
 
 /* Input */
 

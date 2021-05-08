@@ -70,23 +70,12 @@
     editor.on('process nodecreated noderemoved connectioncreated connectionremoved', async () => {
       console.log('process');
         await engine.abort();
-        await engine.process(editor.toJSON());
+        let json = await editor.toJSON();
+        await engine.process(json);
+        //state.editor_reference = json;
     });
 
-    editor.bind ('myevent');
-
-    editor.on ('myevent', async (id) => {
-        for (let node of editor.nodes) {
-            if (node.id === id) {
-                let json = node.data['save'];
-
-                editor.removeNode (node);
-
-                manual_import (editor, json);
-            }
-        }
-       // alert ('we got it: ' + id);
-    });
+    editor.bind ('expand_step');
 
     // editor.on('nodeselect', (node) => {
     //   selectedNode = node;

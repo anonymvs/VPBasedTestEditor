@@ -8,7 +8,8 @@ const test_types = {
 }
 
 var state = {
-  type: test_types.DEFAULT
+  type: test_types.DEFAULT,
+  editor_reference: 'undefined',
 };
 
 var components = [

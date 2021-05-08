@@ -50,6 +50,7 @@
         <script src="js/validation.js" defer="defer"></script>
         <script src="js/style.js" defer="defer"></script>
         <script src="js/controls.js" defer="defer"></script>
+        <script src="js/stepcontrols.js" defer="defer"></script>
 
         
         <script src="js/side_menu.js" defer="defer"></script>
@@ -125,7 +126,14 @@
                                 <!-- <a class="dropdown-item no-href disabled" href="#">Ezt majd generálni kell</a> -->
                             </div>
                         </li>
+
+                        
                     </ul>
+                    <div hidden id="step_view_controls">
+                        <label class="step_name_label">step name: </label>
+                        <label class="step_name_label" id="open_step_name"></label>
+                        <button type="button" class="btn btn-secondary btn-sm" id="exit_step_button">Exit Step</button>
+                    </div>
                 </div>
             </nav>
             

@@ -14,7 +14,7 @@ var VueOpenStepControl = {
       if (this.ikey)
         this.putData(this.ikey, this.value)
       //this.emitter.trigger('process');
-      this.emitter.trigger ('myevent', this.iid);
+      this.emitter.trigger ('expand_step', this.iid);
     },
     init (id) {
       this.value = id;

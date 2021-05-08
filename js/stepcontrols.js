@@ -1,3 +1,65 @@
+
+// step expand ========================================================================================================
+
+editor.on ('expand_step', async (id) => {
+  
+  for (let node of editor.nodes) {
+      if (node.id === id) {
+          let json = node.data['save'];
+          let step_name = node.data['str'];
+
+          state.editor_reference = await editor.toJSON ();
+
+          await editor.clear ();
+          await editor.fromJSON (json);
+
+          let container = document.querySelector('#rete');
+          container.style.cssText += `
+          border-style: solid;
+          border-color: yellow;
+          border-width: 10px;`;
+
+          let step_view_controls = document.querySelector('#step_view_controls');
+          step_view_controls.hidden = false;
+          let attr = document.createAttribute("step_id");      
+          attr.value = id;                           
+          step_view_controls.setAttributeNode(attr);  
+
+          let step_name_label = document.querySelector('#open_step_name');
+          step_name_label.innerHTML = step_name;
+
+      }
+  }
+});
+
+
+var exit_step_button = document.querySelector ('#exit_step_button');
+exit_step_button.addEventListener ('click', async function () {
+  
+  let step_json = editor.toJSON (); 
+
+  await editor.clear ();
+  await editor.fromJSON (state.editor_reference);
+
+  let step_view_controls = document.querySelector('#step_view_controls');
+  step_view_controls.hidden = true;
+  let step_id = step_view_controls.getAttribute ('step_id').value;
+
+  for (let node of editor.nodes) {
+    if (node.id === step_id) {
+      node.data['save'] = step_json;
+    }
+  }
+
+  let container = document.querySelector('#rete');
+  container.style.cssText += `
+  border-style: solid;
+  border-color: yellow;
+  border-width: 0px;`;
+
+});
+
+
 // ====================================================================================================================
 
 function get_step_component () {
@@ -15,16 +77,12 @@ function get_step_component () {
 
 var create_step_button = document.querySelector ('#create_step_btn');
 create_step_button.addEventListener ('click', function () {
-  let maxId = 0;
-  for (let node of editor.nodes) {
-      maxId = Math.max(node.id, maxId);
-  }
-
-  maxId++;
+  let maxId = Rete.Node.latestId + 1;
 
   for (let node of editor.nodes) {
       node.data['step'] = maxId;
   }
+
   var save = editor.toJSON ();
 
   let exporter = new Exporter (editor.nodes);
@@ -54,7 +112,8 @@ create_step_button.addEventListener ('click', function () {
 
 var create_step_from_selected_btn = document.querySelector ('#create_step_from_selected_btn');
 create_step_from_selected_btn.addEventListener ('click', function () {
-
+  // var selected = editor.selected;
+  // console.log(selected);
 });
 
 // ====================================================================================================================
