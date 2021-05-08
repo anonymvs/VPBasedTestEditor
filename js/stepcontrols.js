@@ -37,6 +37,7 @@ var exit_step_button = document.querySelector ('#exit_step_button');
 exit_step_button.addEventListener ('click', async function () {
   
   let step_json = await editor.toJSON (); 
+  let script = exporter.export ();
 
   await editor.clear ();
   await editor.fromJSON (state.editor_reference);
@@ -48,6 +49,7 @@ exit_step_button.addEventListener ('click', async function () {
   for (let node of editor.nodes) {
     if (node.id == attr) {
       node.data['save'] = step_json;
+      node.data['perl'] = script;
     }
   }
 
