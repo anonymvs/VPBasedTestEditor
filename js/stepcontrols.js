@@ -37,6 +37,8 @@ var exit_step_button = document.querySelector ('#exit_step_button');
 exit_step_button.addEventListener ('click', async function () {
   
   let step_json = await editor.toJSON (); 
+
+  let exporter = new Exporter (editor.nodes);
   let script = exporter.export ();
 
   await editor.clear ();
@@ -114,8 +116,9 @@ create_step_button.addEventListener ('click', function () {
 
 var create_step_from_selected_btn = document.querySelector ('#create_step_from_selected_btn');
 create_step_from_selected_btn.addEventListener ('click', function () {
-  // var selected = editor.selected;
-  // console.log(selected);
+  //var selected = editor.selected;
+  
+  
 });
 
 // ====================================================================================================================
