@@ -1,5 +1,5 @@
 // let command_array2 = []
-let controlsDiv = document.querySelector('[aria-labelledby="SimpleComponents"]');
+let componentsDiv = document.querySelector('[aria-labelledby="SimpleComponents"]');
 
 // // Commands to array
 // function getCommands(command_array) {
@@ -24,18 +24,17 @@ let controlsDiv = document.querySelector('[aria-labelledby="SimpleComponents"]')
 
 // Async
 function getPoster(simple_command_descriptors) {
-    fetch("./repository/simple/data_nodes.json")
-      .then(response => response.json())
-      .then(response => {
-          let commands = response['nodes'][0];
-          for (const [key, value] of Object.entries(commands)) {
-            simple_command_descriptors.push([key, value]);
-          }
-          simple_command_descriptors = simple_command_descriptors[0]
-      }
-      );
-      
-  }
+  fetch("./repository/simple/data_nodes.json")
+    .then(response => response.json())
+    .then(response => {
+        let commands = response['nodes'][0];
+        for (const [key, value] of Object.entries(commands)) {
+          simple_command_descriptors.push([key, value]);
+        }
+        simple_command_descriptors = simple_command_descriptors[0]
+    }
+    );      
+}
 
 
 window.addEventListener('load', () => {
@@ -44,6 +43,7 @@ window.addEventListener('load', () => {
         generateControlsToDropDowMenu();    
     }, 1000);
 })
+
 
 function generateControlsToDropDowMenu () {
     for (let i = 0; i < simple_command_descriptors.length; ++i) {
@@ -55,7 +55,7 @@ function generateControlsToDropDowMenu () {
         child.setAttribute('href', '#');
         child.setAttribute('guid', simple_command_descriptors[i][1]['data_guid'])
 
-        controlsDiv.appendChild(child);
+        componentsDiv.appendChild(child);
     }
 }
 
@@ -75,8 +75,27 @@ const registerComponent = async function registerComponent (data) {
 }
 
 
+let controlsDiv = document.querySelector('[aria-labelledby="Controls"]');
 controlsDiv.addEventListener('click', (e) => {
-    if (e.target.matches('a')) {
+  if (e.target.matches('a') && e.target.matches('.control')) {
+    let componentId = e.target.getAttribute ('componentid');
+
+    (async() => { 
+      let node = await components[componentId].createNode ();
+      node.position = getPosition (184, 195);
+
+      editor.addNode(node);
+
+      editor.selected.clear ();
+      editor.selected.list.push (node);
+      editor.nodes.map(n => n.update());
+    })(); 
+  }
+})
+
+
+componentsDiv.addEventListener('click', (e) => {
+    if (e.target.matches('a')) {   
         let guid = e.target.getAttribute ('guid');
 
         if (guid == null)
@@ -98,9 +117,7 @@ controlsDiv.addEventListener('click', (e) => {
               editor.selected.list.push (node);
               editor.nodes.map(n => n.update());              
             })();
-
           }
         }
-
     }
 })

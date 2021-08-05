@@ -1,13 +1,12 @@
 function getRetePosition () {
     let transformationElem = document.querySelector ('.node-editor').childNodes[0];
 
-    console.log ("transformation");
-    console.log (transformationElem.css('transform'));
-    console.log (transformationElem.css('transform').split(','));
+    var style = window.getComputedStyle(transformationElem);
+    let transform = style.transform;
 
-    let zoom = parseFloat(transformationElem.css('transform').split(',')[3]);
-    let xCoord = parseInt(transformationElem.css('transform').split(',')[4]);
-    let yCoord = parseInt(transformationElem.css('transform').split(',')[5]);
+    let zoom = parseFloat(transform.split(',')[3]);
+    let xCoord = parseInt(transform.split(',')[4]);
+    let yCoord = parseInt(transform.split(',')[5]);
 
     return {
         zoom : zoom,
